@@ -53,10 +53,10 @@ Think of it as the *taste and system* layer. You still bring the ambition and th
 ## Layout
 
 ```
-SKILL.md      the entry point: a short intro and a table that points to the right topic
-playbook/     the opinionated layer: apple-look checklist, design tokens, font setup
-skills/       65 short design skills - foundations, patterns, components, interaction
-references/   the full 172-page HIG, for when you want everything Apple wrote
+SKILL.md            the entry point: a short intro and a table that points to the right topic
+skills/             65 short design skills - foundations, patterns, components, interaction
+skills/playbook/    the opinionated layer: apple-look checklist, design tokens, font setup
+references/          the full 172-page HIG, for when you want everything Apple wrote
 ```
 
 ## Install

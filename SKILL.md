@@ -11,11 +11,11 @@ This is **design guidance**, not implementation - it says how something should l
 
 ## Start here: the playbook
 
-Before designing, read the **[playbook](playbook/)**. The `skills/` files give taste and correctness; the playbook gives the concrete moves and numbers that actually make a UI look Apple:
+Before designing, read the **[playbook](skills/playbook/)**. The `skills/` files give taste and correctness; the playbook gives the concrete moves and numbers that actually make a UI look Apple:
 
-- **[playbook/apple-look.md](playbook/apple-look.md)** - what reads as "Apple," a design checklist, and how to apply this boldly instead of making timid tweaks.
-- **[playbook/tokens.md](playbook/tokens.md)** - real values: type ramp, 8pt spacing, radii, the iOS system color palette (light + dark), shadows, motion. Copy-paste CSS variables, Tailwind, and `tokens.json`.
-- **[playbook/fonts.md](playbook/fonts.md)** - font stacks (system/SF, Inter substitute, mono, serif), sources, and licensing.
+- **[playbook/apple-look.md](skills/playbook/apple-look.md)** - what reads as "Apple," a design checklist, and how to apply this boldly instead of making timid tweaks.
+- **[playbook/tokens.md](skills/playbook/tokens.md)** - real values: type ramp, 8pt spacing, radii, the iOS system color palette (light + dark), shadows, motion. Copy-paste CSS variables, Tailwind, and `tokens.json`.
+- **[playbook/fonts.md](skills/playbook/fonts.md)** - font stacks (system/SF, Inter substitute, mono, serif), sources, and licensing.
 
 Adopt the tokens and font first, then design against them. "Be consistent" only works once "consistent" has numbers.
 
@@ -24,9 +24,9 @@ Adopt the tokens and font first, then design against them. "Be consistent" only 
 1. Read the **playbook** above for the concrete system (tokens, fonts, the Apple-look checklist).
 2. Figure out what you're designing - a **foundation**, a **pattern/flow**, a **component**, or an **interaction** - and open that one file from the router below.
 3. Apply its **Guidelines**, **Accessibility**, and **Avoid** points, expressed in the playbook tokens.
-4. Make it look, then critique it against `playbook/apple-look.md` and iterate. Each skill links to its full Apple HIG page for deep detail.
+4. Make it look, then critique it against `skills/playbook/apple-look.md` and iterate. Each skill links to its full Apple HIG page for deep detail.
 
-`playbook/` holds the opinionated design system. `skills/` holds **65** design skills. `references/` holds the **172** full HIG pages for deep dives.
+`skills/playbook/` holds the opinionated design system. `skills/` holds **65** design skills. `references/` holds the **172** full HIG pages for deep dives.
 
 ## Router
 
