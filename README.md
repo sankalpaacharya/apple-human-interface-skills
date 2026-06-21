@@ -22,9 +22,29 @@ skills/       65 short design skills — foundations, patterns, components, inte
 references/   the full 172-page HIG, for when you want everything Apple wrote
 ```
 
+## Install
+
+This repo is an [Agent Skill](https://docs.claude.com/en/docs/agents-and-tools/agent-skills) — a folder with a `SKILL.md`. Installing it just means dropping that folder where your agent looks for skills.
+
+**Claude Code** — clone it into your skills folder:
+
+```bash
+# every project:
+git clone https://github.com/sankalpaacharya/apple-human-interface-skills.git \
+  ~/.claude/skills/apple-human-interface-skills
+
+# or a single project:
+git clone https://github.com/sankalpaacharya/apple-human-interface-skills.git \
+  .claude/skills/apple-human-interface-skills
+```
+
+Claude then loads it automatically whenever your request matches what it's for — "design this screen," "review my UI," "lay out a settings page." No command to remember.
+
+**Any other agent (Cursor, your own tooling, etc.)** — clone the repo anywhere and tell the agent to read `SKILL.md` first. It routes itself from there.
+
 ## Using it
 
-Point an AI agent at `SKILL.md`. It reads the router, jumps to the one topic it needs (designing a modal? open `sheets.md`), and applies the guidance. Each skill links back to the original Apple page if you want the full version.
+Once installed, you don't really "call" it — just ask your agent to design or review something and it pulls the relevant topic in. Under the hood it reads the router in `SKILL.md`, opens the one file it needs (designing a modal? `sheets.md`), and applies the guidance. Every skill links back to the original Apple page if you want the full version.
 
 ## Credit
 
