@@ -22,7 +22,7 @@ Widgets come in different sizes, ranging from small accessory widgets on iPhone,
 
 - The widget size to support
 
-- The context — devices and system experiences — in which the widget may appear
+- The context - devices and system experiences - in which the widget may appear
 
 - The rendering modes and color treatment that the widget receives based on the size and context
 
@@ -185,11 +185,11 @@ For additional design guidance, see [Rendering modes](https://developer.apple.co
 
 **Balance information density.** Sparse layouts can make the widget seem unnecessary, while overly dense layouts are less glanceable. Create a layout that provides essential information at a glance and allows people to view additional details by taking a longer look. If your layout is too dense, consider improving its clarity by using a larger widget size or replacing text with graphics.
 
-**Display only the information that’s directly related to the widget’s main purpose.** In larger widgets, you can display more data — or more detailed visualizations of the data — but you don’t want to lose sight of the widget’s primary purpose. For example, all Calendar widgets display a person’s upcoming events. In each size, the widget remains centered on events while expanding the range of information as the size increases.
+**Display only the information that’s directly related to the widget’s main purpose.** In larger widgets, you can display more data - or more detailed visualizations of the data - but you don’t want to lose sight of the widget’s primary purpose. For example, all Calendar widgets display a person’s upcoming events. In each size, the widget remains centered on events while expanding the range of information as the size increases.
 
-**Use brand elements thoughtfully.** Incorporate brand colors, typefaces, and stylized glyphs to make your widget recognizable but don’t overpower useful information or make your widget look out of place. When you include brand elements, people seldom need your logo or app icon to help them recognize your widget. If your widget benefits from including a small logo — for example, if your widget displays content from multiple sources — a small logo in the top-right corner is sufficient.
+**Use brand elements thoughtfully.** Incorporate brand colors, typefaces, and stylized glyphs to make your widget recognizable but don’t overpower useful information or make your widget look out of place. When you include brand elements, people seldom need your logo or app icon to help them recognize your widget. If your widget benefits from including a small logo - for example, if your widget displays content from multiple sources - a small logo in the top-right corner is sufficient.
 
-**Choose between automatically displaying content and letting people customize displayed information.** In some cases, people need to configure a widget to ensure it displays the information that’s most useful for them. For example, the Stocks widget lets people select the stocks they wish to track. In contrast, some widgets — like the Podcasts widget — automatically display recent content, so people don’t need to customize them. For developer guidance, see [Making a configurable widget](https://developer.apple.com/documentation/WidgetKit/Making-a-Configurable-Widget).
+**Choose between automatically displaying content and letting people customize displayed information.** In some cases, people need to configure a widget to ensure it displays the information that’s most useful for them. For example, the Stocks widget lets people select the stocks they wish to track. In contrast, some widgets - like the Podcasts widget - automatically display recent content, so people don’t need to customize them. For developer guidance, see [Making a configurable widget](https://developer.apple.com/documentation/WidgetKit/Making-a-Configurable-Widget).
 
 **Avoid mirroring your widget’s appearance within your app.** Including an element in your app that looks like your widget but doesn’t behave like it can confuse people. Additionally, people may be less likely to try other ways to interact with such an element in your app because they expect it to behave like a widget.
 
@@ -219,7 +219,7 @@ People tap or click a widget to launch its corresponding app. It can also includ
 
 ![An image of a medium Stocks watchlist widget, listing two stock market indices and one stock symbol. Each row displays the index or symbol name on the left, a graph section in the middle, and a current quote, including a value change, on the right.](https://docs-assets.developer.apple.com/published/bfe482d5903ff332d0027450f18a6a43/widgets-stocks-medium%402x.png)
 
-**Offer interactivity while remaining glanceable and uncluttered.** Multiple interaction targets — SwiftUI links, buttons, and toggles — might make sense for your content, but avoid creating app-like layouts in your widgets. Pay attention to the size of targets and make sure people can tap or click them with confidence and without accidentally performing unintended interactions. Note that inline accessory widgets offer only one tap target.
+**Offer interactivity while remaining glanceable and uncluttered.** Multiple interaction targets - SwiftUI links, buttons, and toggles - might make sense for your content, but avoid creating app-like layouts in your widgets. Pay attention to the size of targets and make sure people can tap or click them with confidence and without accidentally performing unintended interactions. Note that inline accessory widgets offer only one tap target.
 
 #### Choosing margins and padding
 
@@ -227,7 +227,7 @@ Widgets scale to adapt to the screen sizes of different devices and onscreen are
 
 As you design for various devices and scale factors, use the values listed in [Specifications](https://developer.apple.com/design/human-interface-guidelines/widgets#Specifications) and the [Apple Design Resources](https://developer.apple.com/design/resources/) for guidance; for your production widget, use [SwiftUI](https://developer.apple.com/documentation/SwiftUI) to ensure flexibility.
 
-**In general, use standard margins to ensure legibility.** Use the standard margin width for widgets — 16 points for most widgets — to avoid crowding their edges and creating a cluttered appearance. If you need to use tighter margins — for example, to create content groupings for graphics, buttons, or background shapes — setting margins of 11 points can work well. Additionally, note that widgets use smaller margins on the desktop on Mac and on the Lock Screen, including in StandBy. For developer guidance, see [padding(_:_:)](https://developer.apple.com/documentation/SwiftUI/View/padding(_:_:)).
+**In general, use standard margins to ensure legibility.** Use the standard margin width for widgets - 16 points for most widgets - to avoid crowding their edges and creating a cluttered appearance. If you need to use tighter margins - for example, to create content groupings for graphics, buttons, or background shapes - setting margins of 11 points can work well. Additionally, note that widgets use smaller margins on the desktop on Mac and on the Lock Screen, including in StandBy. For developer guidance, see [padding(_:_:)](https://developer.apple.com/documentation/SwiftUI/View/padding(_:_:)).
 
 **Coordinate the corner radius of your content with the corner radius of the widget.** To ensure that your content looks good within a widget’s rounded corners, use a SwiftUI container to apply the correct corner radius. For developer guidance, see [ContainerRelativeShape](https://developer.apple.com/documentation/SwiftUI/ContainerRelativeShape).
 
@@ -275,7 +275,7 @@ For developer guidance, see [widgetAccentable(_:)](https://developer.apple.com/d
 
 ### Previews and placeholders
 
-**Design a realistic preview to display in the widget gallery.** Highlighting your widget’s capabilities — and clearly representing the experiences each widget type or size can provide — helps people make an informed decision. You can display real data in your widget preview, but if the data takes too long to generate or load, display realistic simulated data instead.
+**Design a realistic preview to display in the widget gallery.** Highlighting your widget’s capabilities - and clearly representing the experiences each widget type or size can provide - helps people make an informed decision. You can display real data in your widget preview, but if the data takes too long to generate or load, display realistic simulated data instead.
 
 **Design placeholder content that helps people recognize your widget.** An installed widget displays placeholder content while its data loads. Create an effective placeholder appearance by combining static interface components with semi-opaque shapes that stand in for dynamic content. For example, use rectangles of different widths to suggest lines of text, and circles or squares in place of glyphs and images.
 
@@ -283,9 +283,9 @@ For developer guidance, see [widgetAccentable(_:)](https://developer.apple.com/d
 
 ![An image of a small Tips widget that displays actual data on top of a yellow background. The horizontal bars in the placeholder widget are replaced by three short lines of text in different shades of yellow.](https://docs-assets.developer.apple.com/published/aa5e504f019f5558fa61813932709755/widgets-tips-full-content%402x.png)
 
-**Write a succinct widget description.** The widget gallery displays descriptions that help people understand what each widget does. Begin a description with an action verb — for example, “See the current weather conditions and forecast for a location” or “Keep track of your upcoming events and meetings.” Avoid including unnecessary phrases that reference the widget itself, like “This widget shows…,” “Use this widget to…,” or “Add this widget.” Use approachable language and [sentence-style capitalization](https://support.apple.com/guide/applestyleguide/c-apsgb744e4a3/web#apdca93e113f1d64).
+**Write a succinct widget description.** The widget gallery displays descriptions that help people understand what each widget does. Begin a description with an action verb - for example, “See the current weather conditions and forecast for a location” or “Keep track of your upcoming events and meetings.” Avoid including unnecessary phrases that reference the widget itself, like “This widget shows…,” “Use this widget to…,” or “Add this widget.” Use approachable language and [sentence-style capitalization](https://support.apple.com/guide/applestyleguide/c-apsgb744e4a3/web#apdca93e113f1d64).
 
-**Group your widget’s sizes together, and provide a single description.** If your widget is available in multiple sizes, group them together so people don’t think each size is a different widget. Provide a single description of your widget — regardless of how many sizes you offer — to avoid repetition and to help people understand how each size provides a slightly different perspective on the same content and functionality.
+**Group your widget’s sizes together, and provide a single description.** If your widget is available in multiple sizes, group them together so people don’t think each size is a different widget. Provide a single description of your widget - regardless of how many sizes you offer - to avoid repetition and to help people understand how each size provides a slightly different perspective on the same content and functionality.
 
 **Consider coloring the Add button.** After people choose your app in the widget gallery, an Add button appears below the group of widgets you offer. You can specify a color for this button to help remind people of your brand.
 
@@ -361,7 +361,7 @@ Because widgets can appear throughout a person’s environment, it’s also impo
 
 **Design a responsive layout that shows the right level of detail for each of the two thresholds.** When a person views the widget at a distance, display a simplified version of your widget that shows fewer details and has a larger type size, and remove interactive elements like buttons or toggles. When a person views the widget from nearby, show more details and use a smaller type size. To create a smooth and consistent experience and help your layout feel continuous, maintain shared elements across both distance thresholds.
 
-**Offer widget family sizes that fit a person’s surroundings well.** Widgets map to real-world dimensions and have a permanent presence in a person’s spatial environment. Think about where people might place your widget — mounted to a wall, placed on a sideboard, or sitting next to a workplace — and choose a widget family size that’s right for that context. For example, offer a small system widget with content that people might place on a desk or an extra large widget to let people decorate their surroundings with something visually rich, like artwork or photography.
+**Offer widget family sizes that fit a person’s surroundings well.** Widgets map to real-world dimensions and have a permanent presence in a person’s spatial environment. Think about where people might place your widget - mounted to a wall, placed on a sideboard, or sitting next to a workplace - and choose a widget family size that’s right for that context. For example, offer a small system widget with content that people might place on a desk or an extra large widget to let people decorate their surroundings with something visually rich, like artwork or photography.
 
 **Display content in a way that remains legible from a range of distances.** To make a widget feel intentional and proportionate to where they place it, people can scale a widget from 75 to 125 percent in size. Use print design principles like clear hierarchy, strong typography, and scale to make sure your content remains glanceable. Include high-resolution assets that look good scaled up to every size.
 
@@ -369,9 +369,9 @@ Because widgets can appear throughout a person’s environment, it’s also impo
 
 The way a widget appears on a surface plays a big role in how a person perceives it. To make it feel intentional and integrated into their surroundings, people place a widget on surfaces in distinct mounting styles.
 
-- **[elevated](https://developer.apple.com/documentation/WidgetKit/WidgetMountingStyle/elevated) style**.  On horizontal surfaces — for example, on a desk — the widget always appears elevated and gently tilts backward, providing a subtle angle that improves readability, and casts a soft shadow that helps it feel grounded on the surface. On vertical surfaces — for example, on a wall — the widget either appears elevated, sitting flush on the surface and similar to how you mount a picture frame.
+- **[elevated](https://developer.apple.com/documentation/WidgetKit/WidgetMountingStyle/elevated) style**.  On horizontal surfaces - for example, on a desk - the widget always appears elevated and gently tilts backward, providing a subtle angle that improves readability, and casts a soft shadow that helps it feel grounded on the surface. On vertical surfaces - for example, on a wall - the widget either appears elevated, sitting flush on the surface and similar to how you mount a picture frame.
 
-- **[recessed](https://developer.apple.com/documentation/WidgetKit/WidgetMountingStyle/recessed) style**. On vertical surfaces — for example, on a wall — the widget can appear recessed, with content set back into the surface, creating a depth effect that gives the illusion of a cutout in the surface. Horizontal surfaces don’t use the recessed mounting style.
+- **[recessed](https://developer.apple.com/documentation/WidgetKit/WidgetMountingStyle/recessed) style**. On vertical surfaces - for example, on a wall - the widget can appear recessed, with content set back into the surface, creating a depth effect that gives the illusion of a cutout in the surface. Horizontal surfaces don’t use the recessed mounting style.
 
 By default, widgets use the elevated mounting style, because it works for horizontal and vertical surfaces.
 
@@ -379,7 +379,7 @@ By default, widgets use the elevated mounting style, because it works for horizo
 
 > **Developer note**
 >
-> Use the [supportedMountingStyles(_:)](https://developer.apple.com/documentation/SwiftUI/WidgetConfiguration/supportedMountingStyles(_:)) property of your [WidgetConfiguration](https://developer.apple.com/documentation/SwiftUI/WidgetConfiguration) to  declare supported mounting styles — elevated, recessed, or both — for all widgets included in the configuration. To offer a widget that only supports one mounting style and other widgets that support both mounting styles, create separate widget configurations. For example, create one widget configuration for the widget that only supports the recessed mounting style, and a second configuration for the widgets that support both mounting styles.
+> Use the [supportedMountingStyles(_:)](https://developer.apple.com/documentation/SwiftUI/WidgetConfiguration/supportedMountingStyles(_:)) property of your [WidgetConfiguration](https://developer.apple.com/documentation/SwiftUI/WidgetConfiguration) to  declare supported mounting styles - elevated, recessed, or both - for all widgets included in the configuration. To offer a widget that only supports one mounting style and other widgets that support both mounting styles, create separate widget configurations. For example, create one widget configuration for the widget that only supports the recessed mounting style, and a second configuration for the widgets that support both mounting styles.
 
 **Test your elevated widget designs with each system-provided frame width.** People can choose from different system-defined frame widths for widgets that use the elevated mounting style. You can’t change your layout based on the frame width a person chooses, so make sure your widget layout stays visually balanced for each frame width.
 
@@ -477,7 +477,7 @@ As you design your widgets, use the following values for guidance.
 
 [WidgetKit](https://developer.apple.com/documentation/WidgetKit)
 
-[Developing a WidgetKit strategy](https://developer.apple.com/documentation/WidgetKit/Developing-a-WidgetKit-strategy) — WidgetKit
+[Developing a WidgetKit strategy](https://developer.apple.com/documentation/WidgetKit/Developing-a-WidgetKit-strategy) - WidgetKit
 
 ##### Videos
 

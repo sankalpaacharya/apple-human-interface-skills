@@ -28,23 +28,23 @@ Pickers help people enter information by letting them choose single or multipart
 
 A date picker is an efficient interface for selecting a specific date, time, or both, using touch, a keyboard, or a pointing device. You can display a date picker in one of the following styles:
 
-- Compact — A button that displays editable date and time content in a modal view.
+- Compact - A button that displays editable date and time content in a modal view.
 
-- Inline — For time only, a button that displays wheels of values; for dates and times, an inline calendar view.
+- Inline - For time only, a button that displays wheels of values; for dates and times, an inline calendar view.
 
-- Wheels — A set of scrolling wheels that also supports data entry through built-in or external keyboards.
+- Wheels - A set of scrolling wheels that also supports data entry through built-in or external keyboards.
 
-- Automatic — A system-determined style based on the current platform and date picker mode.
+- Automatic - A system-determined style based on the current platform and date picker mode.
 
 A date picker has four modes, each of which presents a different set of selectable values.
 
-- Date — Displays months, days of the month, and years.
+- Date - Displays months, days of the month, and years.
 
-- Time — Displays hours, minutes, and (optionally) an AM/PM designation.
+- Time - Displays hours, minutes, and (optionally) an AM/PM designation.
 
-- Date and time — Displays dates, hours, minutes, and (optionally) an AM/PM designation.
+- Date and time - Displays dates, hours, minutes, and (optionally) an AM/PM designation.
 
-- Countdown timer — Displays hours and minutes, up to a maximum of 23 hours and 59 minutes. This mode isn’t available in the inline or compact styles.
+- Countdown timer - Displays hours and minutes, up to a maximum of 23 hours and 59 minutes. This mode isn’t available in the inline or compact styles.
 
 The exact values shown in a date picker, and their order, depend on the device location.
 
@@ -107,13 +107,13 @@ For longer lists, the navigation link displays the picker as a button. When some
 
 ##### Developer documentation
 
-[Picker](https://developer.apple.com/documentation/SwiftUI/Picker) — SwiftUI
+[Picker](https://developer.apple.com/documentation/SwiftUI/Picker) - SwiftUI
 
-[UIDatePicker](https://developer.apple.com/documentation/UIKit/UIDatePicker) — UIKit
+[UIDatePicker](https://developer.apple.com/documentation/UIKit/UIDatePicker) - UIKit
 
-[UIPickerView](https://developer.apple.com/documentation/UIKit/UIPickerView) — UIKit
+[UIPickerView](https://developer.apple.com/documentation/UIKit/UIPickerView) - UIKit
 
-[NSDatePicker](https://developer.apple.com/documentation/AppKit/NSDatePicker) — AppKit
+[NSDatePicker](https://developer.apple.com/documentation/AppKit/NSDatePicker) - AppKit
 
 ### Change log
 

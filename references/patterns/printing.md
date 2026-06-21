@@ -12,7 +12,7 @@
 
 **Present a printing option only when it’s possible.** If there’s nothing onscreen to print, or no printers are available, dim the Print item in a macOS app’s File menu and remove the Print action from the Action sheet in an iOS or iPadOS app. If you implement a custom print button, dim or hide it when printing isn’t possible.
 
-**Present relevant printing options.** If it makes sense to offer options like selecting a page range, requesting multiple copies, or printing on both sides — and the printer supports the options — use the system-provided view to present them.
+**Present relevant printing options.** If it makes sense to offer options like selecting a page range, requesting multiple copies, or printing on both sides - and the printer supports the options - use the system-provided view to present them.
 
 ### Platform considerations
 
@@ -42,6 +42,6 @@
 
 ##### Developer documentation
 
-[UIPrintInteractionController](https://developer.apple.com/documentation/UIKit/UIPrintInteractionController) — UIKit
+[UIPrintInteractionController](https://developer.apple.com/documentation/UIKit/UIPrintInteractionController) - UIKit
 
-[NSDocument](https://developer.apple.com/documentation/AppKit/NSDocument) — AppKit
+[NSDocument](https://developer.apple.com/documentation/AppKit/NSDocument) - AppKit

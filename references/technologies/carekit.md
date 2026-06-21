@@ -8,7 +8,7 @@
 
 To learn more about CareKit, see [Research & Care > CareKit](https://www.researchandcare.org/carekit/).
 
-CareKit 2.0 contains two projects, CareKit UI and CareKit Store. CareKit UI provides a wide variety of prebuilt views you can use to create a custom CareKit app. CareKit Store defines a database scheme that incorporates CareKit entities — such as patients, care plans, tasks, and contacts — so you can store and manage data on the patient’s device. CareKit 2.0 provides seamless synchronization between your database and the UI, so you can always keep a care plan up to date. For developer guidance, see [CareKit](https://carekit-apple.github.io/CareKit/documentation/carekit).
+CareKit 2.0 contains two projects, CareKit UI and CareKit Store. CareKit UI provides a wide variety of prebuilt views you can use to create a custom CareKit app. CareKit Store defines a database scheme that incorporates CareKit entities - such as patients, care plans, tasks, and contacts - so you can store and manage data on the patient’s device. CareKit 2.0 provides seamless synchronization between your database and the UI, so you can always keep a care plan up to date. For developer guidance, see [CareKit](https://carekit-apple.github.io/CareKit/documentation/carekit).
 
 ### Data and privacy
 
@@ -52,7 +52,7 @@ For related design guidance, see [ResearchKit](https://developer.apple.com/desig
 
 ### CareKit views
 
-CareKit UI provides customizable views organized into three categories — tasks, charts, and contacts — and defines several default view styles in each. To design a CareKit app, you simply choose the view styles you need and supply CareKit Store data to display in them.
+CareKit UI provides customizable views organized into three categories - tasks, charts, and contacts - and defines several default view styles in each. To design a CareKit app, you simply choose the view styles you need and supply CareKit Store data to display in them.
 
 Each view category is designed to support specific types of content and interaction. To ensure a consistent experience, use each view type for its intended purpose.
 
@@ -82,7 +82,7 @@ A task can contain the following types of information.
 | --- | --- | --- | --- |
 | Title | Yes | A word or short phrase that introduces the task. | *Ibuprofen* |
 | Schedule | Yes | The schedule on which a task must be completed. | *Four times a day* |
-| Instructions | No | Detailed instructions, recommendations, and warnings. | *Take 1 tablet every 4–6 hours (not to exceed 4 tablets daily).* |
+| Instructions | No | Detailed instructions, recommendations, and warnings. | *Take 1 tablet every 4-6 hours (not to exceed 4 tablets daily).* |
 | Group ID | No | An identifier you can use to group similar tasks in ways that make sense in your app. | A category identifier like  *medication* or *exercise*. |
 
 In CareKit 2.0, CareKit UI defines five styles of task views: simple, instructions, log, checklist, and grid. Each style is designed to support a particular use case.
@@ -91,7 +91,7 @@ In CareKit 2.0, CareKit UI defines five styles of task views: simple, instructio
 
 ![An illustration of a task for taking a single dose of medicine at a specific time of day. The filled-in circle and checkmark indicate that the task is complete.](https://docs-assets.developer.apple.com/published/a85ed842da7f8c4866c33137ad075e1d/carekit-simple-task%402x.png)
 
-**Use the instructions style when you need to add informative text to a simple task.** For example, if a single-step medication task needs to include additional information — such as “Take on an empty stomach” or “Take at bedtime” — you can use an instructions-style task to display it.
+**Use the instructions style when you need to add informative text to a simple task.** For example, if a single-step medication task needs to include additional information - such as “Take on an empty stomach” or “Take at bedtime” - you can use an instructions-style task to display it.
 
 ![An illustration of a task for taking a single dose of medicine at a specific time of day. The task includes instructions for how to take the dose. Below the instructions, the task shows the word completed and a checkmark to indicate that the task is complete.](https://docs-assets.developer.apple.com/published/e5b168ae1bdb4df6888510dbced322b6/carekit-instructions-task%402x.png)
 
@@ -117,7 +117,7 @@ In CareKit 2.0, CareKit UI defines five styles of task views: simple, instructio
 
 Chart views let you present data and trends in graphical ways that can help people visualize their progress in a care plan. CareKit chart views can display both current and historical data, and update automatically with new data.
 
-In CareKit 2.0, CareKit UI provides three chart styles: bar, scatter, and line. For each style, you provide a descriptive title and subtitle, supply axis markers — like days of the week — and specify the data set.
+In CareKit 2.0, CareKit UI provides three chart styles: bar, scatter, and line. For each style, you provide a descriptive title and subtitle, supply axis markers - like days of the week - and specify the data set.
 
 ![An illustration of a bar chart with days of the week on the x-axis and dosage numbers on the y-axis. The bar on Thursday reaches a value of two on the y-axis, indicating that the medicine was taken twice that day.](https://docs-assets.developer.apple.com/published/a97874787391ab1483b41b1e991874f7/carekit-bar-chart%402x.png)
 
@@ -195,7 +195,7 @@ Using SF Symbols in your app gives you:
 
 [Research & Care > Developers](https://www.researchandcare.org/developers/)
 
-[Protecting user privacy](https://developer.apple.com/documentation/HealthKit/protecting-user-privacy) — HealthKit
+[Protecting user privacy](https://developer.apple.com/documentation/HealthKit/protecting-user-privacy) - HealthKit
 
 [HealthKit](https://developer.apple.com/documentation/HealthKit)
 

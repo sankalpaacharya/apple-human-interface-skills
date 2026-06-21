@@ -46,7 +46,7 @@ Controls display their information differently depending on where they appear:
 
 ![An active control toggle with a light bulb symbol that's tinted yellow.](https://docs-assets.developer.apple.com/published/6beab4a3187d3a10493645eaf5447811/control-lightbulb-tinted%402x.png)
 
-**Help people provide additional information the system needs to perform an action.** A person may need to configure a control to perform a desired action — for example, select a specific light in a house to turn on and off. If a control requires configuration, prompt people to complete this step when they first add it. People can reconfigure the control at any time. For developer guidance, see [promptsForUserConfiguration()](https://developer.apple.com/documentation/SwiftUI/ControlWidgetConfiguration/promptsForUserConfiguration()).
+**Help people provide additional information the system needs to perform an action.** A person may need to configure a control to perform a desired action - for example, select a specific light in a house to turn on and off. If a control requires configuration, prompt people to complete this step when they first add it. People can reconfigure the control at any time. For developer guidance, see [promptsForUserConfiguration()](https://developer.apple.com/documentation/SwiftUI/ControlWidgetConfiguration/promptsForUserConfiguration()).
 
 ![A representation of a control with the ability to set an option to a value a person chooses.](https://docs-assets.developer.apple.com/published/2862099d2344c5c6576a3c4503b0c0b4/control-configuration-options%402x.png)
 

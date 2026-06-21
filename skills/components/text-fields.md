@@ -10,7 +10,7 @@
 - Mask sensitive input like passwords.
 - Size the field roughly to its expected content, and stack fields vertically with consistent widths and spacing.
 - Match the input mode to the content so the right keyboard appears on touch devices.
-- Validate at the right moment — on completion for some fields, as people type for rule-based ones — and show clear, specific errors.
+- Validate at the right moment - on completion for some fields, as people type for rule-based ones - and show clear, specific errors.
 - Offer a clear button on search-like fields and support autofill where it speeds entry.
 
 **Accessibility**

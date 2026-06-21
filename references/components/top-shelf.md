@@ -14,7 +14,7 @@ The system defines several layout templates that you can use to give people a co
 
 ### Best practices
 
-**Help people jump right into your content.** Top Shelf provides a path to the content people care about most. Two of the system-provided layout templates — [Carousel actions](https://developer.apple.com/design/human-interface-guidelines/top-shelf#Carousel-actions) and [Carousel details](https://developer.apple.com/design/human-interface-guidelines/top-shelf#Carousel-details) — each include two buttons by default: A primary button intended to begin playback and a More Info button intended to open your app to a view that displays details about the content.
+**Help people jump right into your content.** Top Shelf provides a path to the content people care about most. Two of the system-provided layout templates - [Carousel actions](https://developer.apple.com/design/human-interface-guidelines/top-shelf#Carousel-actions) and [Carousel details](https://developer.apple.com/design/human-interface-guidelines/top-shelf#Carousel-details) - each include two buttons by default: A primary button intended to begin playback and a More Info button intended to open your app to a view that displays details about the content.
 
 **Feature new content.** For example, showcase new releases or episodes, highlight upcoming movies and shows, and avoid promoting content that people have already purchased, rented, or watched.
 

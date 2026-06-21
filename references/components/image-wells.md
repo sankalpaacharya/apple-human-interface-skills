@@ -12,7 +12,7 @@ After selecting an image well, people can copy and paste its image or delete it.
 
 **Revert to a default image when necessary.** If your image well requires an image, display the default image again if people clear the content of the image well.
 
-**If your image well supports copy and paste, make sure the standard copy and paste menu items are available.** People generally expect to choose these menu items — or use the standard keyboard shortcuts — to interact with an image well. For guidance, see [Edit menu](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar#Edit-menu).
+**If your image well supports copy and paste, make sure the standard copy and paste menu items are available.** People generally expect to choose these menu items - or use the standard keyboard shortcuts - to interact with an image well. For guidance, see [Edit menu](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar#Edit-menu).
 
 For related guidance, see [Image views](https://developer.apple.com/design/human-interface-guidelines/image-views).
 
@@ -28,4 +28,4 @@ For related guidance, see [Image views](https://developer.apple.com/design/human
 
 ##### Developer documentation
 
-[NSImageView](https://developer.apple.com/documentation/AppKit/NSImageView) — AppKit
+[NSImageView](https://developer.apple.com/documentation/AppKit/NSImageView) - AppKit

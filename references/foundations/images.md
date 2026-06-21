@@ -77,15 +77,15 @@ You can embed layered images in your app or retrieve them from a content server 
 
 > **Developer note**
 >
-> If your app retrieves layered images from a content server at runtime, you must provide runtime layered images (`.lcr`). You can generate them from LSR files or Photoshop files using the `layerutil` command-line tool that Xcode provides. Runtime layered images are intended to be downloaded — don’t embed them in your app.
+> If your app retrieves layered images from a content server at runtime, you must provide runtime layered images (`.lcr`). You can generate them from LSR files or Photoshop files using the `layerutil` command-line tool that Xcode provides. Runtime layered images are intended to be downloaded - don’t embed them in your app.
 
-**Use standard interface elements to display layered images.** If you use standard views and system-provided focus APIs — such as [FocusState](https://developer.apple.com/documentation/SwiftUI/FocusState) — layered images automatically get the parallax treatment when people bring them into focus.
+**Use standard interface elements to display layered images.** If you use standard views and system-provided focus APIs - such as [FocusState](https://developer.apple.com/documentation/SwiftUI/FocusState) - layered images automatically get the parallax treatment when people bring them into focus.
 
 **Identify logical foreground, middle, and background elements.** In foreground layers, display prominent elements like a character in a game, or text on an album cover or movie poster. Middle layers are perfect for secondary content and effects like shadows. Background layers are opaque backdrops that showcase the foreground and middle layers without upstaging them.
 
 **Generally, keep text in the foreground.** Unless you want to obscure text, bring it to the foreground layer for clarity.
 
-**Keep the background layer opaque.** Using varying levels of opacity to let content shine through higher layers is fine, but your background layer must be opaque — you’ll get an error if it’s not. An opaque background layer ensures your artwork looks great with parallax, drop shadows, and system backgrounds.
+**Keep the background layer opaque.** Using varying levels of opacity to let content shine through higher layers is fine, but your background layer must be opaque - you’ll get an error if it’s not. An opaque background layer ensures your artwork looks great with parallax, drop shadows, and system backgrounds.
 
 **Keep layering simple and subtle.** Parallax is designed to be almost unnoticeable. Excessive 3D effects can appear unrealistic and jarring. Keep depth simple to bring your content to life and add delight.
 
@@ -145,13 +145,13 @@ In addition to 2D and stereoscopic images, visionOS apps and games can use Reali
 
 ##### Developer documentation
 
-[Drawing sharp layer-based content in visionOS](https://developer.apple.com/documentation/visionOS/drawing-sharp-layer-based-content) — visionOS
+[Drawing sharp layer-based content in visionOS](https://developer.apple.com/documentation/visionOS/drawing-sharp-layer-based-content) - visionOS
 
-[Images](https://developer.apple.com/documentation/SwiftUI/Images) — SwiftUI
+[Images](https://developer.apple.com/documentation/SwiftUI/Images) - SwiftUI
 
-[UIImageView](https://developer.apple.com/documentation/UIKit/UIImageView) — UIKit
+[UIImageView](https://developer.apple.com/documentation/UIKit/UIImageView) - UIKit
 
-[NSImageView](https://developer.apple.com/documentation/AppKit/NSImageView) — AppKit
+[NSImageView](https://developer.apple.com/documentation/AppKit/NSImageView) - AppKit
 
 ### Change log
 

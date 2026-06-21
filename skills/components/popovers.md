@@ -2,7 +2,7 @@
 
 > A popover is a transient view anchored to a control that appears above other content when activated.
 
-**When to use it:** To expose a small amount of related information or a few quick actions tied to a trigger — dropdowns, editing pop-ups, contextual detail views — freeing space versus a persistent panel.
+**When to use it:** To expose a small amount of related information or a few quick actions tied to a trigger - dropdowns, editing pop-ups, contextual detail views - freeing space versus a persistent panel.
 
 **Guidelines**
 - Keep the contents small and limited to a few related tasks.
@@ -19,7 +19,7 @@
 - Give interactive controls generous, easily tapped targets (about 44pt).
 
 **Avoid**
-- Using a popover for warnings or critical information — use an alert.
+- Using a popover for warnings or critical information - use an alert.
 - Discarding user input when a non-modal popover is dismissed by an outside tap.
 
 **Full reference:** [popovers.md](../../references/components/popovers.md)

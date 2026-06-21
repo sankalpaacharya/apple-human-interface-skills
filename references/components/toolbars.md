@@ -38,7 +38,7 @@ In contrast to a toolbar, a [Tab bars](https://developer.apple.com/design/human-
 
 ![A screenshot of the Notes app on Mac, with the window narrow enough that the system moves several items from the toolbar into an overflow menu, including the More menu button. The overflow menu is open to show the items it includes.](https://docs-assets.developer.apple.com/published/d946d1a2815b1a181b0cd090e536cb21/toolbars-notes-app-collapsed-icons%402x.png)
 
-**In iPadOS and macOS apps, consider letting people customize the toolbar to include their most common items.** Toolbar customization is especially useful in apps that provide a lot of items — or that include advanced functionality that not everyone needs — and in apps that people tend to use for long periods of time. For example, it works well to make a range of editing actions available for toolbar customization, because people often use different types of editing commands based on their work style and their current project.
+**In iPadOS and macOS apps, consider letting people customize the toolbar to include their most common items.** Toolbar customization is especially useful in apps that provide a lot of items - or that include advanced functionality that not everyone needs - and in apps that people tend to use for long periods of time. For example, it works well to make a range of editing actions available for toolbar customization, because people often use different types of editing commands based on their work style and their current project.
 
 **Reduce the use of toolbar backgrounds and tinted controls.** Any custom backgrounds and appearances you use might overlay or interfere with background effects that the system provides. Instead, use the content layer to inform the color and appearance of the toolbar, and use a [ScrollEdgeEffectStyle](https://developer.apple.com/documentation/SwiftUI/ScrollEdgeEffectStyle) when necessary to distinguish the toolbar area from the content area. This approach helps your app express its unique personality without distracting from content.
 
@@ -220,11 +220,11 @@ For developer guidance, see [primaryAction](https://developer.apple.com/document
 
 ##### Developer documentation
 
-[Toolbars](https://developer.apple.com/documentation/SwiftUI/Toolbars) — SwiftUI
+[Toolbars](https://developer.apple.com/documentation/SwiftUI/Toolbars) - SwiftUI
 
-[UIToolbar](https://developer.apple.com/documentation/UIKit/UIToolbar) — UIKit
+[UIToolbar](https://developer.apple.com/documentation/UIKit/UIToolbar) - UIKit
 
-[NSToolbar](https://developer.apple.com/documentation/AppKit/NSToolbar) — AppKit
+[NSToolbar](https://developer.apple.com/documentation/AppKit/NSToolbar) - AppKit
 
 ##### Videos
 

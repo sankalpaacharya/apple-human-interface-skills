@@ -30,9 +30,9 @@ If you help people create an account within your app or game, you must also help
 
 > **Important**
 >
-> If legal requirements compel your app to maintain accounts or information — such as digital health records — or to follow a specific account-deletion process, clearly describe the situation so people can understand the information or accounts you must maintain and the process you must follow.
+> If legal requirements compel your app to maintain accounts or information - such as digital health records - or to follow a specific account-deletion process, clearly describe the situation so people can understand the information or accounts you must maintain and the process you must follow.
 
-**Provide a clear way to initiate account deletion within your app or game.** If people can’t perform account deletion within your app, you must provide a direct link to the webpage on which people can do so. Make the link easy to discover — for example, don’t bury it in your Privacy Policy or Terms of Service pages.
+**Provide a clear way to initiate account deletion within your app or game.** If people can’t perform account deletion within your app, you must provide a direct link to the webpage on which people can do so. Make the link easy to discover - for example, don’t bury it in your Privacy Policy or Terms of Service pages.
 
 > **Developer note**
 >
@@ -92,7 +92,7 @@ Use iCloud synchronization to provide access to the Keychain, letting people aut
 
 ##### Developer documentation
 
-[Supporting passkeys](https://developer.apple.com/documentation/AuthenticationServices/supporting-passkeys) — Authentication Services
+[Supporting passkeys](https://developer.apple.com/documentation/AuthenticationServices/supporting-passkeys) - Authentication Services
 
 ##### Videos
 

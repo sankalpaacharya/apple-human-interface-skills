@@ -14,7 +14,7 @@ In visionOS, people use passthrough to see their physical surroundings. *Passthr
 
 People can also use the [Digital Crown](https://developer.apple.com/design/human-interface-guidelines/digital-crown) at any time to manage app or game content or adjust passthrough. For example, people can press and hold the Digital Crown to recenter content in their field of view or double-click it to briefly hide all content and show passthrough for a clear view of their surroundings.
 
-The system also helps people remain comfortable by automatically changing the opacity of content in certain situations. For example, if someone gets too close to a physical object in `mixed` immersion, the content in front of them dims briefly so they can see their immediate physical surroundings more clearly. In more immersive experiences — such as in the `progressive` and `full` styles described below — the system defines a boundary that extends about 1.5 meters from the initial position of the wearer’s head. As their head gets close to this boundary, the entire experience begins to fade and passthrough increases. When their head moves beyond this boundary, the immersive visuals are replaced in space by the app’s icon, and are restored when the wearer returns to their original location or recenters their view using the Digital Crown.
+The system also helps people remain comfortable by automatically changing the opacity of content in certain situations. For example, if someone gets too close to a physical object in `mixed` immersion, the content in front of them dims briefly so they can see their immediate physical surroundings more clearly. In more immersive experiences - such as in the `progressive` and `full` styles described below - the system defines a boundary that extends about 1.5 meters from the initial position of the wearer’s head. As their head gets close to this boundary, the entire experience begins to fade and passthrough increases. When their head moves beyond this boundary, the immersive visuals are replaced in space by the app’s icon, and are restored when the wearer returns to their original location or recenters their view using the Digital Crown.
 
 #### Immersion styles
 
@@ -73,7 +73,7 @@ visionOS offers several ways to immerse people in your content in the Shared Spa
 
 **Be mindful of people’s visual comfort.** For example, although you can place 3D content anywhere while your app or game is running in a Full Space, prefer placing it within people’s [Field of view](https://developer.apple.com/design/human-interface-guidelines/spatial-layout#Field-of-view). Also, make sure you display motion in comfortable ways while your software runs in a Full Space to avoid causing distraction, confusion, or discomfort. For guidance, see [Motion](https://developer.apple.com/design/human-interface-guidelines/motion).
 
-**Choose a style of immersion that supports the movements people might make while they’re in your app or game.** It’s essential to choose the right style for your immersive experience because it allows the system to respond appropriately when people move. Although people can make minor physical movements while in an immersive experience — such as shifting their weight, turning around, or switching between sitting and standing — making excessive movements can cause the system to interrupt some experiences. In particular, avoid using the `progressive` or `full` immersion styles or transition back to the `mixed` immersion style if you think people might need to move beyond the 1.5-meter boundary.
+**Choose a style of immersion that supports the movements people might make while they’re in your app or game.** It’s essential to choose the right style for your immersive experience because it allows the system to respond appropriately when people move. Although people can make minor physical movements while in an immersive experience - such as shifting their weight, turning around, or switching between sitting and standing - making excessive movements can cause the system to interrupt some experiences. In particular, avoid using the `progressive` or `full` immersion styles or transition back to the `mixed` immersion style if you think people might need to move beyond the 1.5-meter boundary.
 
 **Avoid encouraging people to move while they’re in a progressive or fully immersive experience.** Some people may not want to move, or are unable to move because of a disability or their physical surroundings. Design ways for people to interact with content without moving. For example, let people bring a virtual object closer to them instead of expecting them to move closer to the object.
 
@@ -111,7 +111,7 @@ When your app or game transitions to a Full Space, you can replace passthrough w
 
 **Create an expansive environment, regardless of the place it depicts.** A small, restrictive environment can make people feel uncomfortable and even claustrophobic.
 
-**Use Spatial Audio to create atmosphere.** In visionOS, you use Spatial Audio to play sound that people can perceive as coming from specific locations in space, not just from speakers (for guidance, see [Playing audio](https://developer.apple.com/design/human-interface-guidelines/playing-audio)). As you design a soundscape that enhances your custom environment, keep the experience fresh and captivating by avoiding too much repetition or looping. If people can play other audio while they’re in your environment — for example, while watching a movie — be sure to lower the volume of the soundscape or stop it completely.
+**Use Spatial Audio to create atmosphere.** In visionOS, you use Spatial Audio to play sound that people can perceive as coming from specific locations in space, not just from speakers (for guidance, see [Playing audio](https://developer.apple.com/design/human-interface-guidelines/playing-audio)). As you design a soundscape that enhances your custom environment, keep the experience fresh and captivating by avoiding too much repetition or looping. If people can play other audio while they’re in your environment - for example, while watching a movie - be sure to lower the volume of the soundscape or stop it completely.
 
 **In general, avoid using a flat 360-degree image to create your environment.** A 360-degree image doesn’t tend to give people a sense of scale when they view it in an environment, so it can reduce the immersiveness of the experience. Prefer creating object meshes that include lighting, and use shaders to implement subtle animations like the movements of clouds or leaves or the reflections of objects.
 
@@ -133,13 +133,13 @@ When your app or game transitions to a Full Space, you can replace passthrough w
 
 ##### Developer documentation
 
-[Creating fully immersive experiences in your app](https://developer.apple.com/documentation/visionOS/creating-fully-immersive-experiences) — visionOS
+[Creating fully immersive experiences in your app](https://developer.apple.com/documentation/visionOS/creating-fully-immersive-experiences) - visionOS
 
-[Incorporating real-world surroundings in an immersive experience](https://developer.apple.com/documentation/visionOS/incorporating-real-world-surroundings-in-an-immersive-experience) — visionOS
+[Incorporating real-world surroundings in an immersive experience](https://developer.apple.com/documentation/visionOS/incorporating-real-world-surroundings-in-an-immersive-experience) - visionOS
 
-[ImmersionStyle](https://developer.apple.com/documentation/SwiftUI/ImmersionStyle) — visionOS
+[ImmersionStyle](https://developer.apple.com/documentation/SwiftUI/ImmersionStyle) - visionOS
 
-[Immersive spaces](https://developer.apple.com/documentation/SwiftUI/Immersive-spaces) — SwiftUI
+[Immersive spaces](https://developer.apple.com/documentation/SwiftUI/Immersive-spaces) - SwiftUI
 
 ##### Videos
 

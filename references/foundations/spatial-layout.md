@@ -32,9 +32,9 @@ A person’s *field of view* is the space they can see without moving their head
 
 ### Depth
 
-People rely on visual cues like distance, occlusion, and shadow to perceive depth and make sense of their surroundings. On Apple Vision Pro, the system automatically uses visual effects like color temperature, reflections, and shadow to help people perceive the depth of virtual content. When people move a virtual object in space — or when they change their position relative to that object — the visual effects change the object’s apparent depth, making the experience feel more lifelike.
+People rely on visual cues like distance, occlusion, and shadow to perceive depth and make sense of their surroundings. On Apple Vision Pro, the system automatically uses visual effects like color temperature, reflections, and shadow to help people perceive the depth of virtual content. When people move a virtual object in space - or when they change their position relative to that object - the visual effects change the object’s apparent depth, making the experience feel more lifelike.
 
-Because people can view your content from any angle, incorporating small amounts of depth throughout your interface — even in standard windows — can help it look more natural. When you use SwiftUI, the system adds visual effects to views in a 2D window, making them appear to have depth. For developer guidance, see [Adding 3D content to your app](https://developer.apple.com/documentation/visionOS/adding-3d-content-to-your-app).
+Because people can view your content from any angle, incorporating small amounts of depth throughout your interface - even in standard windows - can help it look more natural. When you use SwiftUI, the system adds visual effects to views in a 2D window, making them appear to have depth. For developer guidance, see [Adding 3D content to your app](https://developer.apple.com/documentation/visionOS/adding-3d-content-to-your-app).
 
 ![A screenshot of a 2D Notes window in visionOS. A note titled Nature Walks is open on the trailing side of the view, with sketches of leaves accompanied by handwritten text descriptions.](https://docs-assets.developer.apple.com/published/2b07a7f22124deaea6c2ce31a93d8833/visionos-spatial-layout-2d-window%402x.png)
 
@@ -48,7 +48,7 @@ If you need to present content with additional depth, you use RealityKit to crea
 
 **In general, avoid adding depth to text.** Text that appears to hover above its background is difficult to read, which slows people down and can sometimes cause vision discomfort.
 
-**Make sure depth adds value.** In general, you want to use depth to clarify and delight — you don’t need to use it everywhere. As you add depth to your design, think about the size and relative importance of objects. Depth is great for visually separating large, important elements in your app, like making a tab bar or toolbar stand out from a window, but it may not work as well on small objects. For example, using depth to make a button’s symbol stand out from its background can make the button less legible and harder to use. Also review how often you use different depths throughout your app. People need to refocus their eyes to perceive each difference in depth, and doing so too often or quickly can be tiring.
+**Make sure depth adds value.** In general, you want to use depth to clarify and delight - you don’t need to use it everywhere. As you add depth to your design, think about the size and relative importance of objects. Depth is great for visually separating large, important elements in your app, like making a tab bar or toolbar stand out from a window, but it may not work as well on small objects. For example, using depth to make a button’s symbol stand out from its background can make the button less legible and harder to use. Also review how often you use different depths throughout your app. People need to refocus their eyes to perceive each difference in depth, and doing so too often or quickly can be tiring.
 
 ### Scale
 
@@ -98,11 +98,11 @@ To learn more about windows and volumes in visionOS, see [visionOS](https://deve
 
 ##### Developer documentation
 
-[Presenting windows and spaces](https://developer.apple.com/documentation/visionOS/presenting-windows-and-spaces) — visionOS
+[Presenting windows and spaces](https://developer.apple.com/documentation/visionOS/presenting-windows-and-spaces) - visionOS
 
-[Positioning and sizing windows](https://developer.apple.com/documentation/visionOS/positioning-and-sizing-windows) — visionOS
+[Positioning and sizing windows](https://developer.apple.com/documentation/visionOS/positioning-and-sizing-windows) - visionOS
 
-[Adding 3D content to your app](https://developer.apple.com/documentation/visionOS/adding-3d-content-to-your-app) — visionOS
+[Adding 3D content to your app](https://developer.apple.com/documentation/visionOS/adding-3d-content-to-your-app) - visionOS
 
 ##### Videos
 

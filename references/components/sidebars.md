@@ -76,15 +76,15 @@ A sidebar’s row height, text, and glyph size depend on its overall size, which
 
 ##### Developer documentation
 
-[sidebarAdaptable](https://developer.apple.com/documentation/SwiftUI/TabViewStyle/sidebarAdaptable) — SwiftUI
+[sidebarAdaptable](https://developer.apple.com/documentation/SwiftUI/TabViewStyle/sidebarAdaptable) - SwiftUI
 
-[NavigationSplitView](https://developer.apple.com/documentation/SwiftUI/NavigationSplitView) — SwiftUI
+[NavigationSplitView](https://developer.apple.com/documentation/SwiftUI/NavigationSplitView) - SwiftUI
 
-[sidebar](https://developer.apple.com/documentation/SwiftUI/ListStyle/sidebar) — SwiftUI
+[sidebar](https://developer.apple.com/documentation/SwiftUI/ListStyle/sidebar) - SwiftUI
 
-[UICollectionLayoutListConfiguration](https://developer.apple.com/documentation/UIKit/UICollectionLayoutListConfiguration-swift.struct) — UIKit
+[UICollectionLayoutListConfiguration](https://developer.apple.com/documentation/UIKit/UICollectionLayoutListConfiguration-swift.struct) - UIKit
 
-[NSSplitViewController](https://developer.apple.com/documentation/AppKit/NSSplitViewController) — AppKit
+[NSSplitViewController](https://developer.apple.com/documentation/AppKit/NSSplitViewController) - AppKit
 
 ##### Videos
 

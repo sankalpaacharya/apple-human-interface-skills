@@ -10,7 +10,7 @@
 - Show at most about two levels of hierarchy inline; deeper structures belong in a split view.
 - Use succinct group titles and familiar icons, keeping icon color purposeful and restrained.
 - Persistently highlight the current selection.
-- Let people hide and show the sidebar, but don't hide it by default — keep it discoverable, and collapse it to an overlay when the view narrows.
+- Let people hide and show the sidebar, but don't hide it by default - keep it discoverable, and collapse it to an overlay when the view narrows.
 - Avoid placing critical actions at the very bottom, where they can be cut off.
 
 **Accessibility**

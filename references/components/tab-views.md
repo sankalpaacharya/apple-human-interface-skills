@@ -54,9 +54,9 @@ watchOS displays tab views using [page controls](https://developer.apple.com/des
 
 ##### Developer documentation
 
-[TabView](https://developer.apple.com/documentation/SwiftUI/TabView) — SwiftUI
+[TabView](https://developer.apple.com/documentation/SwiftUI/TabView) - SwiftUI
 
-[NSTabView](https://developer.apple.com/documentation/AppKit/NSTabView) — AppKit
+[NSTabView](https://developer.apple.com/documentation/AppKit/NSTabView) - AppKit
 
 ### Change log
 

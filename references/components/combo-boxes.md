@@ -34,4 +34,4 @@ For guidance, see [Text fields](https://developer.apple.com/design/human-interfa
 
 ##### Developer documentation
 
-[NSComboBox](https://developer.apple.com/documentation/AppKit/NSComboBox) — AppKit
+[NSComboBox](https://developer.apple.com/documentation/AppKit/NSComboBox) - AppKit

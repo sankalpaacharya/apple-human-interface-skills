@@ -32,6 +32,6 @@ A stepper sits next to a field that displays its current value, because the step
 
 ##### Developer documentation
 
-[UIStepper](https://developer.apple.com/documentation/UIKit/UIStepper) — UIKit
+[UIStepper](https://developer.apple.com/documentation/UIKit/UIStepper) - UIKit
 
-[NSStepper](https://developer.apple.com/documentation/AppKit/NSStepper) — AppKit
+[NSStepper](https://developer.apple.com/documentation/AppKit/NSStepper) - AppKit

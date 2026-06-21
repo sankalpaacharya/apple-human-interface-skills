@@ -7,7 +7,7 @@
 **Guidelines**
 - Standardize on one icon system so weight, stroke, and proportions stay consistent.
 - Match icon size and weight to adjacent text, and let icons inherit the surrounding text color.
-- Use color purposefully — monochrome by default, with multi-tone or accent color only to add meaning.
+- Use color purposefully - monochrome by default, with multi-tone or accent color only to add meaning.
 - Use variant pairs (outline vs. fill, with or without a slash) to signal selection or unavailability.
 - Choose icons that have right-to-left variants, or supply flipped versions for directional glyphs.
 - Animate icons sparingly and only for feedback or status, and respect reduced-motion.

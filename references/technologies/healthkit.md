@@ -12,7 +12,7 @@ When you support HealthKit in your app, you can ask people for permission to acc
 >
 > If your app doesn’t provide health and fitness functionality, don’t request access to people’s private health data.
 
-For example, a nutrition app might ask for permission to retrieve people’s weight and activity data, so it can define calorie consumption goals and make dietary recommendations. In this scenario, the nutrition app could also send data — such as the calories that people log — to HealthKit, which can include the data in its global progress metrics.
+For example, a nutrition app might ask for permission to retrieve people’s weight and activity data, so it can define calorie consumption goals and make dietary recommendations. In this scenario, the nutrition app could also send data - such as the calories that people log - to HealthKit, which can include the data in its global progress metrics.
 
 ![A screenshot of the Health app's summary screen on iPhone, showing current data for activity, active energy, stair speed, heart rate, resting energy, and stand minutes.](https://docs-assets.developer.apple.com/published/fdb416a7e3e60d832ba22dd317fae712/health-summary%402x.png)
 
@@ -106,7 +106,7 @@ The Apple Health icon shows that an app works with HealthKit and the Health app.
 
 [HealthKit](https://developer.apple.com/documentation/HealthKit)
 
-[Protecting user privacy](https://developer.apple.com/documentation/HealthKit/protecting-user-privacy) — HealthKit
+[Protecting user privacy](https://developer.apple.com/documentation/HealthKit/protecting-user-privacy) - HealthKit
 
 ##### Videos
 

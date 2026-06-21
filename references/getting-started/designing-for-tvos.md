@@ -10,11 +10,11 @@ As you begin designing your app or game for tvOS, start by understanding the fol
 
 **Display.** A TV typically has a very large, high-resolution display.
 
-**Ergonomics.** Although people generally remain many feet away from their stationary TV — often 8 feet or more — they sometimes continue to interact with content as they move around the room.
+**Ergonomics.** Although people generally remain many feet away from their stationary TV - often 8 feet or more - they sometimes continue to interact with content as they move around the room.
 
 **Inputs.** People can use a [remote](https://developer.apple.com/design/human-interface-guidelines/remotes), a [game controller](https://developer.apple.com/design/human-interface-guidelines/game-controls), their [voice](https://developer.apple.com/design/human-interface-guidelines/siri), and apps running on their other devices to interact with Apple TV.
 
-**App interactions.** People can get deeply immersed in a single experience — often lasting hours — but they also appreciate using a picture-in-picture view to simultaneously follow an alternative app or video.
+**App interactions.** People can get deeply immersed in a single experience - often lasting hours - but they also appreciate using a picture-in-picture view to simultaneously follow an alternative app or video.
 
 **System features.** Apple TV users expect their apps and games to integrate well with the following system experiences.
 

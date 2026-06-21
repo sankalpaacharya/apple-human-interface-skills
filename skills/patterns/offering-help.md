@@ -1,6 +1,6 @@
 # Offering Help
 
-> Contextual help — tips, hints, and links — offered when an interface isn't fully self-explanatory.
+> Contextual help - tips, hints, and links - offered when an interface isn't fully self-explanatory.
 
 **When to use it:** For a new or non-obvious feature, a control whose purpose needs a brief explanation, or a complex task that warrants a short tutorial or a link to more information.
 

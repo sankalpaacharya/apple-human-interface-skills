@@ -6,7 +6,7 @@
 
 **Guidelines**
 - Think in terms of leading and trailing edges so the layout mirrors automatically with reading direction.
-- Align text to match the interface direction — right-aligned in right-to-left contexts.
+- Align text to match the interface direction - right-aligned in right-to-left contexts.
 - Align a paragraph of three or more lines by its own language, not the surrounding context.
 - Use one consistent alignment for all items in a list, even when scripts are mixed.
 - Never reverse the digit order within a number such as a phone or card number.

@@ -72,11 +72,11 @@ Disclosure controls are available in iOS, iPadOS, and visionOS with the SwiftUI 
 
 ##### Developer documentation
 
-[DisclosureGroup](https://developer.apple.com/documentation/SwiftUI/DisclosureGroup) — SwiftUI
+[DisclosureGroup](https://developer.apple.com/documentation/SwiftUI/DisclosureGroup) - SwiftUI
 
-[NSButton.BezelStyle.disclosure](https://developer.apple.com/documentation/AppKit/NSButton/BezelStyle-swift.enum/disclosure) — AppKit
+[NSButton.BezelStyle.disclosure](https://developer.apple.com/documentation/AppKit/NSButton/BezelStyle-swift.enum/disclosure) - AppKit
 
-[NSButton.BezelStyle.pushDisclosure](https://developer.apple.com/documentation/AppKit/NSButton/BezelStyle-swift.enum/pushDisclosure) — AppKit
+[NSButton.BezelStyle.pushDisclosure](https://developer.apple.com/documentation/AppKit/NSButton/BezelStyle-swift.enum/pushDisclosure) - AppKit
 
 ##### Videos
 

@@ -60,9 +60,9 @@ Launching begins when someone opens your app or game, includes an initial downlo
 
 ##### Developer documentation
 
-[Specifying your app’s launch screen](https://developer.apple.com/documentation/Xcode/specifying-your-apps-launch-screen) — Xcode
+[Specifying your app’s launch screen](https://developer.apple.com/documentation/Xcode/specifying-your-apps-launch-screen) - Xcode
 
-[Responding to the launch of your app](https://developer.apple.com/documentation/UIKit/responding-to-the-launch-of-your-app) — UIKit
+[Responding to the launch of your app](https://developer.apple.com/documentation/UIKit/responding-to-the-launch-of-your-app) - UIKit
 
 ##### Videos
 

@@ -94,7 +94,7 @@ The people who use your interface may be deaf or hard of hearing. They may also 
 
 For developer guidance, see [Selecting subtitles and alternative audio tracks](https://developer.apple.com/documentation/AVFoundation/selecting-subtitles-and-alternative-audio-tracks).
 
-**Use haptics in addition to audio cues.** If your interface conveys information through audio cues — such as a success chime, error sound, or game feedback — consider pairing that sound with matching haptics for people who can’t perceive the audio or have their audio turned off. In iOS and iPadOS, you can also use [Music Haptics](https://developer.apple.com/documentation/MediaAccessibility/music-haptics) and [Audio graphs](https://developer.apple.com/documentation/Accessibility/audio-graphs) to let people experience music and infographics through vibration and texture. For guidance, see [Playing haptics](https://developer.apple.com/design/human-interface-guidelines/playing-haptics).
+**Use haptics in addition to audio cues.** If your interface conveys information through audio cues - such as a success chime, error sound, or game feedback - consider pairing that sound with matching haptics for people who can’t perceive the audio or have their audio turned off. In iOS and iPadOS, you can also use [Music Haptics](https://developer.apple.com/documentation/MediaAccessibility/music-haptics) and [Audio graphs](https://developer.apple.com/documentation/Accessibility/audio-graphs) to let people experience music and infographics through vibration and texture. For guidance, see [Playing haptics](https://developer.apple.com/design/human-interface-guidelines/playing-haptics).
 
 ![An illustration of an iPhone device vibrating as music plays from the device.](https://docs-assets.developer.apple.com/published/1bf9d6ae5c3586a5163ce6abf0cabb95/accessibility-haptic-audio-combo%402x.png)
 
@@ -126,7 +126,7 @@ Ensure your interface offers a comfortable experience for people with limited de
 
 ![A checkmark in a circle to indicate correct usage.](https://docs-assets.developer.apple.com/published/88662da92338267bb64cd2275c84e484/checkmark%402x.png)
 
-**Support simple gestures for common interactions.** For many people, with or without disabilities, complex gestures can be challenging. For interactions people do frequently in your app or game, use the simplest gesture possible — avoid custom multifinger and multihand gestures — so repetitive actions are both comfortable and easy to remember.
+**Support simple gestures for common interactions.** For many people, with or without disabilities, complex gestures can be challenging. For interactions people do frequently in your app or game, use the simplest gesture possible - avoid custom multifinger and multihand gestures - so repetitive actions are both comfortable and easy to remember.
 
 **Offer alternatives to gestures.** Make sure your UI’s core functionality is accessible through more than one type of physical interaction. Gestures can be less comfortable for people who have limited dexterity, so offer onscreen ways to achieve the same outcome. For example, if you use a swipe gesture to dismiss a view, also make a button available so people can tap or use an assistive device.
 

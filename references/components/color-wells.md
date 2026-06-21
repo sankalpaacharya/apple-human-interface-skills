@@ -30,10 +30,10 @@ Color wells also support drag and drop, so people can drag colors from one color
 
 ##### Developer documentation
 
-[UIColorWell](https://developer.apple.com/documentation/UIKit/UIColorWell) — UIKit
+[UIColorWell](https://developer.apple.com/documentation/UIKit/UIColorWell) - UIKit
 
-[UIColorPickerViewController](https://developer.apple.com/documentation/UIKit/UIColorPickerViewController) — UIKit
+[UIColorPickerViewController](https://developer.apple.com/documentation/UIKit/UIColorPickerViewController) - UIKit
 
-[NSColorWell](https://developer.apple.com/documentation/AppKit/NSColorWell) — AppKit
+[NSColorWell](https://developer.apple.com/documentation/AppKit/NSColorWell) - AppKit
 
 [Color Programming Topics](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/DrawColor/DrawColor.html)

@@ -20,7 +20,7 @@ CarPlay shows compatible apps from the connected iPhone on the car’s built-in 
 
 **Eliminate app interactions on iPhone when CarPlay is active.** Interactions with your app need to occur using the car’s built-in controls and display. If your app requires setup on iPhone, make sure people perform it before the vehicle is in motion.
 
-**Never lock people out of CarPlay because the connected iPhone requires input.** Your app needs to function when iPhone is inaccessible — for example, when people put it in a bag or in the trunk while driving. If people must resolve a problem on the connected iPhone, let them do so after the vehicle stops.
+**Never lock people out of CarPlay because the connected iPhone requires input.** Your app needs to function when iPhone is inaccessible - for example, when people put it in a bag or in the trunk while driving. If people must resolve a problem on the connected iPhone, let them do so after the vehicle stops.
 
 **Make sure your app works without requiring people to unlock iPhone.** Most people use CarPlay while their iPhone is locked, so ensure that the features you provide in your CarPlay app work as expected in this scenario.
 

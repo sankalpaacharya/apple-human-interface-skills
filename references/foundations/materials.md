@@ -12,13 +12,13 @@ Apple platforms feature two types of materials: Liquid Glass, and standard mater
 
 ### Liquid Glass
 
-Liquid Glass forms a distinct functional layer for controls and navigation elements — like tab bars and sidebars — that floats above the content layer, establishing a clear visual hierarchy between functional elements and content. Liquid Glass allows content to scroll and peek through from beneath these elements to give the interface a sense of dynamism and depth, all while maintaining legibility for controls and navigation.
+Liquid Glass forms a distinct functional layer for controls and navigation elements - like tab bars and sidebars - that floats above the content layer, establishing a clear visual hierarchy between functional elements and content. Liquid Glass allows content to scroll and peek through from beneath these elements to give the interface a sense of dynamism and depth, all while maintaining legibility for controls and navigation.
 
 **Don’t use Liquid Glass in the content layer.** Liquid Glass works best when it provides a clear distinction between interactive elements and content, and including it in the content layer can result in unnecessary complexity and a confusing visual hierarchy. Instead, use [Standard materials](https://developer.apple.com/design/human-interface-guidelines/materials#Standard-materials) for elements in the content layer, such as app backgrounds. An exception to this is for controls in the content layer with a transient interactive element like [Sliders](https://developer.apple.com/design/human-interface-guidelines/sliders) and [Toggles](https://developer.apple.com/design/human-interface-guidelines/toggles); in these cases, the element takes on a Liquid Glass appearance to emphasize its interactivity when a person activates it.
 
 **Use Liquid Glass effects sparingly.** Standard components from system frameworks pick up the appearance and behavior of this material automatically. If you apply Liquid Glass effects to a custom control, do so sparingly. Liquid Glass seeks to bring attention to the underlying content, and overusing this material in multiple custom controls can provide a subpar user experience by distracting from that content. Limit these effects to the most important functional elements in your app. For developer guidance, see [Applying Liquid Glass to custom views](https://developer.apple.com/documentation/SwiftUI/Applying-Liquid-Glass-to-custom-views).
 
-**Only use clear Liquid Glass for components that appear over visually rich backgrounds.** Liquid Glass provides two variants — [regular](https://developer.apple.com/documentation/SwiftUI/Glass/regular) and [clear](https://developer.apple.com/documentation/SwiftUI/Glass/clear) — that you can choose when building custom components or styling some system components. The appearance of these variants can differ in response to certain system settings, like if people choose a preferred look for Liquid Glass in their device’s settings, or turn on accessibility settings that reduce transparency or increase contrast in the interface.
+**Only use clear Liquid Glass for components that appear over visually rich backgrounds.** Liquid Glass provides two variants - [regular](https://developer.apple.com/documentation/SwiftUI/Glass/regular) and [clear](https://developer.apple.com/documentation/SwiftUI/Glass/clear) - that you can choose when building custom components or styling some system components. The appearance of these variants can differ in response to certain system settings, like if people choose a preferred look for Liquid Glass in their device’s settings, or turn on accessibility settings that reduce transparency or increase contrast in the interface.
 
 The *regular* variant blurs and adjusts the luminosity of background content to maintain legibility of text and other foreground elements. Scroll edge effects further enhance legibility by blurring and reducing the opacity of background content. Most system components use this variant. Use the regular variant when background content might create legibility issues, or when components have a significant amount of text, such as alerts, sidebars, or popovers.
 
@@ -26,7 +26,7 @@ The *regular* variant blurs and adjusts the luminosity of background content to 
 
 ![A visual example of the regular variant of Liquid Glass, which appears lighter when there is a light background beneath it.](https://docs-assets.developer.apple.com/published/638b8273134e47c336a76220a3e3d2c5/materials-ios-liquid-glass-over-light%402x.png)
 
-The *clear* variant is highly translucent, which is ideal for prioritizing the visibility of the underlying content and ensuring visually rich background elements remain prominent. Use this variant for components that float above media backgrounds — such as photos and videos — to create a more immersive content experience.
+The *clear* variant is highly translucent, which is ideal for prioritizing the visibility of the underlying content and ensuring visually rich background elements remain prominent. Use this variant for components that float above media backgrounds - such as photos and videos - to create a more immersive content experience.
 
 ![A visual example of the clear variant of Liquid Glass, which allows the visual detail of the background beneath it to show through.](https://docs-assets.developer.apple.com/published/13179cfb02f0d81ab00d3db21fe7e10a/materials-ios-liquid-glass-clear%402x.png)
 
@@ -40,7 +40,7 @@ For guidance about the use of color, see [Liquid Glass color](https://developer.
 
 ### Standard materials
 
-Use standard materials and effects — such as [UIBlurEffect](https://developer.apple.com/documentation/UIKit/UIBlurEffect), [UIVibrancyEffect](https://developer.apple.com/documentation/UIKit/UIVibrancyEffect), and [NSVisualEffectView.BlendingMode](https://developer.apple.com/documentation/AppKit/NSVisualEffectView/BlendingMode-swift.enum) — to convey a sense of structure in the content beneath Liquid Glass.
+Use standard materials and effects - such as [UIBlurEffect](https://developer.apple.com/documentation/UIKit/UIBlurEffect), [UIVibrancyEffect](https://developer.apple.com/documentation/UIKit/UIVibrancyEffect), and [NSVisualEffectView.BlendingMode](https://developer.apple.com/documentation/AppKit/NSVisualEffectView/BlendingMode-swift.enum) - to convey a sense of structure in the content beneath Liquid Glass.
 
 **Choose materials and effects based on semantic meaning and recommended usage.** Avoid selecting a material or effect based on the apparent color it imparts to your interface, because system settings can change its appearance and behavior. Instead, match the material or vibrancy style to your specific use case.
 
@@ -66,7 +66,7 @@ For developer guidance, see [Material](https://developer.apple.com/documentation
 
 #### iOS, iPadOS
 
-In addition to Liquid Glass, iOS and iPadOS continue to provide four standard materials — ultra-thin, thin, regular (default), and thick — which you can use in the content layer to help create visual distinction.
+In addition to Liquid Glass, iOS and iPadOS continue to provide four standard materials - ultra-thin, thin, regular (default), and thick - which you can use in the content layer to help create visual distinction.
 
 ![An illustration of the iOS and iPadOS ultraThin material above a colorful background. Where the material overlaps the background, it provides a diffuse gradient of the background colors.](https://docs-assets.developer.apple.com/published/f93e23fa71e0cb11edfee69686baeef1/materials-ios-material-background-ultrathin%402x.png)
 
@@ -187,13 +187,13 @@ visionOS defines three vibrancy values that help you communicate a hierarchy of 
 
 [Adopting Liquid Glass](https://developer.apple.com/documentation/TechnologyOverviews/adopting-liquid-glass)
 
-[glassEffect(_:in:)](https://developer.apple.com/documentation/SwiftUI/View/glassEffect(_:in:)) — SwiftUI
+[glassEffect(_:in:)](https://developer.apple.com/documentation/SwiftUI/View/glassEffect(_:in:)) - SwiftUI
 
-[Material](https://developer.apple.com/documentation/SwiftUI/Material) — SwiftUI
+[Material](https://developer.apple.com/documentation/SwiftUI/Material) - SwiftUI
 
-[UIVisualEffectView](https://developer.apple.com/documentation/UIKit/UIVisualEffectView) — UIKit
+[UIVisualEffectView](https://developer.apple.com/documentation/UIKit/UIVisualEffectView) - UIKit
 
-[NSVisualEffectView](https://developer.apple.com/documentation/AppKit/NSVisualEffectView) — AppKit
+[NSVisualEffectView](https://developer.apple.com/documentation/AppKit/NSVisualEffectView) - AppKit
 
 ##### Videos
 

@@ -20,7 +20,7 @@ In addition to helping people share and collaborate on documents, visionOS suppo
 
 ![An illustration of a Notes document on iPhone. The document toolbar prominently features the Share button next to the More button.](https://docs-assets.developer.apple.com/published/00e4629ef73463727909ceecefdf902f/collaboration-share-button%402x.png)
 
-**If necessary, customize the share sheet or sharing popover to offer the types of file sharing your app supports.** If you use CloudKit, you can add support for sending a copy of a file by passing both the file and your collaboration object to the share sheet. Because the share sheet has built-in support for multiple items, it automatically detects the file and makes the “send copy” functionality available. With iCloud Drive, your collaboration object supports “send copy” functionality by default. For custom collaboration, you can support “send copy” functionality in the share sheet by including a file — or a plain text representation of it — in your collaboration object.
+**If necessary, customize the share sheet or sharing popover to offer the types of file sharing your app supports.** If you use CloudKit, you can add support for sending a copy of a file by passing both the file and your collaboration object to the share sheet. Because the share sheet has built-in support for multiple items, it automatically detects the file and makes the “send copy” functionality available. With iCloud Drive, your collaboration object supports “send copy” functionality by default. For custom collaboration, you can support “send copy” functionality in the share sheet by including a file - or a plain text representation of it - in your collaboration object.
 
 **Write succinct phrases that summarize the sharing permissions you support.** For example, you might write phrases like “Only invited people can edit” or “Everyone can make changes.” The system uses your permission summary in a button that reveals a set of sharing options that people use to define the collaboration.
 
@@ -38,9 +38,9 @@ In addition to helping people share and collaborate on documents, visionOS suppo
 
 ![An illustration of a Notes document on iPhone. A menu is open from the Collaboration button in the document toolbar, with buttons to display the most recent updates and activities.](https://docs-assets.developer.apple.com/published/3ecf0a2e3ac684c0d5bcf8b7d54812bc/collaboration-custom-popover-notes%402x.png)
 
-**If it makes sense in your app, customize the title of the modal view’s collaboration-management button.** People choose this button — titled “Manage Shared File” by default — to reveal the collaboration-management view where they can change settings and add or remove collaborators. If you use CloudKit sharing, the system provides a management view for you; otherwise, you create your own.
+**If it makes sense in your app, customize the title of the modal view’s collaboration-management button.** People choose this button - titled “Manage Shared File” by default - to reveal the collaboration-management view where they can change settings and add or remove collaborators. If you use CloudKit sharing, the system provides a management view for you; otherwise, you create your own.
 
-**Consider posting collaboration event notifications in Messages.** Choose the type of event that occurred — such as a change in the content or the collaboration membership, or the mention of a participant — and include a universal link people can use to open the relevant view in your app. For developer guidance, see [SWHighlightEvent](https://developer.apple.com/documentation/SharedWithYou/SWHighlightEvent).
+**Consider posting collaboration event notifications in Messages.** Choose the type of event that occurred - such as a change in the content or the collaboration membership, or the mention of a participant - and include a universal link people can use to open the relevant view in your app. For developer guidance, see [SWHighlightEvent](https://developer.apple.com/documentation/SharedWithYou/SWHighlightEvent).
 
 ### Platform considerations
 
@@ -64,7 +64,7 @@ In your SwiftUI app running in watchOS, use [ShareLink](https://developer.apple.
 
 [Shared with You](https://developer.apple.com/documentation/SharedWithYou)
 
-[ShareLink](https://developer.apple.com/documentation/SwiftUI/ShareLink) — SwiftUI
+[ShareLink](https://developer.apple.com/documentation/SwiftUI/ShareLink) - SwiftUI
 
 ##### Videos
 

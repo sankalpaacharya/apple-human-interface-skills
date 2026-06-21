@@ -84,7 +84,7 @@ To get input from participants, your study might use surveys, active tasks, or a
 
 ResearchKit offers a profile screen you can use to let participants manage personal information while they’re in your research app. It’s also a good idea to design a custom screen that motivates people and gives them a way to track progress in the study. Ideally, both screens are accessible at all times in your app.
 
-**Use a profile to help participants manage personal data related to your study.** A profile screen can let people edit data that might change during the course of the study — such as weight or sleep habits — and remind them of upcoming activities. A profile screen can also provide an easy way to leave a study and view important information, such as the consent document and privacy policy.
+**Use a profile to help participants manage personal data related to your study.** A profile screen can let people edit data that might change during the course of the study - such as weight or sleep habits - and remind them of upcoming activities. A profile screen can also provide an easy way to leave a study and view important information, such as the consent document and privacy policy.
 
 ![A screenshot that shows a ResearchKit app's profile screen on iPhone. This particular screen includes a list of fields for personal information like name and birth year. Each field includes a button for editing the field's value. The top of the screen includes a settings button, and the bottom of the screen includes tabs for 'Tracking', 'History' and 'Profile'. The active tab is 'Profile'.](https://docs-assets.developer.apple.com/published/9112be9b40dfaec1cc5270f94adc4645/profile-screen%402x.png)
 
@@ -106,7 +106,7 @@ ResearchKit offers a profile screen you can use to let participants manage perso
 
 [Research & Care > Developers](https://www.researchandcare.org/developers/)
 
-[Protecting user privacy](https://developer.apple.com/documentation/HealthKit/protecting-user-privacy) — HealthKit
+[Protecting user privacy](https://developer.apple.com/documentation/HealthKit/protecting-user-privacy) - HealthKit
 
 [ResearchKit GitHub project](https://github.com/ResearchKit/ResearchKit)
 

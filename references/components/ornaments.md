@@ -14,7 +14,7 @@ Ornaments can appear on any edge of a window and can contain UI components like 
 
 **Consider using an ornament to present frequently needed controls or information in a consistent location that doesn’t clutter the window.** Because an ornament stays close to its window, people always know where to find it. For example, Music uses an ornament to offer Now Playing controls, ensuring that these controls remain in a predictable location that’s easy to find.
 
-**In general, keep an ornament visible.** It can make sense to hide an ornament when people dive into a window’s content — for example, when they watch a video or view a photo — but in most cases, people appreciate having consistent access to an ornament’s controls.
+**In general, keep an ornament visible.** It can make sense to hide an ornament when people dive into a window’s content - for example, when they watch a video or view a photo - but in most cases, people appreciate having consistent access to an ornament’s controls.
 
 **If you need to display multiple ornaments, prioritize the overall visual balance of the window.** Ornaments help elevate important actions, but they can sometimes distract from your content. When necessary, consider constraining the total number of ornaments to avoid increasing a window’s visual weight and making your app feel more complicated. If you decide to remove an ornament, you can relocate its elements into the main window.
 
@@ -38,7 +38,7 @@ Ornaments can appear on any edge of a window and can contain UI components like 
 
 ##### Developer documentation
 
-[ornament(visibility:attachmentAnchor:contentAlignment:ornament:)](https://developer.apple.com/documentation/SwiftUI/View/ornament(visibility:attachmentAnchor:contentAlignment:ornament:)) — SwiftUI
+[ornament(visibility:attachmentAnchor:contentAlignment:ornament:)](https://developer.apple.com/documentation/SwiftUI/View/ornament(visibility:attachmentAnchor:contentAlignment:ornament:)) - SwiftUI
 
 ##### Videos
 

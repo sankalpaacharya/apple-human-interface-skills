@@ -50,7 +50,7 @@ As you create or adapt a game for Apple platforms, learn how to integrate the fu
 
 **Integrate device features into your layout.**  For example, a device may have rounded corners or a camera housing that can affect parts of your interface. To help your game look at home on each device, accommodate such features during layout, relying on platform-provided safe areas when possible (for developer guidance, see [Positioning content relative to the safe area](https://developer.apple.com/documentation/UIKit/positioning-content-relative-to-the-safe-area)). For guidance, see [Layout](https://developer.apple.com/design/human-interface-guidelines/layout); for templates that include safe-area guides, see [Apple Design Resources](https://developer.apple.com/design/resources/).
 
-**Make sure in-game menus adapt to different aspect ratios.**  Games need to look good and behave well at various aspect ratios, such as 16:10, 19.5:9, and 4:3. In particular, in-game menus need to remain legible and easy to use on every device — and, if you support them, in both orientations on iPhone and iPad — without obscuring other content. To help ensure your in-game menus render correctly, consider using dynamic layouts that rely on relative constraints to adjust to different contexts. Avoid fixed layouts as much as possible, and aim to create a custom, device-specific layout only when necessary. For guidance, see [In-game menus](https://developer.apple.com/design/human-interface-guidelines/menus#In-game-menus).
+**Make sure in-game menus adapt to different aspect ratios.**  Games need to look good and behave well at various aspect ratios, such as 16:10, 19.5:9, and 4:3. In particular, in-game menus need to remain legible and easy to use on every device - and, if you support them, in both orientations on iPhone and iPad - without obscuring other content. To help ensure your in-game menus render correctly, consider using dynamic layouts that rely on relative constraints to adjust to different contexts. Avoid fixed layouts as much as possible, and aim to create a custom, device-specific layout only when necessary. For guidance, see [In-game menus](https://developer.apple.com/design/human-interface-guidelines/menus#In-game-menus).
 
 **Design for the full-screen experience.**  People often enjoy playing a game in a distraction-free, full-screen context. In macOS, iOS, and iPadOS, full-screen mode lets people hide other apps and parts of the system UI; in visionOS, a game running in a Full Space can completely surround people, transporting them somewhere else. For guidance, see [Going full screen](https://developer.apple.com/design/human-interface-guidelines/going-full-screen).
 
@@ -71,7 +71,7 @@ As you create or adapt a game for Apple platforms, learn how to integrate the fu
 | macOS | Keyboard, mouse, trackpad | Game controller |
 | tvOS | Remote | Game controller, keyboard, mouse, trackpad |
 | visionOS | Touch | Game controller, keyboard, mouse, trackpad, spatial game controller |
-| watchOS | Touch | – |
+| watchOS | Touch | - |
 
 **Support physical game controllers, while also giving people alternatives.**  Every platform except watchOS supports physical game controllers. Although the presence of a game controller makes it straightforward to port controls from an existing game and handle complex control mappings, recognize that not every player can use a physical game controller. To make your game available to as many players as possible, also offer alternative ways to interact with your game. For guidance, see [Physical controllers](https://developer.apple.com/design/human-interface-guidelines/game-controls#Physical-controllers).
 
@@ -101,7 +101,7 @@ As you create or adapt a game for Apple platforms, learn how to integrate the fu
 
 **Give players the tools they need to represent themselves.**  If your game encourages players to create avatars or supply names or descriptions, support the spectrum of self-identity and provide options that represent as many human characteristics as possible.
 
-**Avoid stereotypes in your stories and characters.**  Ask yourself whether you’re depicting game characters and scenarios in a way that perpetuates real-life stereotypes. For example, does your game depict enemies as having a certain race, gender, or cultural heritage? Review your game to uncover and remove biases and stereotypes and — if references to real-life cultures and languages are necessary — be sure they’re respectful.
+**Avoid stereotypes in your stories and characters.**  Ask yourself whether you’re depicting game characters and scenarios in a way that perpetuates real-life stereotypes. For example, does your game depict enemies as having a certain race, gender, or cultural heritage? Review your game to uncover and remove biases and stereotypes and - if references to real-life cultures and languages are necessary - be sure they’re respectful.
 
 - [Accessibility](https://developer.apple.com/design/human-interface-guidelines/accessibility)
 

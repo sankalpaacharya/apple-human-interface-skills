@@ -5,7 +5,7 @@
 **When to use it:** To choose from a medium-to-long list of predictable, logically ordered values. Use a short selection control for brief lists and a searchable list for very large sets.
 
 **Guidelines**
-- Use predictable, logically ordered values — alphabetical or chronological — for quick scanning.
+- Use predictable, logically ordered values - alphabetical or chronological - for quick scanning.
 - Show the picker in context, near the field being edited, rather than navigating to a new view.
 - Prefer familiar date and time pickers so people get calendar layout, entry, and localization they already know.
 - Let the locale format and order date and time parts; don't hardcode the order.

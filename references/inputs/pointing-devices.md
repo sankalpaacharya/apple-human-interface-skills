@@ -26,7 +26,7 @@ People appreciate the precision and flexibility that pointing devices offer. On 
 
 #### iPadOS
 
-iPadOS builds on the traditional pointer experience, automatically adapting the pointer to the current context and providing rich visual feedback at a level of precision that enhances productivity and simplifies common tasks on a touchscreen device. The iPadOS pointing system gives people an additional way to interact with apps and content — it doesn’t replace touch.
+iPadOS builds on the traditional pointer experience, automatically adapting the pointer to the current context and providing rich visual feedback at a level of precision that enhances productivity and simplifies common tasks on a touchscreen device. The iPadOS pointing system gives people an additional way to interact with apps and content - it doesn’t replace touch.
 
 **Allow multiple selection in custom views when necessary.** In iPadOS 15 and later, people can click and drag the pointer over multiple items to select them. As people use the pointer in this way, it expands into a visible rectangle that selects the items it encompasses. Standard nonlist collection views support this interaction by default; if you want to support multiple selection in custom views, you need to implement it yourself. For developer guidance, see [UIBandSelectionInteraction](https://developer.apple.com/documentation/UIKit/UIBandSelectionInteraction).
 
@@ -102,7 +102,7 @@ The system also applies magnetism to text-entry areas, where it can help people 
 
 **Create contiguous hit regions for custom bar buttons.** If there’s space between the hit regions of adjacent buttons in a bar, people may experience a distracting motion when the pointer reverts briefly to its default shape as it moves between buttons.
 
-**Specify the corner radius of a nonstandard element that receives the lift effect.** With the system-provided lift effect, the pointer transforms to match the element’s shape as it fades out. By default, the pointer uses the system-defined corner radius to transform into a rounded rectangle. If your element is a different shape — if it’s a circle, for example — you need to provide the radius so the pointer can animate seamlessly into the shape of the element. For developer guidance, see [UIPointerShape.roundedRect(_:radius:)](https://developer.apple.com/documentation/UIKit/UIPointerShape-swift.enum/roundedRect(_:radius:)).
+**Specify the corner radius of a nonstandard element that receives the lift effect.** With the system-provided lift effect, the pointer transforms to match the element’s shape as it fades out. By default, the pointer uses the system-defined corner radius to transform into a rounded rectangle. If your element is a different shape - if it’s a circle, for example - you need to provide the radius so the pointer can animate seamlessly into the shape of the element. For developer guidance, see [UIPointerShape.roundedRect(_:radius:)](https://developer.apple.com/documentation/UIKit/UIPointerShape-swift.enum/roundedRect(_:radius:)).
 
 ##### Customizing pointers
 
@@ -152,11 +152,11 @@ macOS offers a variety of standard pointer styles, which your app can use to com
 | Pointer | Name | Meaning | AppKit API |
 | --- | --- | --- | --- |
 | ![A pointer that resembles a diagonal arrow pointing up and to the left.](https://docs-assets.developer.apple.com/published/5be2c381c17d5d868866b3a5de1013f8/pointers-arrow%402x.png) | Arrow | Standard pointer for selecting and interacting with content and interface elements. | [arrow](https://developer.apple.com/documentation/AppKit/NSCursor/arrow) |
-| ![A closed, gloved hand.](https://docs-assets.developer.apple.com/published/6680cdb870edf5364f84a483fd2bead9/pointers-closed-hand%402x.png) | Closed hand | Dragging to reposition the display of content within a view—for example, dragging a map around in Maps. | [closedHand](https://developer.apple.com/documentation/AppKit/NSCursor/closedHand) |
+| ![A closed, gloved hand.](https://docs-assets.developer.apple.com/published/6680cdb870edf5364f84a483fd2bead9/pointers-closed-hand%402x.png) | Closed hand | Dragging to reposition the display of content within a view-for example, dragging a map around in Maps. | [closedHand](https://developer.apple.com/documentation/AppKit/NSCursor/closedHand) |
 | ![A pointer arrow with a small menu-like square to the right of the arrow.](https://docs-assets.developer.apple.com/published/0cb033cee3b55bd4be661b28b928fdc1/pointers-contextual-menu%402x.png) | Contextual menu | A contextual menu is available for the content below the pointer. This pointer is generally shown only when the Control key is pressed. | [contextualMenu](https://developer.apple.com/documentation/AppKit/NSCursor/contextualMenu) |
 | ![A plus symbol.](https://docs-assets.developer.apple.com/published/d55eabe14365af873000aa389e5fad6c/pointers-crosshair%402x.png) | Crosshair | Precise rectangular selection is possible, such as when viewing an image in Preview. | [crosshair](https://developer.apple.com/documentation/AppKit/NSCursor/crosshair) |
 | ![A small pointer arrowhead with a circle underneath; the circle contains an Ex.](https://docs-assets.developer.apple.com/published/528819d511869de26beb1fd5008ac773/pointers-disappearing-item%402x.png) | Disappearing item | A dragged item will disappear when dropped. If the item references an original item, the original is unaffected. For example, when dragging a mailbox out of the favorites bar in Mail, the original mailbox isn’t removed. | [disappearingItem](https://developer.apple.com/documentation/AppKit/NSCursor/disappearingItem) |
-| ![A small pointer arrowhead with a circle underneath; the circle contains a plus symbol.](https://docs-assets.developer.apple.com/published/ccc7052f9bc6fb302d913633c648adcd/pointers-drag-copy%402x.png) | Drag copy | Duplicates a dragged—not moved—item when dropped into the destination. Appears when pressing the Option key during a drag operation. | [dragCopy](https://developer.apple.com/documentation/AppKit/NSCursor/dragCopy) |
+| ![A small pointer arrowhead with a circle underneath; the circle contains a plus symbol.](https://docs-assets.developer.apple.com/published/ccc7052f9bc6fb302d913633c648adcd/pointers-drag-copy%402x.png) | Drag copy | Duplicates a dragged-not moved-item when dropped into the destination. Appears when pressing the Option key during a drag operation. | [dragCopy](https://developer.apple.com/documentation/AppKit/NSCursor/dragCopy) |
 | ![A curved arrow, pointing up and to the right.](https://docs-assets.developer.apple.com/published/47dfbfd5f1bf3141dbf875f47446d1fd/pointers-drag-link%402x.png) | Drag link | During a drag and drop operation, creates an alias of the selected file when dropped. The alias points to the original file, which remains unmoved. Appears when pressing the Option and Command keys during a drag operation. | [dragLink](https://developer.apple.com/documentation/AppKit/NSCursor/dragLink) |
 | ![Opposing veritcal braces, used to form an insertion marker.](https://docs-assets.developer.apple.com/published/060f443dee8d260a1a1191d7831e36b7/pointers-horizontal-beam%402x.png) | Horizontal I beam | Selection and insertion of text is possible in a horizontal layout, such as a TextEdit or Pages document. | [iBeam](https://developer.apple.com/documentation/AppKit/NSCursor/iBeam) |
 | ![An open, gloved hand.](https://docs-assets.developer.apple.com/published/a5daee642ccc8fb3ac550d176b2d1932/pointers-open-hand%402x.png) | Open hand | Dragging to reposition content within a view is possible. | [openHand](https://developer.apple.com/documentation/AppKit/NSCursor/openHand) |
@@ -190,11 +190,11 @@ When people use an attached pointing device that supports gestures, like a track
 
 ##### Developer documentation
 
-[Input events](https://developer.apple.com/documentation/SwiftUI/Input-events) — SwiftUI
+[Input events](https://developer.apple.com/documentation/SwiftUI/Input-events) - SwiftUI
 
-[Pointer interactions](https://developer.apple.com/documentation/UIKit/pointer-interactions) — UIKit
+[Pointer interactions](https://developer.apple.com/documentation/UIKit/pointer-interactions) - UIKit
 
-[Mouse, Keyboard, and Trackpad](https://developer.apple.com/documentation/AppKit/mouse-keyboard-and-trackpad) — AppKit
+[Mouse, Keyboard, and Trackpad](https://developer.apple.com/documentation/AppKit/mouse-keyboard-and-trackpad) - AppKit
 
 ##### Videos
 

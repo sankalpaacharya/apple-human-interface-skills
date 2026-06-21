@@ -34,4 +34,4 @@ There are two styles of path control.
 
 ##### Developer documentation
 
-[NSPathControl](https://developer.apple.com/documentation/AppKit/NSPathControl) — AppKit
+[NSPathControl](https://developer.apple.com/documentation/AppKit/NSPathControl) - AppKit

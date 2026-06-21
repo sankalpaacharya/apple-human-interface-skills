@@ -6,7 +6,7 @@
 
 ![A sketch of a waving hand, suggesting a gesture of welcoming. The image is overlaid with rectangular and circular grid lines and is tinted orange to subtly reflect the orange in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/044d56043e30ee77f306a8613041311b/patterns-onboarding-intro%402x.png)
 
-Ideally, people can understand your app or game simply by experiencing it, but if onboarding is necessary, design a flow that’s fast, fun, and optional. When available, onboarding occurs after [Launching](https://developer.apple.com/design/human-interface-guidelines/launching) is complete — it isn’t part of the launch experience.
+Ideally, people can understand your app or game simply by experiencing it, but if onboarding is necessary, design a flow that’s fast, fun, and optional. When available, onboarding occurs after [Launching](https://developer.apple.com/design/human-interface-guidelines/launching) is complete - it isn’t part of the launch experience.
 
 ### Best practices
 

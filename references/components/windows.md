@@ -26,7 +26,7 @@ For guidance laying out content within a window on any platform, see [Layout](ht
 
 **Avoid creating custom window UI.** System-provided windows look and behave in a way that people understand and recognize. Avoid making custom window frames or controls, and don’t try to replicate the system-provided appearance. Doing so without perfectly matching the system’s look and behavior can make your app feel broken.
 
-**Use the term *window* in user-facing content.** The system refers to app windows as *windows* regardless of type. Using different terms — including *scene*, which refers to window implementation — is likely to confuse people.
+**Use the term *window* in user-facing content.** The system refers to app windows as *windows* regardless of type. Using different terms - including *scene*, which refers to window implementation - is likely to confuse people.
 
 ### Platform considerations
 
@@ -36,7 +36,7 @@ For guidance laying out content within a window on any platform, see [Layout](ht
 
 Windows present in one of two ways depending on a person’s choice in Multitasking & Gestures settings.
 
-- **Full screen.** App windows fill the entire screen, and people switch between them — or between multiple windows of the same app — using the app switcher.
+- **Full screen.** App windows fill the entire screen, and people switch between them - or between multiple windows of the same app - using the app switcher.
 
 - **Windowed.** People can freely resize app windows. Multiple windows can be onscreen at once, and people can reposition them and bring them to the front. The system remembers window size and placement even when an app is closed.
 
@@ -60,7 +60,7 @@ Windows present in one of two ways depending on a person’s choice in Multitask
 
 #### macOS
 
-In macOS, people typically run several apps at the same time, often viewing windows from multiple apps on one desktop and switching frequently between different windows — moving, resizing, minimizing, and revealing the windows to suit their work style.
+In macOS, people typically run several apps at the same time, often viewing windows from multiple apps on one desktop and switching frequently between different windows - moving, resizing, minimizing, and revealing the windows to suit their work style.
 
 To learn about setting up a window to display your game in macOS, see [Managing your game window for Metal in macOS](https://developer.apple.com/documentation/Metal/managing-your-game-window-for-metal-in-macos).
 
@@ -76,7 +76,7 @@ A macOS window can have one of three states:
 
 - **Main.** The frontmost window that people view is an app’s main window. There can be only one main window per app.
 
-- **Key.** Also called the *active window*, the key window accepts people’s input. There can be only one key window onscreen at a time. Although the front app’s main window is usually the key window, another window — such as a panel floating above the main window — might be key instead. People typically click a window to make it key; when people click an app’s Dock icon to bring all of that app’s windows forward, only the most recently accessed window becomes key.
+- **Key.** Also called the *active window*, the key window accepts people’s input. There can be only one key window onscreen at a time. Although the front app’s main window is usually the key window, another window - such as a panel floating above the main window - might be key instead. People typically click a window to make it key; when people click an app’s Dock icon to bring all of that app’s windows forward, only the most recently accessed window becomes key.
 
 - **Inactive.** A window that’s not in the foreground is an inactive window.
 
@@ -86,7 +86,7 @@ The system gives main, key, and inactive windows different appearances to help p
 
 > **Note**
 >
-> Some windows — typically, panels like Colors or Fonts — become the key window only when people click the window’s title bar or a component that requires keyboard input, such as a text field.
+> Some windows - typically, panels like Colors or Fonts - become the key window only when people click the window’s title bar or a component that requires keyboard input, such as a text field.
 
 **Make sure custom windows use the system-defined appearances.** People rely on the visual differences between windows to help them identify the foreground window and know which window will accept their input. When you use system-provided components, a window’s background and button appearances update automatically when the window changes state; if you use custom implementations, you need to do this work yourself.
 
@@ -138,7 +138,7 @@ You can use a volume to display 2D or 3D content that people can view from any a
 
 **In general, use dynamic scaling.** Dynamic scaling helps a volume’s content remain comfortably legible and easy to interact with, even when it’s far away from the viewer. On the other hand, if you want a volume’s content to represent a real-world object, like a product in a retail app, you can use fixed scaling (this is the default).
 
-**Take advantage of the default baseplate appearance to help people discern the edges of a volume.** In visionOS 2 and later, the system automatically makes a volume’s horizontal “floor,” or *baseplate*, visible by displaying a gentle glow around its border when people look at it. If your content doesn’t fill the volume, the system-provided glow can help people become aware of the volume’s edges, which can be particularly useful in keeping the resize control easy to find. On the other hand, if your content is full bleed or fills the volume’s bounds — or if you display a custom baseplate appearance — you may not want the default glow.
+**Take advantage of the default baseplate appearance to help people discern the edges of a volume.** In visionOS 2 and later, the system automatically makes a volume’s horizontal “floor,” or *baseplate*, visible by displaying a gentle glow around its border when people look at it. If your content doesn’t fill the volume, the system-provided glow can help people become aware of the volume’s edges, which can be particularly useful in keeping the resize control easy to find. On the other hand, if your content is full bleed or fills the volume’s bounds - or if you display a custom baseplate appearance - you may not want the default glow.
 
 **Consider offering high-value content in an ornament.** In visionOS 2 and later, a volume can include an ornament in addition to a toolbar and tab bar. You can use an ornament to reduce clutter in a volume and elevate important views or controls. When you use an attachment anchor to specify the ornament’s location, such as `topBack` or `bottomFront`, the ornament remains in the same position, relative to the viewer’s perspective, as they move around the volume. Be sure to avoid placing an ornament on the same edge as a toolbar or tab bar, and prefer creating only one additional ornament to avoid overshadowing the important content in your volume. For developer guidance, see [ornament(visibility:attachmentAnchor:contentAlignment:ornament:)](https://developer.apple.com/documentation/SwiftUI/View/ornament(visibility:attachmentAnchor:contentAlignment:ornament:)).
 
@@ -156,13 +156,13 @@ You can use a volume to display 2D or 3D content that people can view from any a
 
 ##### Developer documentation
 
-[Windows](https://developer.apple.com/documentation/SwiftUI/Windows) — SwiftUI
+[Windows](https://developer.apple.com/documentation/SwiftUI/Windows) - SwiftUI
 
-[WindowGroup](https://developer.apple.com/documentation/SwiftUI/WindowGroup) — SwiftUI
+[WindowGroup](https://developer.apple.com/documentation/SwiftUI/WindowGroup) - SwiftUI
 
-[UIWindow](https://developer.apple.com/documentation/UIKit/UIWindow) — UIKit
+[UIWindow](https://developer.apple.com/documentation/UIKit/UIWindow) - UIKit
 
-[NSWindow](https://developer.apple.com/documentation/AppKit/NSWindow) — AppKit
+[NSWindow](https://developer.apple.com/documentation/AppKit/NSWindow) - AppKit
 
 ##### Videos
 

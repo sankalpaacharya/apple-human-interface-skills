@@ -6,7 +6,7 @@
 
 **Guidelines**
 - Keep designs simplified and recognizable, using familiar metaphors tied to the action.
-- Maintain consistency across the set — same size, level of detail, stroke weight, and perspective.
+- Maintain consistency across the set - same size, level of detail, stroke weight, and perspective.
 - Match icon stroke weight to adjacent text weight unless you intentionally emphasize one.
 - Optically center asymmetric icons rather than centering them purely by geometry.
 - Design icons to scale crisply and adopt the surrounding text color.

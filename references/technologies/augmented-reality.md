@@ -28,7 +28,7 @@ Using the device’s camera to present the physical world onscreen live, your ap
 
 **If additional information or controls are necessary, consider displaying them in screen space.** Content in *screen space* appears fixed to a consistent location either in the virtual world or, less commonly, on the device screen. It’s typically easy for people to find and view content in screen space because it remains stationary while the underlying AR environment moves with the device.
 
-**Consider using indirect controls when you need to provide persistent controls.** *Indirect controls* are not part of the virtual environment — instead, they are 2D controls displayed in screen space. If people need access to persistent controls in your app, consider placing the controls so that people don’t have to adjust how they’re holding the device to reach them. Also, consider using translucency in an indirect control to help avoid blocking the underlying scene. For example, the Measure app uses screen space to display a mix of translucent and opaque controls that people use to measure objects in the real world.
+**Consider using indirect controls when you need to provide persistent controls.** *Indirect controls* are not part of the virtual environment - instead, they are 2D controls displayed in screen space. If people need access to persistent controls in your app, consider placing the controls so that people don’t have to adjust how they’re holding the device to reach them. Also, consider using translucency in an indirect control to help avoid blocking the underlying scene. For example, the Measure app uses screen space to display a mix of translucent and opaque controls that people use to measure objects in the real world.
 
 ![A screenshot of the Measure app on iPhone showing a bunch of carrots. A line segment extends from one end of a carrot to the other end. The measurement is four and a half inches.](https://docs-assets.developer.apple.com/published/8a3faa907452d5fdb2771a64ffdcdb62/augmented-reality-measure-carrots%402x.png)
 
@@ -42,13 +42,13 @@ Using the device’s camera to present the physical world onscreen live, your ap
 
 ### Providing coaching
 
-Before people can enjoy an AR experience in your app, they need to move their device in ways that lets ARKit evaluate the surroundings and detect surfaces. Consider using the built-in coaching view to show people what to do and provide feedback during the initialization process. You can also use the coaching view to help people reinitialize AR — a process known as *relocalization* — after an AR experience is interrupted by, for example, people switching briefly to a different app. For guidance on relocalization, see [Handling interruptions](https://developer.apple.com/design/human-interface-guidelines/augmented-reality#Handling-interruptions); for developer guidance, see [ARCoachingOverlayView](https://developer.apple.com/documentation/ARKit/ARCoachingOverlayView).
+Before people can enjoy an AR experience in your app, they need to move their device in ways that lets ARKit evaluate the surroundings and detect surfaces. Consider using the built-in coaching view to show people what to do and provide feedback during the initialization process. You can also use the coaching view to help people reinitialize AR - a process known as *relocalization* - after an AR experience is interrupted by, for example, people switching briefly to a different app. For guidance on relocalization, see [Handling interruptions](https://developer.apple.com/design/human-interface-guidelines/augmented-reality#Handling-interruptions); for developer guidance, see [ARCoachingOverlayView](https://developer.apple.com/documentation/ARKit/ARCoachingOverlayView).
 
 ![An illustration of an iPhone screen showing the corner of a room viewed through the camera. On the screen is a translucent overlay containing the surface-detection indicator. The indicator is a white square with rounded corners projected into the 3D space. A small iPhone is shown scanning back and forth along the base of the square. A circle of dots trailing the iPhone emphasizes the movement.](https://docs-assets.developer.apple.com/published/a8f541f789d28879cd0d2c9862cbdcba/augmented-reality-coaching-overlay%402x.png)
 
 **Hide unnecessary app UI while people are using a coaching view.** By default, the coaching view appears automatically when initialization or relocalization starts, so be prepared to hide unrelated UI to help people concentrate on the coaching view’s instructions.
 
-**If necessary, offer a custom coaching experience.** Although you can configure the system-provided coaching view to help people provide specific information — such as the detection of a horizontal or vertical plane — you might need additional information or want to use a different visual style. If you want to design a custom coaching experience, use the system-provided coaching view for reference.
+**If necessary, offer a custom coaching experience.** Although you can configure the system-provided coaching view to help people provide specific information - such as the detection of a horizontal or vertical plane - you might need additional information or want to use a different visual style. If you want to design a custom coaching experience, use the system-provided coaching view for reference.
 
 ### Helping people place objects
 
@@ -161,7 +161,7 @@ ARKit can’t track device position and orientation during an interruption, such
 
 ![An illustration showing a corner of a dark office that contains a desk and chair.](https://docs-assets.developer.apple.com/published/346b5de0b7f08b0a510192cae8189cab/augmented-reality-insufficient-lighting%402x.png)
 
-**Suggest possible fixes if problems occur.** Analysis of the real-world environment and surface detection can fail or take too long for a variety of reasons — insufficient light, an overly reflective surface, a surface without enough detail, or too much camera motion. If your app is notified of these problems, use straightforward, friendly language to offer suggestions for resolving them.
+**Suggest possible fixes if problems occur.** Analysis of the real-world environment and surface detection can fail or take too long for a variety of reasons - insufficient light, an overly reflective surface, a surface without enough detail, or too much camera motion. If your app is notified of these problems, use straightforward, friendly language to offer suggestions for resolving them.
 
 | Problem | Possible suggestion |
 | --- | --- |

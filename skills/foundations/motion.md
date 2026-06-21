@@ -1,15 +1,15 @@
 # Motion
 
-> Purposeful, fluid animation that conveys status, gives feedback, and enriches the experience — without distracting or causing discomfort.
+> Purposeful, fluid animation that conveys status, gives feedback, and enriches the experience - without distracting or causing discomfort.
 
 **When to use it:** Feedback tied to a user action, transitions that clarify spatial relationships (open and close, expand and collapse), and subtle emphasis on state changes.
 
 **Guidelines**
 - Add motion purposefully and skip gratuitous animation that distracts or disorients.
 - Keep feedback animations brief and precise so they feel lightweight.
-- Make motion mirror the gesture — a view that enters from the top should leave toward the top.
+- Make motion mirror the gesture - a view that enters from the top should leave toward the top.
 - Avoid animating frequent, repeated interactions; let routine transitions stay quiet.
-- Never block input on an animation — let people cancel or act before it finishes.
+- Never block input on an animation - let people cancel or act before it finishes.
 - Favor smooth, fluid motion that holds up without feeling sluggish.
 - Use animated symbols and icons only where they add meaning.
 - Provide a non-motion alternative for anything important conveyed through animation.

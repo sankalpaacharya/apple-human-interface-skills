@@ -26,7 +26,7 @@ For example, Mail uses a web view to show HTML content in messages.
 
 ##### Developer documentation
 
-[WKWebView](https://developer.apple.com/documentation/WebKit/WKWebView) — WebKit
+[WKWebView](https://developer.apple.com/documentation/WebKit/WKWebView) - WebKit
 
 ##### Videos
 

@@ -26,4 +26,4 @@ You can add an optional title and prompt above the line of digits.
 
 ##### Developer documentation
 
-[TVDigitEntryViewController](https://developer.apple.com/documentation/TVUIKit/TVDigitEntryViewController) — TVUIKit
+[TVDigitEntryViewController](https://developer.apple.com/documentation/TVUIKit/TVDigitEntryViewController) - TVUIKit

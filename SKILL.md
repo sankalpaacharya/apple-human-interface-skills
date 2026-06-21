@@ -1,17 +1,17 @@
 ---
 name: apple-human-interface-skills
-description: Apple's Human Interface Guidelines distilled into design principles an AI can follow to make better-looking, better-behaved interfaces. Use when designing or reviewing any UI: laying out a screen, choosing and placing a component (button, sheet, tab bar, menu, form field, list, alert), designing a flow (onboarding, search, loading, feedback, settings, notifications), or applying foundations (color, typography, layout, spacing, hierarchy, dark mode, motion, accessibility). Each skill gives Apple's guidance, accessibility considerations, and anti-patterns. This is design guidance only — it does not prescribe frameworks, components, or code.
+description: Apple's Human Interface Guidelines distilled into design principles an AI can follow to make better-looking, better-behaved interfaces. Use when designing or reviewing any UI: laying out a screen, choosing and placing a component (button, sheet, tab bar, menu, form field, list, alert), designing a flow (onboarding, search, loading, feedback, settings, notifications), or applying foundations (color, typography, layout, spacing, hierarchy, dark mode, motion, accessibility). Each skill gives Apple's guidance, accessibility considerations, and anti-patterns. This is design guidance only - it does not prescribe frameworks, components, or code.
 ---
 
 # Apple Human Interface Skills
 
 Apple's Human Interface Guidelines, distilled into short design-principle files so an AI follows good design instead of guessing. Each file covers one topic: what it is, when to use it, the design guidelines, accessibility considerations, and what to avoid.
 
-This is **design guidance**, not implementation — it says how something should look and behave, never which framework or component to build it with.
+This is **design guidance**, not implementation - it says how something should look and behave, never which framework or component to build it with.
 
 ## How to use this skill
 
-1. Figure out what you're designing — a **foundation**, a **pattern/flow**, a **component**, or an **interaction**.
+1. Figure out what you're designing - a **foundation**, a **pattern/flow**, a **component**, or an **interaction**.
 2. Find it in the router below and read that one short file.
 3. Apply its **Guidelines**, **Accessibility**, and **Avoid** points to your design.
 4. Want the complete original guidance? Each file links to its full Apple HIG page under `references/`.
@@ -20,7 +20,7 @@ This is **design guidance**, not implementation — it says how something should
 
 ## Router
 
-### Foundations — Visual & UX principles that apply to every screen.
+### Foundations - Visual & UX principles that apply to every screen.
 
 | Topic | What it covers |
 | --- | --- |
@@ -34,13 +34,13 @@ This is **design guidance**, not implementation — it says how something should
 | [Inclusion](skills/foundations/inclusion.md) | Putting people first by using respectful language and imagery and presenting content everyone can… |
 | [Layout](skills/foundations/layout.md) | A consistent, adaptive layout grounds people in content and works across screen sizes and orienta… |
 | [Materials](skills/foundations/materials.md) | Translucent, blurred surfaces that separate a floating control or navigation layer from backgroun… |
-| [Motion](skills/foundations/motion.md) | Purposeful, fluid animation that conveys status, gives feedback, and enriches the experience — wi… |
+| [Motion](skills/foundations/motion.md) | Purposeful, fluid animation that conveys status, gives feedback, and enriches the experience - wi… |
 | [Privacy](skills/foundations/privacy.md) | Being transparent about the data and device capabilities you need, and protecting whatever people… |
 | [Right to Left](skills/foundations/right-to-left.md) | Mirroring your interface to match the reading direction of right-to-left scripts like Arabic and … |
 | [Typography](skills/foundations/typography.md) | Typographic choices establish legibility, hierarchy, and brand through deliberate use of size, we… |
-| [Writing](skills/foundations/writing.md) | The words in your interface — labels, messages, empty states, errors — are a core part of the use… |
+| [Writing](skills/foundations/writing.md) | The words in your interface - labels, messages, empty states, errors - are a core part of the use… |
 
-### Patterns — How to design recurring flows and experiences.
+### Patterns - How to design recurring flows and experiences.
 
 | Topic | What it covers |
 | --- | --- |
@@ -54,14 +54,14 @@ This is **design guidance**, not implementation — it says how something should
 | [Managing Accounts](skills/patterns/managing-accounts.md) | Authentication and account flows that let people reach their content without becoming a barrier t… |
 | [Modality](skills/patterns/modality.md) | Content shown in a dedicated mode that blocks interaction with the rest of the app until people e… |
 | [Notifications](skills/patterns/notifications.md) | Timely, permission-gated messages that inform people of events, delivered respectfully without ov… |
-| [Offering Help](skills/patterns/offering-help.md) | Contextual help — tips, hints, and links — offered when an interface isn't fully self-explanatory |
+| [Offering Help](skills/patterns/offering-help.md) | Contextual help - tips, hints, and links - offered when an interface isn't fully self-explanatory |
 | [Onboarding](skills/patterns/onboarding.md) | A fast, optional flow that helps people get a quick start using your app |
 | [Ratings and Reviews](skills/patterns/ratings-and-reviews.md) | Asking people for feedback on your product at the right moment, without nagging |
 | [Search](skills/patterns/search.md) | Lets people find content within your app, optionally scoped or filtered |
 | [Settings](skills/patterns/settings.md) | A place for general, infrequently changed preferences that customize the experience |
 | [Undo and Redo](skills/patterns/undo-and-redo.md) | Letting people reverse and re-apply recent actions so they can explore and recover from mistakes … |
 
-### Components — How to design each UI element well.
+### Components - How to design each UI element well.
 
 | Topic | What it covers |
 | --- | --- |
@@ -96,11 +96,11 @@ This is **design guidance**, not implementation — it says how something should
 | [Toolbars](skills/components/toolbars.md) | A toolbar is a horizontal bar of frequently used commands, controls, navigation, and search along… |
 | [Windows](skills/components/windows.md) | A window is the bounded surface that presents an app's content |
 
-### Interaction — Designing for keyboard, pointer, touch, and focus.
+### Interaction - Designing for keyboard, pointer, touch, and focus.
 
 | Topic | What it covers |
 | --- | --- |
 | [Focus and Selection](skills/interaction/focus-and-selection.md) | Focus marks the single element an interaction will target; selection marks the item or items a us… |
-| [Keyboard](skills/interaction/keyboard.md) | Operating and navigating an interface — text entry, activation, and shortcuts — without relying o… |
-| [Pointer and Hover](skills/interaction/pointer-and-hover.md) | Precise pointing input — moving, hovering, and invoking contextual actions — typical of mouse and… |
+| [Keyboard](skills/interaction/keyboard.md) | Operating and navigating an interface - text entry, activation, and shortcuts - without relying o… |
+| [Pointer and Hover](skills/interaction/pointer-and-hover.md) | Precise pointing input - moving, hovering, and invoking contextual actions - typical of mouse and… |
 | [Touch and Gestures](skills/interaction/touch-and-gestures.md) | Direct physical manipulation of on-screen objects through motions like tap, swipe, drag, and pinch |

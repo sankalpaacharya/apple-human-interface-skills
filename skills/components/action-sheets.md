@@ -2,7 +2,7 @@
 
 > An action sheet presents a set of choices related to an action the user just initiated, typically rising from the screen edge.
 
-**When to use it:** When a user-initiated action needs several related choices — especially to confirm a destructive action while still offering alternatives. Prefer it over an alert when more than a simple confirm/cancel is required.
+**When to use it:** When a user-initiated action needs several related choices - especially to confirm a destructive action while still offering alternatives. Prefer it over an alert when more than a simple confirm/cancel is required.
 
 **Guidelines**
 - Trigger an action sheet only in response to an intentional user action.
@@ -19,6 +19,6 @@
 
 **Avoid**
 - Letting the sheet grow long enough to scroll, which invites accidental selections.
-- Announcing a problem the user didn't initiate — that is an alert's job.
+- Announcing a problem the user didn't initiate - that is an alert's job.
 
 **Full reference:** [action-sheets.md](../../references/components/action-sheets.md)

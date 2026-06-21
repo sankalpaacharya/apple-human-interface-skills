@@ -6,7 +6,7 @@
 
 **Guidelines**
 - Rely on familiar, expected focus behavior wherever possible; introduce custom handling only when truly needed.
-- Never move focus without a user action — except to keep it sensible when the focused element disappears.
+- Never move focus without a user action - except to keep it sensible when the focused element disappears.
 - When a modal or dialog opens, move focus into it; when it closes, return focus to whatever opened it.
 - Indicate focus with a ring for individual controls and a highlight for an item within a list or collection.
 - Make focus order follow reading order, and group related controls so directional navigation stays within a logical area.

@@ -72,8 +72,8 @@ You can make a popover detachable in macOS, which becomes a separate panel when 
 
 ##### Developer documentation
 
-[popover(isPresented:attachmentAnchor:arrowEdge:content:)](https://developer.apple.com/documentation/SwiftUI/View/popover(isPresented:attachmentAnchor:arrowEdge:content:)) — SwiftUI
+[popover(isPresented:attachmentAnchor:arrowEdge:content:)](https://developer.apple.com/documentation/SwiftUI/View/popover(isPresented:attachmentAnchor:arrowEdge:content:)) - SwiftUI
 
-[UIPopoverPresentationController](https://developer.apple.com/documentation/UIKit/UIPopoverPresentationController) — UIKit
+[UIPopoverPresentationController](https://developer.apple.com/documentation/UIKit/UIPopoverPresentationController) - UIKit
 
-[NSPopover](https://developer.apple.com/documentation/AppKit/NSPopover) — AppKit
+[NSPopover](https://developer.apple.com/documentation/AppKit/NSPopover) - AppKit

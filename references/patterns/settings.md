@@ -44,11 +44,11 @@ When necessary, you can provide a custom settings area within your app or game t
 
 #### macOS
 
-When people choose the Settings item in your app’s or game’s App menu, your custom settings window opens. Typically, a custom settings window contains a toolbar that includes buttons for switching between views — called *panes* — that each contain a group of related settings.
+When people choose the Settings item in your app’s or game’s App menu, your custom settings window opens. Typically, a custom settings window contains a toolbar that includes buttons for switching between views - called *panes* - that each contain a group of related settings.
 
 **Include a settings item in the [App menu](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar#App-menu).** Avoid adding settings buttons to a window’s toolbar, because doing so decreases the space available for essential commands that people use frequently. If you provide document-level options, add this item to your app’s [File menu](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar#File-menu).
 
-**Dim a settings window’s minimize and maximize buttons.** It’s quick to open a custom settings window using the standard Command–Comma (,) keyboard command, so there’s no need to keep the window in the Dock, and because a settings window accommodates the size of the current pane, people don’t need to expand the window to see more.
+**Dim a settings window’s minimize and maximize buttons.** It’s quick to open a custom settings window using the standard Command-Comma (,) keyboard command, so there’s no need to keep the window in the Dock, and because a settings window accommodates the size of the current pane, people don’t need to expand the window to see more.
 
 **In your settings window, use a noncustomizable toolbar that remains visible and always indicates the active toolbar button.** A settings window’s toolbar identifies the areas people can customize and helps people navigate among those areas. People rely on a stable settings interface to help them find what they need.
 
@@ -68,9 +68,9 @@ In watchOS, apps and games don’t add custom settings to the system-provided Se
 
 ##### Developer documentation
 
-[Settings](https://developer.apple.com/documentation/SwiftUI/Settings) — SwiftUI
+[Settings](https://developer.apple.com/documentation/SwiftUI/Settings) - SwiftUI
 
-[UserDefaults](https://developer.apple.com/documentation/Foundation/UserDefaults) — Foundation
+[UserDefaults](https://developer.apple.com/documentation/Foundation/UserDefaults) - Foundation
 
 [Preference Panes](https://developer.apple.com/documentation/PreferencePanes)
 

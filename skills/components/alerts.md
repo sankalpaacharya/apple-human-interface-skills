@@ -5,7 +5,7 @@
 **When to use it:** To warn before a destructive or irreversible action, confirm an important user-initiated action such as a purchase, or report a problem the user must acknowledge.
 
 **Guidelines**
-- Use alerts sparingly — each one interrupts, so reserve them for essential, actionable moments.
+- Use alerts sparingly - each one interrupts, so reserve them for essential, actionable moments.
 - Don't alert merely to convey information, on load, or for common undoable actions.
 - Write a clear, specific title; add message text only when it adds real value.
 - Use specific verb buttons ("Delete", "Erase") rather than "OK"; reserve "OK" for purely informational alerts.
@@ -16,7 +16,7 @@
 - Treat the alert as an interrupting layer that takes focus and clearly conveys its message.
 - Ensure the default action is reachable first and focus returns to context when dismissed.
 - Give buttons generous, easily tapped targets (about 44pt) and legible, high-contrast text.
-- Don't rely on color alone to mark a destructive button — say so in the label.
+- Don't rely on color alone to mark a destructive button - say so in the label.
 
 **Avoid**
 - Using an alert when a menu of choices fits the situation better.

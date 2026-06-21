@@ -38,7 +38,7 @@ Beyond its use for navigation, turning the Digital Crown generates information y
 >
 > Apps don’t respond to presses on the Digital Crown because watchOS reserves these interactions for system-provided functionality like revealing the Home Screen.
 
-Most Apple Watch models provide haptic feedback for the Digital Crown, which gives people a more tactile experience as they scroll through content. By default, the system provides linear haptic *detents* — or taps — as people turn the Digital Crown a specific distance. Some system controls, like table views, provide detents as new items scroll onto the screen.
+Most Apple Watch models provide haptic feedback for the Digital Crown, which gives people a more tactile experience as they scroll through content. By default, the system provides linear haptic *detents* - or taps - as people turn the Digital Crown a specific distance. Some system controls, like table views, provide detents as new items scroll onto the screen.
 
 **Anchor your app’s navigation to the Digital Crown.** Starting with watchOS 10, turning the Digital Crown is the main way people navigate within and between apps. List, tab, and scroll views are vertically oriented, allowing people to use the Digital Crown to easily move between the important elements of your app’s interface. When anchoring interactions to the Digital Crown, also be sure to back them up with corresponding touch screen interactions.
 
@@ -48,7 +48,7 @@ Most Apple Watch models provide haptic feedback for the Digital Crown, which giv
 
 **Update your interface to match the speed with which people turn the Digital Crown.** People expect turning the Digital Crown to give them precise control over an interface, so it works well to use this speed to determine the speed at which you make changes. Avoid updating content at a rate that makes it difficult for people to select values.
 
-**Use the default haptic feedback when it makes sense in your app.** If haptic feedback doesn’t feel right in the context of your app — for example, if the default detents don’t match your app’s animation — turn off the detents. You can also adjust the haptic feedback behavior for tables, letting them use linear detents instead of row-based detents. For example, if your table has rows with significantly different heights, linear detents may give people a more consistent experience.
+**Use the default haptic feedback when it makes sense in your app.** If haptic feedback doesn’t feel right in the context of your app - for example, if the default detents don’t match your app’s animation - turn off the detents. You can also adjust the haptic feedback behavior for tables, letting them use linear detents instead of row-based detents. For example, if your table has rows with significantly different heights, linear detents may give people a more consistent experience.
 
 ### Platform considerations
 
@@ -66,7 +66,7 @@ Most Apple Watch models provide haptic feedback for the Digital Crown, which giv
 
 ##### Developer documentation
 
-[WKCrownDelegate](https://developer.apple.com/documentation/WatchKit/WKCrownDelegate) — WatchKit
+[WKCrownDelegate](https://developer.apple.com/documentation/WatchKit/WKCrownDelegate) - WatchKit
 
 ### Change log
 

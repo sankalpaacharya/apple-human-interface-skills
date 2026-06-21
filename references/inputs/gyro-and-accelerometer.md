@@ -30,7 +30,7 @@ You can use accelerometer and gyroscope data to provide experiences based on rea
 
 ##### Developer documentation
 
-[Getting processed device-motion data](https://developer.apple.com/documentation/CoreMotion/getting-processed-device-motion-data) — Core Motion
+[Getting processed device-motion data](https://developer.apple.com/documentation/CoreMotion/getting-processed-device-motion-data) - Core Motion
 
 ##### Videos
 

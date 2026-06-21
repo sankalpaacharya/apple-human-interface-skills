@@ -52,9 +52,9 @@ Outline views work well to display text-based content and often appear in the le
 
 ##### Developer documentation
 
-[OutlineGroup](https://developer.apple.com/documentation/SwiftUI/OutlineGroup) — SwiftUI
+[OutlineGroup](https://developer.apple.com/documentation/SwiftUI/OutlineGroup) - SwiftUI
 
-[NSOutlineView](https://developer.apple.com/documentation/AppKit/NSOutlineView) — AppKit
+[NSOutlineView](https://developer.apple.com/documentation/AppKit/NSOutlineView) - AppKit
 
 ##### Videos
 

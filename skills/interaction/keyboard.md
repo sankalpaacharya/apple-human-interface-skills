@@ -1,6 +1,6 @@
 # Keyboard
 
-> Operating and navigating an interface — text entry, activation, and shortcuts — without relying on a pointer.
+> Operating and navigating an interface - text entry, activation, and shortcuts - without relying on a pointer.
 
 **When to use it:** Whenever an interface must be fully operable from a keyboard, and when frequent actions (search, save, new, undo) benefit from shortcuts.
 
@@ -16,7 +16,7 @@
 
 **Accessibility**
 - Show a clearly visible focus indicator at every step so keyboard users always know where they are.
-- Never trap focus — users must be able to move into and out of every component, including modals.
+- Never trap focus - users must be able to move into and out of every component, including modals.
 - Don't make any action depend on a single input mode; keyboard users need a path to everything pointer or touch users have.
 - Give feedback that is perceivable, not conveyed by subtle cues alone.
 

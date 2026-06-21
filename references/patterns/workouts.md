@@ -56,7 +56,7 @@ You can create a workout experience for Apple Watch, iPhone, or iPad that helps 
 
 [WorkoutKit](https://developer.apple.com/documentation/WorkoutKit)
 
-[Workouts and activity rings](https://developer.apple.com/documentation/HealthKit/workouts-and-activity-rings) — HealthKit
+[Workouts and activity rings](https://developer.apple.com/documentation/HealthKit/workouts-and-activity-rings) - HealthKit
 
 ##### Videos
 

@@ -54,13 +54,13 @@ In addition to subtly communicating context, drawing attention to information, a
 
 **In general, avoid letting people rotate a virtual world.** When a virtual world rotates, the experience typically upsets people’s sense of stability, even when they control the rotation and the movement is subtle. Instead, consider using instantaneous directional changes during a quick fade-out.
 
-**Consider giving people a stationary frame of reference.** It can be easier for people to handle visual movement when it’s contained within an area that doesn’t move. In contrast, if the entire surrounding area appears to move — for example, in a game that automatically moves a player through space — people can feel unwell.
+**Consider giving people a stationary frame of reference.** It can be easier for people to handle visual movement when it’s contained within an area that doesn’t move. In contrast, if the entire surrounding area appears to move - for example, in a game that automatically moves a player through space - people can feel unwell.
 
 **Avoid showing objects that oscillate in a sustained way.** In particular, you want to avoid showing an oscillation that has a frequency of around 0.2 Hz because people can be very sensitive to this frequency. If you need to show objects oscillating, aim to keep the amplitude low and consider making the content translucent.
 
 #### watchOS
 
-SwiftUI provides a powerful and streamlined way to add motion to your app. If you need to use WatchKit to animate layout and appearance changes — or create animated image sequences — see [WKInterfaceImage](https://developer.apple.com/documentation/WatchKit/WKInterfaceImage#1652345).
+SwiftUI provides a powerful and streamlined way to add motion to your app. If you need to use WatchKit to animate layout and appearance changes - or create animated image sequences - see [WKInterfaceImage](https://developer.apple.com/documentation/WatchKit/WKInterfaceImage#1652345).
 
 > **Note**
 >
@@ -80,7 +80,7 @@ SwiftUI provides a powerful and streamlined way to add motion to your app. If yo
 
 ##### Developer documentation
 
-[Animating views and transitions](https://developer.apple.com/tutorials/SwiftUI/animating-views-and-transitions) — SwiftUI
+[Animating views and transitions](https://developer.apple.com/tutorials/SwiftUI/animating-views-and-transitions) - SwiftUI
 
 ##### Videos
 

@@ -2,7 +2,7 @@
 
 > A combo box combines a text field with a dropdown list, so people can type a custom value or pick from predefined options.
 
-**When to use it:** When people may type a free-form value or choose from likely options — autocomplete and filterable suggestion lists. Use a plain selection control when only predefined options are valid.
+**When to use it:** When people may type a free-form value or choose from likely options - autocomplete and filterable suggestion lists. Use a plain selection control when only predefined options are valid.
 
 **Guidelines**
 - Populate with a meaningful default value that hints at the available choices.

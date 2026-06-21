@@ -8,7 +8,7 @@
 - Keep all segments equal width and visually balanced; keep icon and title widths consistent.
 - Limit the control to about five segments on narrow layouts and up to roughly seven on wide ones.
 - Use either all text or all icons in one control, never a mix, and prefer nouns or noun phrases for labels.
-- Keep one consistent behavior per control: every segment selects a state, or every segment performs an action — never mix the two.
+- Keep one consistent behavior per control: every segment selects a state, or every segment performs an action - never mix the two.
 - For icon-only segments, provide a clear way to learn what each one means.
 - For switching between whole app sections, use a tab bar or other navigation instead.
 

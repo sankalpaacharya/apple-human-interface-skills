@@ -26,13 +26,13 @@ When your content doesn’t span the full window, use a background extension vie
 
 **Differentiate controls from content.** Take advantage of the Liquid Glass material to provide a distinct appearance for controls that’s consistent across iOS, iPadOS, and macOS. Instead of a background, use a scroll edge effect to provide a transition between content and the control area. For guidance, see [Scroll views](https://developer.apple.com/design/human-interface-guidelines/scroll-views).
 
-**Place items to convey their relative importance.** People often start by viewing items in reading order — that is, from top to bottom and from the leading to trailing side — so it generally works well to place the most important items near the top and leading side of the window, display, or [Field of view](https://developer.apple.com/design/human-interface-guidelines/spatial-layout#Field-of-view). Be aware that reading order varies by language, and take [Right to left](https://developer.apple.com/design/human-interface-guidelines/right-to-left) languages into account as you design.
+**Place items to convey their relative importance.** People often start by viewing items in reading order - that is, from top to bottom and from the leading to trailing side - so it generally works well to place the most important items near the top and leading side of the window, display, or [Field of view](https://developer.apple.com/design/human-interface-guidelines/spatial-layout#Field-of-view). Be aware that reading order varies by language, and take [Right to left](https://developer.apple.com/design/human-interface-guidelines/right-to-left) languages into account as you design.
 
 **Align components with one another to make them easier to scan and to communicate organization and hierarchy.** Alignment makes an app look neat and organized and can help people track content while scrolling or moving their eyes, making it easier to find information. Along with indentation, alignment can also help people understand an information hierarchy.
 
 **Take advantage of progressive disclosure to help people discover content that’s currently hidden.** For example, if you can’t display all the items in a large collection at once, you need to indicate that there are additional items that aren’t currently visible. Depending on the platform, you might use a [Disclosure controls](https://developer.apple.com/design/human-interface-guidelines/disclosure-controls), or display parts of items to hint that people can reveal additional content by interacting with the view, such as by scrolling.
 
-**Make controls easier to use by providing enough space around them and grouping them in logical sections.** If unrelated controls are too close together — or if other content crowds them — they can be difficult for people to tell apart or understand what they do, which can make your app or game hard to use. For guidance, see [Toolbars](https://developer.apple.com/design/human-interface-guidelines/toolbars).
+**Make controls easier to use by providing enough space around them and grouping them in logical sections.** If unrelated controls are too close together - or if other content crowds them - they can be difficult for people to tell apart or understand what they do, which can make your app or game hard to use. For guidance, see [Toolbars](https://developer.apple.com/design/human-interface-guidelines/toolbars).
 
 ### Adaptability
 
@@ -54,11 +54,11 @@ Here are some of the most common device and system variations you need to handle
 
 **Design a layout that adapts gracefully to context changes while remaining recognizably consistent.** People expect your experience to work well and remain familiar when they rotate their device, resize a window, add another display, or switch to a different device. You can help ensure an adaptable interface by respecting system-defined safe areas, margins, and guides (where available) and specifying layout modifiers to fine-tune the placement of views in your interface.
 
-**Be prepared for text-size changes.** People appreciate apps and games that respond when they choose a different text size. When you support [Supporting Dynamic Type](https://developer.apple.com/design/human-interface-guidelines/typography#Supporting-Dynamic-Type) — a feature that lets people choose the size of visible text in iOS, iPadOS, tvOS, visionOS, and watchOS — your app or game can respond appropriately when people adjust text size. To support Dynamic Type in your Unity-based game, use Apple’s accessibility plug-in (for developer guidance, see [Apple – Accessibility](https://github.com/apple/unityplugins/blob/main/plug-ins/Apple.Accessibility/Apple.Accessibility_Unity/Assets/Apple.Accessibility/Documentation~/Apple.Accessibility.md)). For guidance on displaying text in your app, see [Typography](https://developer.apple.com/design/human-interface-guidelines/typography).
+**Be prepared for text-size changes.** People appreciate apps and games that respond when they choose a different text size. When you support [Supporting Dynamic Type](https://developer.apple.com/design/human-interface-guidelines/typography#Supporting-Dynamic-Type) - a feature that lets people choose the size of visible text in iOS, iPadOS, tvOS, visionOS, and watchOS - your app or game can respond appropriately when people adjust text size. To support Dynamic Type in your Unity-based game, use Apple’s accessibility plug-in (for developer guidance, see [Apple - Accessibility](https://github.com/apple/unityplugins/blob/main/plug-ins/Apple.Accessibility/Apple.Accessibility_Unity/Assets/Apple.Accessibility/Documentation~/Apple.Accessibility.md)). For guidance on displaying text in your app, see [Typography](https://developer.apple.com/design/human-interface-guidelines/typography).
 
 **Preview your app on multiple devices, using different orientations, localizations, and text sizes.** You can streamline the testing process by first testing versions of your experience that use the largest and the smallest layouts. Although it’s generally best to preview features like wide-gamut color on actual devices, you can test on a simulated device in Device Hub to check for clipping and other layout issues. For example, if your iOS app or game supports landscape mode, you can use the simulator to make sure your layouts look great whether the device rotates left or right.
 
-**When necessary, scale artwork in response to display changes.** For example, viewing your app or game in a different context — such as on a screen with a different aspect ratio — might make your artwork appear cropped, letterboxed, or pillarboxed. If this happens, don’t change the aspect ratio of the artwork; instead, scale it so that important visual content remains visible. In visionOS, the system automatically [Scale](https://developer.apple.com/design/human-interface-guidelines/spatial-layout#Scale) a window when it moves along the z-axis.
+**When necessary, scale artwork in response to display changes.** For example, viewing your app or game in a different context - such as on a screen with a different aspect ratio - might make your artwork appear cropped, letterboxed, or pillarboxed. If this happens, don’t change the aspect ratio of the artwork; instead, scale it so that important visual content remains visible. In visionOS, the system automatically [Scale](https://developer.apple.com/design/human-interface-guidelines/spatial-layout#Scale) a window when it moves along the z-axis.
 
 ### Guides and safe areas
 
@@ -74,7 +74,7 @@ For templates that include the guides and safe areas for each platform, see [App
 
 #### iOS
 
-**Aim to support both portrait and landscape orientations.** People appreciate apps and games that work well in different device orientations, but sometimes your experience needs to run in only portrait or only landscape. When this is the case, you can rely on people trying both orientations before settling on the one you support — there’s no need to tell people to rotate their device. If your app or game is landscape-only, make sure it runs equally well whether people rotate their device to the left or the right.
+**Aim to support both portrait and landscape orientations.** People appreciate apps and games that work well in different device orientations, but sometimes your experience needs to run in only portrait or only landscape. When this is the case, you can rely on people trying both orientations before settling on the one you support - there’s no need to tell people to rotate their device. If your app or game is landscape-only, make sure it runs equally well whether people rotate their device to the left or the right.
 
 **Prefer a full-bleed interface for your game.** Give players a beautiful interface that fills the screen while accommodating the corner radius, sensor housing, and features like Dynamic Island. If necessary, consider giving players the option to view your game using a letterboxed or pillarboxed appearance.
 
@@ -248,7 +248,7 @@ The guidance below can help you lay out content within the windows of your visio
 
 ![An illustration of the Workout app’s main list of workouts on Apple Watch. A callout indicates that the currently focused workout item spans the full width of the available screen area.](https://docs-assets.developer.apple.com/published/9b9b27a4e9e752fc4ed6be98f5eb5b0d/layout-full-width%402x.png)
 
-**Avoid placing more than two or three controls side by side in your interface.** As a general rule, display no more than three buttons that contain glyphs — or two buttons that contain text — in a row. Although it’s usually better to let text buttons span the full width of the screen, two side-by-side buttons with short text labels can also work well, as long as the screen doesn’t scroll.
+**Avoid placing more than two or three controls side by side in your interface.** As a general rule, display no more than three buttons that contain glyphs - or two buttons that contain text - in a row. Although it’s usually better to let text buttons span the full width of the screen, two side-by-side buttons with short text labels can also work well, as long as the screen doesn’t scroll.
 
 ![A diagram of an Apple Watch screen showing two side-by-side buttons beneath three lines of text.](https://docs-assets.developer.apple.com/published/25c5882538789bded5a9953eb5e2001f/layout-controls%402x.png)
 
@@ -263,7 +263,7 @@ The guidance below can help you lay out content within the windows of your visio
 | iPad Pro 13-inch | 1032x1376 pt (2064x2752 px @2x) |
 | iPad Pro 12.9-inch | 1024x1366 pt (2048x2732 px @2x) |
 | iPad Pro 11-inch 5th and 6th generation | 834x1210 pt (1668x2420 px @2x) |
-| iPad Pro 11-inch 1st–4th generation | 834x1194 pt (1668x2388 px @2x) |
+| iPad Pro 11-inch 1st-4th generation | 834x1194 pt (1668x2388 px @2x) |
 | iPad Pro 10.5-inch | 834x1112 pt (1668x2224 px @2x) |
 | iPad Pro 9.7-inch | 768x1024 pt (1536x2048 px @2x) |
 | iPad Air 13-inch | 1024x1366 pt (2048x2732 px @2x) |
@@ -408,7 +408,7 @@ Different size class combinations apply to the full-screen experience on differe
 
 ##### Developer documentation
 
-[Composing custom layouts with SwiftUI](https://developer.apple.com/documentation/SwiftUI/composing-custom-layouts-with-swiftui) — SwiftUI
+[Composing custom layouts with SwiftUI](https://developer.apple.com/documentation/SwiftUI/composing-custom-layouts-with-swiftui) - SwiftUI
 
 ##### Videos
 

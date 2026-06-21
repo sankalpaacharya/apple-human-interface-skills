@@ -10,7 +10,7 @@ The system-provided Dock menu items can vary depending on whether the app is ope
 
 > **Note**
 >
-> Although iOS and iPadOS don’t support a Dock menu, people can reveal a similar menu of system-provided and custom items — called Home Screen quick actions — when they long press an app icon on the Home Screen or in the Dock. For guidance, see [Home Screen quick actions](https://developer.apple.com/design/human-interface-guidelines/home-screen-quick-actions).
+> Although iOS and iPadOS don’t support a Dock menu, people can reveal a similar menu of system-provided and custom items - called Home Screen quick actions - when they long press an app icon on the Home Screen or in the Dock. For guidance, see [Home Screen quick actions](https://developer.apple.com/design/human-interface-guidelines/home-screen-quick-actions).
 
 ### Best practices
 
@@ -34,4 +34,4 @@ As with all menus, you need to label Dock menu items succinctly and organize the
 
 ##### Developer documentation
 
-[applicationDockMenu(_:)](https://developer.apple.com/documentation/AppKit/NSApplicationDelegate/applicationDockMenu(_:)) — AppKit
+[applicationDockMenu(_:)](https://developer.apple.com/documentation/AppKit/NSApplicationDelegate/applicationDockMenu(_:)) - AppKit

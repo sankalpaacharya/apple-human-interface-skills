@@ -9,7 +9,7 @@
 - Make scrollability apparent by letting content peek at the edge so people see there's more.
 - Don't nest two scroll areas with the same orientation; a horizontal scroller inside a vertical one is fine.
 - For paging, snap to each page, keep a small overlap of context, and show a page indicator.
-- Auto-scroll only when it helps — to bring a search result, insertion point, or selection into view — and scroll the minimum needed.
+- Auto-scroll only when it helps - to bring a search result, insertion point, or selection into view - and scroll the minimum needed.
 - Give pinned toolbars or headers subtle separation (a shadow, blur, or solid background) so they stay legible above scrolling content; use one effect per region.
 - In multi-pane layouts, let each pane scroll independently and keep pinned-header heights aligned.
 

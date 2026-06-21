@@ -2,11 +2,11 @@
 
 > A context menu provides quick access to actions relevant to a specific item or view, revealed on demand.
 
-**When to use it:** For frequently used actions tied to a specific item — a row, card, file, or message — supplementing, never replacing, actions available elsewhere.
+**When to use it:** For frequently used actions tied to a specific item - a row, card, file, or message - supplementing, never replacing, actions available elsewhere.
 
 **Guidelines**
 - Include only the most relevant actions; keep the list short (about three separator-delimited groups at most).
-- Always expose the same actions elsewhere — a context menu is hidden and not discoverable on its own.
+- Always expose the same actions elsewhere - a context menu is hidden and not discoverable on its own.
 - Support it consistently across similar items; hide unavailable items rather than disabling them.
 - Place the most frequent items first; rarely show a title.
 - List destructive actions last and style them distinctly.

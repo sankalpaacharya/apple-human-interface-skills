@@ -34,7 +34,7 @@ Although a context menu provides convenient access to frequently used items, it�
 
 **Follow best practices for using separators.** As with other types of menus, you can use separators to group items in a context menu and help people scan the menu more quickly. In general, you don’t want more than about three groups in a context menu. For guidance, see [Menus](https://developer.apple.com/design/human-interface-guidelines/menus).
 
-**In iOS, iPadOS, and visionOS, warn people about context menu items that can destroy data.** If you need to include potentially destructive items in your context menu — such as Delete or Remove — list them at the end of the menu and identify them as destructive (for developer guidance, see [destructive](https://developer.apple.com/documentation/UIKit/UIMenuElement/Attributes/destructive)). The system can display a destructive menu item using a red text color.
+**In iOS, iPadOS, and visionOS, warn people about context menu items that can destroy data.** If you need to include potentially destructive items in your context menu - such as Delete or Remove - list them at the end of the menu and identify them as destructive (for developer guidance, see [destructive](https://developer.apple.com/documentation/UIKit/UIMenuElement/Attributes/destructive)). The system can display a destructive menu item using a red text color.
 
 ### Content
 
@@ -50,11 +50,11 @@ A context menu seldom displays a title. In contrast, each item in a context menu
 
 #### iOS, iPadOS
 
-**Provide either a context menu or an edit menu for an item, but not both.** If you provide both features for the same item, it can be confusing to people — and difficult for the system to detect their intent. See [Edit menus](https://developer.apple.com/design/human-interface-guidelines/edit-menus).
+**Provide either a context menu or an edit menu for an item, but not both.** If you provide both features for the same item, it can be confusing to people - and difficult for the system to detect their intent. See [Edit menus](https://developer.apple.com/design/human-interface-guidelines/edit-menus).
 
 **In iPadOS, consider using a context menu to let people create a new object in your app.** iPadOS lets you reveal a context menu when people perform a long press on the touchscreen or use a secondary click with an attached trackpad or keyboard. For example, Files lets people create a new folder by revealing a context menu in an area between existing files and folders.
 
-In iOS and iPadOS, a context menu can display a preview of the current content near the list of commands. People can choose a command in the menu or — in some cases — they can tap the preview to open it or drag it to another area.
+In iOS and iPadOS, a context menu can display a preview of the current content near the list of commands. People can choose a command in the menu or - in some cases - they can tap the preview to open it or drag it to another area.
 
 **Prefer a graphical preview that clarifies the target of a context menu’s commands.** For example, when people reveal a context menu on a list item in Notes or Mail, the preview shows a condensed version of the actual content to help people confirm that they’re working with the item they intend.
 
@@ -84,11 +84,11 @@ On a Mac, a context menu is sometimes called a *contextual* menu.
 
 ##### Developer documentation
 
-[contextMenu(menuItems:)](https://developer.apple.com/documentation/SwiftUI/View/contextMenu(menuItems:)) — SwiftUI
+[contextMenu(menuItems:)](https://developer.apple.com/documentation/SwiftUI/View/contextMenu(menuItems:)) - SwiftUI
 
-[UIContextMenuInteraction](https://developer.apple.com/documentation/UIKit/UIContextMenuInteraction) — UIKit
+[UIContextMenuInteraction](https://developer.apple.com/documentation/UIKit/UIContextMenuInteraction) - UIKit
 
-[popUpContextMenu(_:with:for:)](https://developer.apple.com/documentation/AppKit/NSMenu/popUpContextMenu(_:with:for:)) — AppKit
+[popUpContextMenu(_:with:for:)](https://developer.apple.com/documentation/AppKit/NSMenu/popUpContextMenu(_:with:for:)) - AppKit
 
 ### Change log
 

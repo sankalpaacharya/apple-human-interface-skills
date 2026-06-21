@@ -1,6 +1,6 @@
 # SharePlay
 
-> SharePlay helps multiple people share activities — like viewing a movie, listening to music, playing a game, or sketching ideas on a whiteboard — while they’re in a FaceTime call or Messages conversation.
+> SharePlay helps multiple people share activities - like viewing a movie, listening to music, playing a game, or sketching ideas on a whiteboard - while they’re in a FaceTime call or Messages conversation.
 
 *Source: https://developer.apple.com/design/human-interface-guidelines/shareplay*
 
@@ -18,11 +18,11 @@ When someone shares content during a FaceTime call, the system asks each partici
 
 **Support Picture in Picture (PiP) when possible.** On iPhone and iPad, people can open a shared video in a PiP window. On a Mac, a shared video opens in a background window that people can move into the foreground when they want to watch.
 
-**Use the term *SharePlay* correctly.** You can use *SharePlay* as a noun — as in “Join SharePlay” — and also as a verb when describing a direct action in your interface. For example, in a button or sheet that lets people share a movie-viewing activity, you can use a phrase like “SharePlay Movie.” Avoid using an adjective with SharePlay; for example, in your visionOS app, don’t add terms like *virtual* or *spatial*. Avoid changing the term *SharePlay* in any way; for example, don’t use variations like *SharePlayed*, *SharePlays*, or *SharePlaying*.
+**Use the term *SharePlay* correctly.** You can use *SharePlay* as a noun - as in “Join SharePlay” - and also as a verb when describing a direct action in your interface. For example, in a button or sheet that lets people share a movie-viewing activity, you can use a phrase like “SharePlay Movie.” Avoid using an adjective with SharePlay; for example, in your visionOS app, don’t add terms like *virtual* or *spatial*. Avoid changing the term *SharePlay* in any way; for example, don’t use variations like *SharePlayed*, *SharePlays*, or *SharePlaying*.
 
 ### Sharing activities
 
-An *activity* is an app-defined type of shareable experience. For example, an app that lets people view videos might define a separate activity for viewing each type of content — like movies, TV shows, and uploaded videos — and display a different description for each activity. You can define as many different activities as make sense in your app. For developer guidance, see [Defining your app’s SharePlay activities](https://developer.apple.com/documentation/GroupActivities/defining-your-apps-shareplay-activities).
+An *activity* is an app-defined type of shareable experience. For example, an app that lets people view videos might define a separate activity for viewing each type of content - like movies, TV shows, and uploaded videos - and display a different description for each activity. You can define as many different activities as make sense in your app. For developer guidance, see [Defining your app’s SharePlay activities](https://developer.apple.com/documentation/GroupActivities/defining-your-apps-shareplay-activities).
 
 **Briefly describe each activity.** When people receive an invitation to participate in an activity, your description helps them understand the experience they’re about to share. For example, a video-viewing app might associate its descriptive movie view with a movie-viewing activity. In this case, the descriptive view might display a movie’s title, a plot summary, and a poster image. Write a simple, meaningful description that’s short enough to avoid truncation.
 
@@ -44,7 +44,7 @@ An *activity* is an app-defined type of shareable experience. For example, an ap
 
 People expect most visionOS apps to support SharePlay. While wearing Apple Vision Pro, people choose the Spatial option in FaceTime to share content and activities with others.
 
-In a shared activity, FaceTime can show representations of other participants — called spatial Personas — within each wearer’s space, making everyone feel like they’re sharing the same experience in the same place. During a shared experience in FaceTime, people can interact with each other in natural ways through their spatial Personas. For example, people can speak or gesture directly to others, tell when someone is paying attention to them, and know which person is using a shared tool or resource.
+In a shared activity, FaceTime can show representations of other participants - called spatial Personas - within each wearer’s space, making everyone feel like they’re sharing the same experience in the same place. During a shared experience in FaceTime, people can interact with each other in natural ways through their spatial Personas. For example, people can speak or gesture directly to others, tell when someone is paying attention to them, and know which person is using a shared tool or resource.
 
 visionOS uses the concept of *shared context* to describe the characteristics of a shared activity that help people feel physically present with others while connecting over the same content. A shared context helps give people confidence that they’re experiencing the same thing as everyone else.
 
@@ -80,11 +80,11 @@ For developer guidance, see [SystemCoordinator](https://developer.apple.com/docu
 
 When your shared activity runs in a Full Space, the system helps your app maintain a shared context by using a single coordinate system to arrange your content and all participants, automatically synchronizing the size, position, and orientation of your app for each person. You’re responsible for displaying objects, playing sounds, and supporting interactions in ways that enhance the feeling of sharing the experience.
 
-**Make sure everyone views the same state of your app.** If your app has more than one state — such as a media app that provides both minimal and theater-like viewing modes — you need to avoid letting different participants view different states, because doing so can diminish people’s sense of being together in a shared space. The exception to this is when someone needs to temporarily exit a shared activity; for guidance, see [Adjusting a shared context](https://developer.apple.com/design/human-interface-guidelines/shareplay#Adjusting-a-shared-context).
+**Make sure everyone views the same state of your app.** If your app has more than one state - such as a media app that provides both minimal and theater-like viewing modes - you need to avoid letting different participants view different states, because doing so can diminish people’s sense of being together in a shared space. The exception to this is when someone needs to temporarily exit a shared activity; for guidance, see [Adjusting a shared context](https://developer.apple.com/design/human-interface-guidelines/shareplay#Adjusting-a-shared-context).
 
 **Use Spatial Audio to enrich your shared activity.** Playing Spatial Audio can help you strengthen the realism of the shared experience. For guidance, see [Playing audio](https://developer.apple.com/design/human-interface-guidelines/playing-audio).
 
-**When possible, let people discover natural, social solutions to confusions or conflicts that might arise during a shared experience.** For example, if only one participant at a time can use a virtual tool, avoid displaying UI, like tool-use controls or notifications, and instead let people speak or gesture to the group when they want to use the tool. If conflicts can arise during your shared activity — for example, if multiple people try to change the same content at the same time — consider implementing a simple rule, like last change wins, and letting people use the rule to define behavior that’s acceptable to the group.
+**When possible, let people discover natural, social solutions to confusions or conflicts that might arise during a shared experience.** For example, if only one participant at a time can use a virtual tool, avoid displaying UI, like tool-use controls or notifications, and instead let people speak or gesture to the group when they want to use the tool. If conflicts can arise during your shared activity - for example, if multiple people try to change the same content at the same time - consider implementing a simple rule, like last change wins, and letting people use the rule to define behavior that’s acceptable to the group.
 
 **Help people keep their private and shared content separate.** By default, the system clearly differentiates a shared window from windows that aren’t shared. For example, when people use Music to listen together, the shared Music window appears as a new window for everyone, while any individual’s open library window remains separate and unshared. If your app can open multiple windows, help people share the one they want and make it easy for them to distinguish shared from unshared windows. If possible, also let people drag content they want to share from a private window to a shared one.
 

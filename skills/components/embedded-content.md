@@ -2,11 +2,11 @@
 
 > Embedded content displays external rich content such as web pages or media inline within your own screen.
 
-**When to use it:** To show external content inline — a rendered message, a help article, or a third-party widget — or to briefly surface an outside source within your app's context.
+**When to use it:** To show external content inline - a rendered message, a help article, or a third-party widget - or to briefly surface an outside source within your app's context.
 
 **Guidelines**
 - Offer forward and back navigation only when people visit multiple pages, with explicit, visible controls.
-- Don't rebuild a full browser inside an embed — link out for general browsing.
+- Don't rebuild a full browser inside an embed - link out for general browsing.
 - Defer loading of off-screen embeds so the surrounding experience stays fast.
 - Show only trusted content and request only the access it genuinely needs.
 - Size the embed to its content and let it adapt responsively.

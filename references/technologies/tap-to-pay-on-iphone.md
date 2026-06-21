@@ -12,7 +12,7 @@ When you support Tap to Pay on iPhone in your iOS payment app, you help merchant
 >
 > Tap to Pay on iPhone works alongside your existing payment-acceptance hardware and accessories.
 
-Before you can integrate Tap to Pay on iPhone into your iOS app, you need to work with a supported payment service provider (PSP), request the Tap to Pay on iPhone entitlement, and use [ProximityReader](https://developer.apple.com/documentation/ProximityReader) APIs, either through the PSP’s SDK or by adopting the framework. For high-level guidance — including marketing recommendations for letting people know about your app’s new capabilities — see [Tap to Pay on iPhone](https://developer.apple.com/tap-to-pay/); for developer guidance, see [Setting up Tap to Pay on iPhone](https://developer.apple.com/documentation/ProximityReader/setting-up-the-entitlement-for-tap-to-pay-on-iPhone).
+Before you can integrate Tap to Pay on iPhone into your iOS app, you need to work with a supported payment service provider (PSP), request the Tap to Pay on iPhone entitlement, and use [ProximityReader](https://developer.apple.com/documentation/ProximityReader) APIs, either through the PSP’s SDK or by adopting the framework. For high-level guidance - including marketing recommendations for letting people know about your app’s new capabilities - see [Tap to Pay on iPhone](https://developer.apple.com/tap-to-pay/); for developer guidance, see [Setting up Tap to Pay on iPhone](https://developer.apple.com/documentation/ProximityReader/setting-up-the-entitlement-for-tap-to-pay-on-iPhone).
 
 > **Note**
 >
@@ -78,7 +78,7 @@ Checking out is a time-sensitive action, and merchants need the process to work 
 
 **Avoid making merchants wait to use Tap to Pay on iPhone.** In addition to performing the initial configuration for each device, you need to perform a subsequent configuration each time your app becomes frontmost. To minimize potential wait times, prepare the feature as soon as your app starts and immediately after each transition to the foreground. For developer guidance, see [prepare(using:)](https://developer.apple.com/documentation/ProximityReader/PaymentCardReader/prepare(using:)).
 
-**Make sure the Tap to Pay on iPhone checkout option is available even if configuration is continuing in the background.** Merchants must always be able to select the Tap to Pay on iPhone checkout option in a checkout flow. During configuration, let merchants select the checkout option and then display a progress indicator — avoid waiting for configuration to complete before making the option available. In most scenarios, you can display an indeterminate progress indicator, but if ProximityReader API shows that configuration is ongoing, display a determinate progress indicator. For guidance, see [Progress indicators](https://developer.apple.com/design/human-interface-guidelines/progress-indicators); for developer guidance see [PaymentCardReader.Event.updateProgress(_:)](https://developer.apple.com/documentation/ProximityReader/PaymentCardReader/Event/updateProgress(_:)).
+**Make sure the Tap to Pay on iPhone checkout option is available even if configuration is continuing in the background.** Merchants must always be able to select the Tap to Pay on iPhone checkout option in a checkout flow. During configuration, let merchants select the checkout option and then display a progress indicator - avoid waiting for configuration to complete before making the option available. In most scenarios, you can display an indeterminate progress indicator, but if ProximityReader API shows that configuration is ongoing, display a determinate progress indicator. For guidance, see [Progress indicators](https://developer.apple.com/design/human-interface-guidelines/progress-indicators); for developer guidance see [PaymentCardReader.Event.updateProgress(_:)](https://developer.apple.com/documentation/ProximityReader/PaymentCardReader/Event/updateProgress(_:)).
 
 ![An illustration of an app screen that displays a determinate progress indicator followed by the text 'Preparing Tap to Pay on iPhone' above a purchase total.](https://docs-assets.developer.apple.com/published/75c45da83b016a137a5f42a6d0df9eb7/tap-to-pay-processing-screen-determinate-progress%402x.png)
 
@@ -110,7 +110,7 @@ Checking out is a time-sensitive action, and merchants need the process to work 
 
 ### Displaying results
 
-Customers pay by *tapping* — that is, bringing a contactless card or digital wallet near the Tap to Pay on iPhone screen in your app. After a successful tap (and after a successful PIN entry, if required), Tap to Pay on iPhone displays a checkmark and gives your app an object that contains the encrypted payment information you send to your PSP for processing. When a tap fails, Tap to Pay on iPhone displays an error screen. Your app is responsible for displaying transaction results after a successful tap or offering alternative payment options after an unsuccessful tap.
+Customers pay by *tapping* - that is, bringing a contactless card or digital wallet near the Tap to Pay on iPhone screen in your app. After a successful tap (and after a successful PIN entry, if required), Tap to Pay on iPhone displays a checkmark and gives your app an object that contains the encrypted payment information you send to your PSP for processing. When a tap fails, Tap to Pay on iPhone displays an error screen. Your app is responsible for displaying transaction results after a successful tap or offering alternative payment options after an unsuccessful tap.
 
 **Start processing a transaction as soon as possible.** The system provides API you can use to request the result of a successful tap before the Tap to Pay on iPhone screen finishes displaying the checkmark animation that indicates tap completion. For developer guidance, see [returnReadResultImmediately](https://developer.apple.com/documentation/ProximityReader/PaymentCardReader/Options-swift.struct/returnReadResultImmediately).
 
@@ -150,7 +150,7 @@ Tap to Pay on iPhone lets merchants read a payment card when there’s no transa
 
 **Use a generic label in a button that opens the Tap to Pay on iPhone screen to read a payment card when there’s no transaction amount.** Don’t include “Tap to Pay on iPhone” or “Tap to Pay” in such a label; instead, use a generic label like “Look Up,” “Store Card,” “Verify,” or “Refund.”
 
-When customers have other types of NFC-compatible cards or passes in Apple Wallet — such as loyalty, discount, and points cards — Tap to Pay on iPhone lets merchants read these items at the same time that they read a payment card or independently.
+When customers have other types of NFC-compatible cards or passes in Apple Wallet - such as loyalty, discount, and points cards - Tap to Pay on iPhone lets merchants read these items at the same time that they read a payment card or independently.
 
 **If your app supports an independent loyalty card transaction, distinguish this flow from a payment-acceptance flow that uses Tap to Pay on iPhone.** It works well to give merchants a separate, clearly labeled button to initiate a loyalty card transaction. To help merchants avoid choosing the wrong button by mistake, avoid including “Tap to Pay on iPhone,” “Tap to Pay,” or other payment-related terms in the label for a loyalty-transaction button.
 
@@ -174,7 +174,7 @@ When customers have other types of NFC-compatible cards or passes in Apple Walle
 
 ##### Developer documentation
 
-[Adding support for Tap to Pay on iPhone to your app](https://developer.apple.com/documentation/ProximityReader/adding-support-for-tap-to-pay-on-iphone-to-your-app) — ProximityReader
+[Adding support for Tap to Pay on iPhone to your app](https://developer.apple.com/documentation/ProximityReader/adding-support-for-tap-to-pay-on-iphone-to-your-app) - ProximityReader
 
 ### Change log
 

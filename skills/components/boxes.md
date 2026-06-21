@@ -2,7 +2,7 @@
 
 > A box visually groups logically related content and controls, set off by a border or background.
 
-**When to use it:** To separate a group of related fields, settings, or information from the rest of the screen — card-style grouping in settings panes, dashboards, and forms.
+**When to use it:** To separate a group of related fields, settings, or information from the rest of the screen - card-style grouping in settings panes, dashboards, and forms.
 
 **Guidelines**
 - Keep a box noticeably smaller than its container; a box near full size stops reading as a distinct group.

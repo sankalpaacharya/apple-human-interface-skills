@@ -6,7 +6,7 @@
 
 **Guidelines**
 - Request only the data and capabilities you actually need, and be specific about why.
-- Ask in context — prompt when the person activates the feature, not at first launch.
+- Ask in context - prompt when the person activates the feature, not at first launch.
 - Don't request up front unless the feature is essential and the reason is obvious (e.g. a map needing location).
 - Explain the reason before a sensitive request with a clear, single-purpose pre-prompt.
 - Favor designs that keep data on the device where feasible.

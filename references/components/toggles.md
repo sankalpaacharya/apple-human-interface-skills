@@ -12,11 +12,11 @@ In addition to toggles, all platforms also support buttons that behave like togg
 
 ### Best practices
 
-**Use a toggle to help people choose between two opposing values that affect the state of content or a view.** A toggle always lets people manage the state of something, so if you need to support other types of actions — such as choosing from a list of items — use a different component, like a [Pop-up buttons](https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons).
+**Use a toggle to help people choose between two opposing values that affect the state of content or a view.** A toggle always lets people manage the state of something, so if you need to support other types of actions - such as choosing from a list of items - use a different component, like a [Pop-up buttons](https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons).
 
-**Clearly identify the setting, view, or content the toggle affects.** In general, the surrounding context provides enough information for people to understand what they’re turning on or off. In some cases, often in macOS apps, you can also supply a label to describe the state the toggle controls. If you use a button that behaves like a toggle, you generally use an interface icon that communicates its purpose, and you update its appearance — typically by changing the background — based on the current state.
+**Clearly identify the setting, view, or content the toggle affects.** In general, the surrounding context provides enough information for people to understand what they’re turning on or off. In some cases, often in macOS apps, you can also supply a label to describe the state the toggle controls. If you use a button that behaves like a toggle, you generally use an interface icon that communicates its purpose, and you update its appearance - typically by changing the background - based on the current state.
 
-**Make sure the visual differences in a toggle’s state are obvious.** For example, you might add or remove a color fill, show or hide the background shape, or change the inner details you display — like a checkmark or dot — to show that a toggle is on or off. Avoid relying solely on different colors to communicate state, because not everyone can perceive the differences.
+**Make sure the visual differences in a toggle’s state are obvious.** For example, you might add or remove a color fill, show or hide the background shape, or change the inner details you display - like a checkmark or dot - to show that a toggle is on or off. Avoid relying solely on different colors to communicate state, because not everyone can perceive the differences.
 
 ### Platform considerations
 
@@ -38,7 +38,7 @@ In addition to toggles, all platforms also support buttons that behave like togg
 
 ![A screenshot of the top half of the Phone app on iPhone, showing all recent calls. The filter button in the top trailing corner has no highlight, indicating that the toggle is inactive.](https://docs-assets.developer.apple.com/published/d38180341155877eec2f5b34159ab72f/toggles-ios-phone-filter-off%402x.png)
 
-**Avoid supplying a label that explains the button’s purpose.** The interface icon you create — combined with the alternative background appearances you supply — help people understand what the button does. For developer guidance, see [changesSelectionAsPrimaryAction](https://developer.apple.com/documentation/UIKit/UIButton/changesSelectionAsPrimaryAction).
+**Avoid supplying a label that explains the button’s purpose.** The interface icon you create - combined with the alternative background appearances you supply - help people understand what the button does. For developer guidance, see [changesSelectionAsPrimaryAction](https://developer.apple.com/documentation/UIKit/UIButton/changesSelectionAsPrimaryAction).
 
 #### macOS
 
@@ -58,7 +58,7 @@ In addition to the switch toggle style, macOS supports the checkbox style and al
 
 A checkbox is a small, square button that’s empty when the button is off, contains a checkmark when the button is on, and can contain a dash when the button’s state is mixed. Typically, a checkbox includes a title on its trailing side. In an editable checklist, a checkbox can appear without a title or any additional content.
 
-**Use a checkbox instead of a switch if you need to present a hierarchy of settings.** The visual style of checkboxes helps them align well and communicate grouping. By using alignment — generally along the leading edge of the checkboxes — and indentation, you can show dependencies, such as when the state of a checkbox governs the state of subordinate checkboxes.
+**Use a checkbox instead of a switch if you need to present a hierarchy of settings.** The visual style of checkboxes helps them align well and communicate grouping. By using alignment - generally along the leading edge of the checkboxes - and indentation, you can show dependencies, such as when the state of a checkbox governs the state of subordinate checkboxes.
 
 ![An illustration showing a layout that includes two levels of checkboxes.](https://docs-assets.developer.apple.com/published/ec2755eb8089e275b1ebb3cd294606b0/checkbox-alignment%402x.png)
 
@@ -104,13 +104,13 @@ A radio button’s state is either selected (a filled circle) or deselected (an 
 
 ##### Developer documentation
 
-[Toggle](https://developer.apple.com/documentation/SwiftUI/Toggle) — SwiftUI
+[Toggle](https://developer.apple.com/documentation/SwiftUI/Toggle) - SwiftUI
 
-[UISwitch](https://developer.apple.com/documentation/UIKit/UISwitch) — UIKit
+[UISwitch](https://developer.apple.com/documentation/UIKit/UISwitch) - UIKit
 
-[NSButton.ButtonType.toggle](https://developer.apple.com/documentation/AppKit/NSButton/ButtonType/toggle) — AppKit
+[NSButton.ButtonType.toggle](https://developer.apple.com/documentation/AppKit/NSButton/ButtonType/toggle) - AppKit
 
-[NSSwitch](https://developer.apple.com/documentation/AppKit/NSSwitch) — AppKit
+[NSSwitch](https://developer.apple.com/documentation/AppKit/NSSwitch) - AppKit
 
 ### Change log
 

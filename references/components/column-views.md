@@ -1,6 +1,6 @@
 # Column views
 
-> A column view — also called a *browser* — lets people view and navigate a data hierarchy using a series of vertical columns.
+> A column view - also called a *browser* - lets people view and navigate a data hierarchy using a series of vertical columns.
 
 *Source: https://developer.apple.com/design/human-interface-guidelines/column-views*
 
@@ -38,4 +38,4 @@ Consider using a column view when you have a deep data hierarchy in which people
 
 ##### Developer documentation
 
-[NSBrowser](https://developer.apple.com/documentation/AppKit/NSBrowser) — AppKit
+[NSBrowser](https://developer.apple.com/documentation/AppKit/NSBrowser) - AppKit

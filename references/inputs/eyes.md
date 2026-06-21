@@ -30,7 +30,7 @@ visionOS also supports *focus effects* that help people navigate apps and the sy
 
 ### Making items easy to see
 
-**Minimize visual distractions.** When there’s a lot of visual noise, it can be difficult for people to find the object they’re looking for. Visual movement can be even more distracting: When people sense movement — especially in their peripheral vision — they tend to respond automatically by looking at it, making it hard to keep looking at the object they’re interested in. For example, revealing content near a button people are looking at can cause them to involuntarily look at the new content instead of the button.
+**Minimize visual distractions.** When there’s a lot of visual noise, it can be difficult for people to find the object they’re looking for. Visual movement can be even more distracting: When people sense movement - especially in their peripheral vision - they tend to respond automatically by looking at it, making it hard to keep looking at the object they’re interested in. For example, revealing content near a button people are looking at can cause them to involuntarily look at the new content instead of the button.
 
 **Make it easy for people to look at an item by providing enough space around it.** Because eyes naturally tend to make small, quick adjustments in direction even while people are looking at one place, crowding UI objects together can make it difficult for people to look at one of them without jumping to another. You can help ensure that there’s enough space between interactive items by using a margin of at least 16 points around the bounds of each item or by placing items so that their centers are always at least 60 points apart. For additional layout guidance, see [Layout](https://developer.apple.com/design/human-interface-guidelines/layout) and [Spatial layout](https://developer.apple.com/design/human-interface-guidelines/spatial-layout).
 
@@ -60,7 +60,7 @@ Before you start designing custom hover effects, it’s important to understand 
 
 As an example that shows what a custom hover effect can and can’t do, consider a photo-browsing app where a photo’s custom effect displays a different symbol depending on whether people have added the photo to Favorites. The app specifies the appropriate symbol for a photo’s custom hover effect and the system displays the effect if people look at the photo. However, the hover effect can’t perform the favoriting action because the system doesn’t tell the app when someone is looking at the photo.
 
-**Prefer using a custom hover effect to emphasize or enhance a special moment in your experience.** People are accustomed to the standard hover effects that provide visual feedback or, in the case of tab bars or tooltips, additional information, so a custom hover effect can be especially noticeable. Adding too many custom hover effects — or using them when standard effects are sufficient — can dilute the impact of your design, distract people from their task, and even cause visual discomfort.
+**Prefer using a custom hover effect to emphasize or enhance a special moment in your experience.** People are accustomed to the standard hover effects that provide visual feedback or, in the case of tab bars or tooltips, additional information, so a custom hover effect can be especially noticeable. Adding too many custom hover effects - or using them when standard effects are sufficient - can dilute the impact of your design, distract people from their task, and even cause visual discomfort.
 
 **Choose the right delay.** An element’s custom hover effect can appear instantly, after a short delay, or after a slightly longer delay, depending on how you expect people to interact with the element.
 
@@ -90,7 +90,7 @@ As an example that shows what a custom hover effect can and can’t do, consider
 
 ##### Developer documentation
 
-[Adopting best practices for privacy and user preferences](https://developer.apple.com/documentation/visionOS/adopting-best-practices-for-privacy) — visionOS
+[Adopting best practices for privacy and user preferences](https://developer.apple.com/documentation/visionOS/adopting-best-practices-for-privacy) - visionOS
 
 ##### Videos
 

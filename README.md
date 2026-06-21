@@ -28,7 +28,7 @@ The goal is simple: give an agent good design taste. Not "use this component," j
 
 Every HIG page, pulled down and turned into Markdown, plus a short distilled file for each design topic. Each one says what the thing is, when it's the right choice, the guidelines to follow, the accessibility points to keep in mind, and the mistakes to avoid.
 
-It's design guidance on purpose — it tells you how something should look and behave, never which framework or code to build it with. That part's up to you.
+It's design guidance on purpose - it tells you how something should look and behave, never which framework or code to build it with. That part's up to you.
 
 ## What to expect
 
@@ -36,14 +36,14 @@ Worth being clear about what this is, so it doesn't disappoint:
 
 **What it does**
 
-- Gives an agent Apple's design *taste* — clear hierarchy, sensible spacing, restraint, good defaults — so its choices are more considered.
+- Gives an agent Apple's design *taste* - clear hierarchy, sensible spacing, restraint, good defaults - so its choices are more considered.
 - Helps it pick the right element for the job and place, label, and size it well.
 - Bakes in accessibility as a design concern (contrast, target size, not relying on color alone, motion sensitivity).
 - Catches common design mistakes when reviewing an existing UI.
 
 **What it doesn't**
 
-- It won't single-handedly turn a plain screen into a stunning one. HIG is guidance for *not getting it wrong*, not a recipe for "wow" — on its own it makes an agent careful, not bold.
+- It won't single-handedly turn a plain screen into a stunning one. HIG is guidance for *not getting it wrong*, not a recipe for "wow" - on its own it makes an agent careful, not bold.
 - It has no opinionated numbers (exact spacing scale, type ramp, palette). It says "be consistent," not "use an 8pt grid." Pair it with real design tokens for that.
 - It doesn't write code, choose a framework, or set up a component library.
 - It can't see your screen. Real polish needs a look-and-critique loop (see [Getting good results](#getting-good-results)).
@@ -54,15 +54,15 @@ Think of it as the *taste* layer. You still bring the ambition, the direction, a
 
 ```
 SKILL.md      the entry point: a short intro and a table that points to the right topic
-skills/       65 short design skills — foundations, patterns, components, interaction
+skills/       65 short design skills - foundations, patterns, components, interaction
 references/   the full 172-page HIG, for when you want everything Apple wrote
 ```
 
 ## Install
 
-This repo is an [Agent Skill](https://docs.claude.com/en/docs/agents-and-tools/agent-skills) — a folder with a `SKILL.md`. Installing it just means dropping that folder where your agent looks for skills.
+This repo is an [Agent Skill](https://docs.claude.com/en/docs/agents-and-tools/agent-skills) - a folder with a `SKILL.md`. Installing it just means dropping that folder where your agent looks for skills.
 
-**Claude Code** — clone it into your skills folder:
+**Claude Code** - clone it into your skills folder:
 
 ```bash
 # every project:
@@ -74,19 +74,19 @@ git clone https://github.com/sankalpaacharya/apple-human-interface-skills.git \
   .claude/skills/apple-human-interface-skills
 ```
 
-Claude then loads it automatically whenever your request matches what it's for — "design this screen," "review my UI," "lay out a settings page." No command to remember.
+Claude then loads it automatically whenever your request matches what it's for - "design this screen," "review my UI," "lay out a settings page." No command to remember.
 
-**Any other agent (Cursor, your own tooling, etc.)** — clone the repo anywhere and tell the agent to read `SKILL.md` first. It routes itself from there.
+**Any other agent (Cursor, your own tooling, etc.)** - clone the repo anywhere and tell the agent to read `SKILL.md` first. It routes itself from there.
 
 ## Using it
 
-Once installed, you don't really "call" it — just ask your agent to design or review something and it pulls the relevant topic in. Under the hood it reads the router in `SKILL.md`, opens the one file it needs (designing a modal? `sheets.md`), and applies the guidance. Every skill links back to the original Apple page if you want the full version.
+Once installed, you don't really "call" it - just ask your agent to design or review something and it pulls the relevant topic in. Under the hood it reads the router in `SKILL.md`, opens the one file it needs (designing a modal? `sheets.md`), and applies the guidance. Every skill links back to the original Apple page if you want the full version.
 
 ## Getting good results
 
-A heads-up: the HIG is guidance for *not getting it wrong* — clear hierarchy, sensible spacing, restraint. On its own it makes an agent careful, not bold. If you just say "improve the UI," you'll get a tidy spacing pass, not a redesign. To get real change out of it:
+A heads-up: the HIG is guidance for *not getting it wrong* - clear hierarchy, sensible spacing, restraint. On its own it makes an agent careful, not bold. If you just say "improve the UI," you'll get a tidy spacing pass, not a redesign. To get real change out of it:
 
-- **Ask for ambition explicitly.** "Redesign this screen to feel premium — rework the visual hierarchy, type scale, spacing rhythm, color, and depth. Meaningfully different, not minor tweaks. Use the HIG skill for taste." Permission to be bold matters more than the skill itself.
+- **Ask for ambition explicitly.** "Redesign this screen to feel premium - rework the visual hierarchy, type scale, spacing rhythm, color, and depth. Meaningfully different, not minor tweaks. Use the HIG skill for taste." Permission to be bold matters more than the skill itself.
 - **Give it a target.** Point at a screen, a reference you like, or a vibe ("calm and editorial," "dense and pro"). Taste needs direction.
 - **Make it look, then critique.** The biggest quality jump is a loop: render the page → screenshot it → critique against the guidelines → fix → repeat. Text-only edits can't see that a heading is too timid.
 - **Pair it with concrete tokens.** This skill gives principles; combine it with a real spacing/type scale and a limited palette so "consistent spacing" becomes actual numbers.
@@ -95,4 +95,4 @@ Think of it as the design *taste* layer. You still bring the ambition and the di
 
 ## Credit
 
-Everything here is from Apple's [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines) — I just scraped it (June 2026) and reorganized it. It's Apple's work; this is an unofficial reference, and the image up top is theirs too.
+Everything here is from Apple's [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines) - I just scraped it (June 2026) and reorganized it. It's Apple's work; this is an unofficial reference, and the image up top is theirs too.

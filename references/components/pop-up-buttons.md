@@ -50,11 +50,11 @@ After people choose an item from a pop-up button’s menu, the menu closes, and 
 
 ##### Developer documentation
 
-[MenuPickerStyle](https://developer.apple.com/documentation/SwiftUI/MenuPickerStyle)  — SwiftUI
+[MenuPickerStyle](https://developer.apple.com/documentation/SwiftUI/MenuPickerStyle)  - SwiftUI
 
-[changesSelectionAsPrimaryAction](https://developer.apple.com/documentation/UIKit/UIButton/changesSelectionAsPrimaryAction) — UIKit
+[changesSelectionAsPrimaryAction](https://developer.apple.com/documentation/UIKit/UIButton/changesSelectionAsPrimaryAction) - UIKit
 
-[NSPopUpButton](https://developer.apple.com/documentation/AppKit/NSPopUpButton) — AppKit
+[NSPopUpButton](https://developer.apple.com/documentation/AppKit/NSPopUpButton) - AppKit
 
 ### Change log
 

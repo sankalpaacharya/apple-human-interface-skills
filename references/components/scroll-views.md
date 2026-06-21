@@ -16,7 +16,7 @@ The scroll view itself has no appearance, but it can display a translucent *scro
 
 **Avoid putting a scroll view inside another scroll view with the same orientation.** Nesting scroll views that have the same orientation can create an unpredictable interface that’s difficult to control. It’s alright to place a horizontal scroll view inside a vertical scroll view (or vice versa), however.
 
-**Consider supporting page-by-page scrolling if it makes sense for your content.** In some situations, people appreciate scrolling by a fixed amount of content per interaction instead of scrolling continuously. On most platforms, you can define the size of such a *page* — typically the current height or width of the view — and define an interaction that scrolls one page at a time. To help maintain context during page-by-page scrolling, you can define a unit of overlap, such as a line of text, a row of glyphs, or part of a picture, and subtract the unit from the page size. For developer guidance, see [PagingScrollTargetBehavior](https://developer.apple.com/documentation/SwiftUI/PagingScrollTargetBehavior).
+**Consider supporting page-by-page scrolling if it makes sense for your content.** In some situations, people appreciate scrolling by a fixed amount of content per interaction instead of scrolling continuously. On most platforms, you can define the size of such a *page* - typically the current height or width of the view - and define an interaction that scrolls one page at a time. To help maintain context during page-by-page scrolling, you can define a unit of overlap, such as a line of text, a row of glyphs, or part of a picture, and subtract the unit from the page size. For developer guidance, see [PagingScrollTargetBehavior](https://developer.apple.com/documentation/SwiftUI/PagingScrollTargetBehavior).
 
 **In some cases, scroll automatically to help people find their place.** Although people initiate almost all scrolling, automatic scrolling can be helpful when relevant content is no longer in view, such as when:
 
@@ -76,11 +76,11 @@ When people begin swiping content in the direction they want it to scroll, the s
 
 ##### Look to Scroll
 
-In views that support Look to Scroll, people can scroll using only their eyes. Scrolling starts when people look near the boundary of the scroll view — along the top and bottom for vertical scroll views, or along the sides for horizontal scroll views. For example, a person can look at the bottom edge of a Safari window to scroll the page down, or look at an album on the trailing edge in the Music app to scroll it horizontally toward the center of the page. Look to Scroll works in conjunction with existing behavior, so someone can choose whether to use a gesture or their eyes to scroll. For developer guidance, see [look](https://developer.apple.com/documentation/SwiftUI/ScrollInputKind/look).
+In views that support Look to Scroll, people can scroll using only their eyes. Scrolling starts when people look near the boundary of the scroll view - along the top and bottom for vertical scroll views, or along the sides for horizontal scroll views. For example, a person can look at the bottom edge of a Safari window to scroll the page down, or look at an album on the trailing edge in the Music app to scroll it horizontally toward the center of the page. Look to Scroll works in conjunction with existing behavior, so someone can choose whether to use a gesture or their eyes to scroll. For developer guidance, see [look](https://developer.apple.com/documentation/SwiftUI/ScrollInputKind/look).
 
 **Support Look to Scroll for reading or browsing views.** Because Look to Scroll doesn’t work by default, you need to add support for it to each individual scroll view. If your app contains reading or browsing views, add support for Look to Scroll to provide a comfortable and hands-free experience. For developer guidance, see [ScrollInputKind](https://developer.apple.com/documentation/SwiftUI/ScrollInputKind).
 
-**Avoid using Look to Scroll for secondary content.** In general, support standard gestures — but not Look to Scroll — in views that contain UI controls or dense information that requires quick, precise scrolling. For example, the Notes app offers Look to Scroll within the main view to let people easily read their content, but doesn’t support it for the list of notes.
+**Avoid using Look to Scroll for secondary content.** In general, support standard gestures - but not Look to Scroll - in views that contain UI controls or dense information that requires quick, precise scrolling. For example, the Notes app offers Look to Scroll within the main view to let people easily read their content, but doesn’t support it for the list of notes.
 
 **Maintain consistency across content.** If you support Look to Scroll for one view in your app, make sure to support it for all similar views. For example, if you offer several collection views of videos throughout your app, support Look to Scroll for each of these views so people know what to expect.
 
@@ -108,15 +108,15 @@ In views that support Look to Scroll, people can scroll using only their eyes. S
 
 ##### Developer documentation
 
-[ScrollView](https://developer.apple.com/documentation/SwiftUI/ScrollView) — SwiftUI
+[ScrollView](https://developer.apple.com/documentation/SwiftUI/ScrollView) - SwiftUI
 
-[UIScrollView](https://developer.apple.com/documentation/UIKit/UIScrollView) — UIKit
+[UIScrollView](https://developer.apple.com/documentation/UIKit/UIScrollView) - UIKit
 
-[NSScrollView](https://developer.apple.com/documentation/AppKit/NSScrollView) — AppKit
+[NSScrollView](https://developer.apple.com/documentation/AppKit/NSScrollView) - AppKit
 
-[WKPageOrientation](https://developer.apple.com/documentation/WatchKit/WKPageOrientation) — WatchKit
+[WKPageOrientation](https://developer.apple.com/documentation/WatchKit/WKPageOrientation) - WatchKit
 
-[look](https://developer.apple.com/documentation/SwiftUI/ScrollInputKind/look) — SwiftUI
+[look](https://developer.apple.com/documentation/SwiftUI/ScrollInputKind/look) - SwiftUI
 
 ### Change log
 

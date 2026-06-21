@@ -60,7 +60,7 @@ For developer guidance, see [App Clips](https://developer.apple.com/documentatio
 
 **Make it easy to pay for a service or product.** Entering payment information can be a long and error-prone task. Consider supporting [Apple Pay](https://developer.apple.com/design/human-interface-guidelines/apple-pay) to offer express checkout and let people enter shipping information with no typing.
 
-**Avoid requiring people to create an account before they can benefit from your App Clip.** Creating an account is a complex task that takes time and effort. Consider not requiring an account, or think about asking people to create an account after they finish a task. If your App Clip requires an account to provide value, limit the amount of information people need to provide — for example, by offering [Sign in with Apple](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple).
+**Avoid requiring people to create an account before they can benefit from your App Clip.** Creating an account is a complex task that takes time and effort. Consider not requiring an account, or think about asking people to create an account after they finish a task. If your App Clip requires an account to provide value, limit the amount of information people need to provide - for example, by offering [Sign in with Apple](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple).
 
 **Provide a familiar, focused experience in your app.** When people install the full app, it replaces the App Clip on their device. From this moment, invocations that would have launched the App Clip launch the full app instead. Ensure your app provides a focused, familiar experience to people who previously used the App Clip. Don’t require additional steps that slow people down; for example, don’t require people to log in again when they transition from the App Clip to the app.
 
@@ -68,7 +68,7 @@ For developer guidance, see [App Clips](https://developer.apple.com/documentatio
 
 The system imposes limits on App Clips to ensure people’s privacy. For example, App Clips can’t perform background operations. For developer guidance, see [Choosing the right functionality for your App Clip](https://developer.apple.com/documentation/AppClip/choosing-the-right-functionality-for-your-app-clip).
 
-**Limit the amount of data you store and handle yourself.** If you need to store people’s data — for example, login information — store it securely. In addition, don’t rely on the availability of data you previously stored on the device — the system may have removed the App Clip from the device between launches and deleted all of its data. If you store login information, securely store it off the device.
+**Limit the amount of data you store and handle yourself.** If you need to store people’s data - for example, login information - store it securely. In addition, don’t rely on the availability of data you previously stored on the device - the system may have removed the App Clip from the device between launches and deleted all of its data. If you store login information, securely store it off the device.
 
 **Consider offering Sign in with Apple.** Sign in with Apple securely retains login information off people’s devices and preserves their privacy. For guidance, see [Sign in with Apple](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple).
 
@@ -186,11 +186,11 @@ No matter which of the two variants you use, it’s important you carefully cons
 
 **Include the App Clip logo when space allows.** The logo helps make it clear that the code launches an App Clip; however, if you can’t meet the clear space requirements, use the App Clip Code design without the App Clip logo. Also, use the design without the App Clip logo if you place the App Clip Code on disposable paper or plastic items, or on items associated with gambling or drinking. For example, use the App Clip Code without the App Clip logo on playing cards, poker chips, or bar coasters. The App Clip logo is always part of the badge design where it appears below the App Clip Code; never use the App Clip logo on its own.
 
-**Place your App Clip Code on a flat or cylindrical surface only.** If you place your App Clip Code on a cylindrical surface — for example, on a scooter’s handlebar — make sure the width of the App Clip Code doesn’t exceed one-sixth of the cylinder’s circumference.
+**Place your App Clip Code on a flat or cylindrical surface only.** If you place your App Clip Code on a cylindrical surface - for example, on a scooter’s handlebar - make sure the width of the App Clip Code doesn’t exceed one-sixth of the cylinder’s circumference.
 
 ![An illustration that shows a circle that represents a cylindrical surface. Lines divide the circle into six segments of equal size. One segment represents an App Clip Code and shows how the code doesn’t cover more than one-sixth, or 60 degrees, of the surface’s circumference.](https://docs-assets.developer.apple.com/published/5999e7c0f514a877839b74e365c8a7e2/app-clips-slice%402x.png)
 
-**Help your App Clip Code remain as flat as possible so it’s easy for people to scan.** To provide the best scanning experience, avoid displaying App Clip Codes on deformable materials that readily fold or crumple, such as paper, plastic, or fabric. If you need to make your App Clip Code available on a bag, flexible box, or other deformable object, display it on something rigid — like a card — that you attach to the object. If you create an App Clip Code sticker, make sure it adheres well to flat surfaces.
+**Help your App Clip Code remain as flat as possible so it’s easy for people to scan.** To provide the best scanning experience, avoid displaying App Clip Codes on deformable materials that readily fold or crumple, such as paper, plastic, or fabric. If you need to make your App Clip Code available on a bag, flexible box, or other deformable object, display it on something rigid - like a card - that you attach to the object. If you create an App Clip Code sticker, make sure it adheres well to flat surfaces.
 
 **Place your App Clip Code in a location that helps ensure reliable scanning.** For example, place a scan-only App Clip Code in a location that offers enough light to ensure reliable scanning, and don’t require people to scan from a wide angle.
 
@@ -260,7 +260,7 @@ Use [App Store Connect](https://appstoreconnect.apple.com) or the [App Clip Code
 
 ![Four App Clip badges, each using different colors. The two on the left use the badge design, and the two on the right use the design without the App Clip logo.](https://docs-assets.developer.apple.com/published/02d96548534ce28b92754477aadbf9bb/app-clips-customizing%402x.png)
 
-**Always use the generated App Clip Code.** Don’t create your own App Clip Code design or modify a generated App Clip Code in any way. Don’t apply filters, augment its colors, or add glows, shadows, gradients, or reflections. They negatively impact people’s scanning experience. When scaling a generated App Clip Code, don’t change the generated code’s aspect ratio, and be sure to scale all attributes of the App Clip Code — for example the stroke widths.
+**Always use the generated App Clip Code.** Don’t create your own App Clip Code design or modify a generated App Clip Code in any way. Don’t apply filters, augment its colors, or add glows, shadows, gradients, or reflections. They negatively impact people’s scanning experience. When scaling a generated App Clip Code, don’t change the generated code’s aspect ratio, and be sure to scale all attributes of the App Clip Code - for example the stroke widths.
 
 ![An illustration of an invalid App Clip Code with a changed aspect ratio.](https://docs-assets.developer.apple.com/published/2243d4c0011526cae9bd3d69e62907ae/customizing-wrong-1%402x.png)
 
@@ -280,7 +280,7 @@ Use [App Store Connect](https://appstoreconnect.apple.com) or the [App Clip Code
 
 ### Printing guidelines
 
-App Clip Codes offer the best experience to launch App Clips. As a result, it’s important to manufacture and display App Clip Codes that offer a reliable scanning experience for a long time. You can print App Clip Codes yourself, or work with a professional printing service — for example, [RR Donnelley](https://touchless.acc.rrd.com/).
+App Clip Codes offer the best experience to launch App Clips. As a result, it’s important to manufacture and display App Clip Codes that offer a reliable scanning experience for a long time. You can print App Clip Codes yourself, or work with a professional printing service - for example, [RR Donnelley](https://touchless.acc.rrd.com/).
 
 Always test printed App Clip Codes before you distribute them to be sure they’re scannable from a variety of angles.
 

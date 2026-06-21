@@ -112,11 +112,11 @@ If you use a tab bar in your iPad app, consider using a split view with a sideba
 
 **Make sure people retain access to important tab-bar items in the Mac version of your app.** Regardless of whether you use a split view or a segmented control instead of a tab bar in your iPad app, be sure to give people quick access to top-level items by listing them in the macOS View menu.
 
-**Offer multiple ways to move between pages.** Mac users — especially those who interact using a pointing device or only the keyboard — appreciate Next and Previous buttons in addition to iPad or trackpad gestures that let them swipe between pages.
+**Offer multiple ways to move between pages.** Mac users - especially those who interact using a pointing device or only the keyboard - appreciate Next and Previous buttons in addition to iPad or trackpad gestures that let them swipe between pages.
 
 #### Inputs
 
-Although both iPad and Mac accept user input from a range of devices — such as keyboard, mouse, and trackpad — touch interactions are the basis for iPadOS conventions. In contrast, keyboard and mouse interactions inform most macOS conventions.
+Although both iPad and Mac accept user input from a range of devices - such as keyboard, mouse, and trackpad - touch interactions are the basis for iPadOS conventions. In contrast, keyboard and mouse interactions inform most macOS conventions.
 
 Most iPadOS gestures convert automatically when you create your Mac app using Mac Catalyst; for example:
 
@@ -186,7 +186,7 @@ The system automatically converts the context menus in your iPad app to context 
 
 ##### Developer documentation
 
-[Mac Catalyst](https://developer.apple.com/documentation/UIKit/mac-catalyst) — UIKit
+[Mac Catalyst](https://developer.apple.com/documentation/UIKit/mac-catalyst) - UIKit
 
 ##### Videos
 

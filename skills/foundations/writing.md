@@ -1,6 +1,6 @@
 # Writing
 
-> The words in your interface — labels, messages, empty states, errors — are a core part of the user experience.
+> The words in your interface - labels, messages, empty states, errors - are a core part of the user experience.
 
 **When to use it:** Any microcopy: buttons, links, alerts, errors, settings, empty states, and onboarding.
 
@@ -11,10 +11,10 @@
 - Use descriptive link and button text ("Learn more about pricing"), never "Click here."
 - Pick title case or sentence case per element type and apply it uniformly, reusing language patterns.
 - Label multi-step flows consistently ("Get Started," then "Continue," then "Done").
-- Use possessive pronouns sparingly, and avoid "we" in errors — prefer "Unable to load content."
+- Use possessive pronouns sparingly, and avoid "we" in errors - prefer "Unable to load content."
 - Match terms to the input method (e.g. "tap" on touch, "click" with a pointer).
 - Give empty states a clear next action, and don't put crucial information there since it disappears.
-- Write helpful errors near the problem — say what to do, and avoid blame and "oops" or "uh-oh."
+- Write helpful errors near the problem - say what to do, and avoid blame and "oops" or "uh-oh."
 
 **Accessibility**
 - Descriptive link and button text is essential for people navigating by controls with a screen reader.

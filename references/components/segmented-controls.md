@@ -32,7 +32,7 @@ In addition to representing the state of a single or multiple-choice selection, 
 
 ### Content
 
-**Prefer using either text or images — not a mix of both — in a single segmented control.** Although individual segments can contain text labels or images, mixing the two in a single control can lead to a disconnected and confusing interface.
+**Prefer using either text or images - not a mix of both - in a single segmented control.** Although individual segments can contain text labels or images, mixing the two in a single control can lead to a disconnected and confusing interface.
 
 **As much as possible, use content with a similar size in each segment.** Because all segments typically have equal width, it doesn’t look good if content fills some segments but not others.
 
@@ -52,7 +52,7 @@ In addition to representing the state of a single or multiple-choice selection, 
 
 **Consider using introductory text to clarify the purpose of a segmented control.** When the control uses symbols or interface icons, you could also add a label below each segment to clarify its meaning. If your app includes tooltips, provide one for each segment in a segmented control.
 
-**Use a tab view in the main window area — instead of a segmented control — for view switching.** A [Tab views](https://developer.apple.com/design/human-interface-guidelines/tab-views) supports efficient view switching and is similar in appearance to a [Boxes](https://developer.apple.com/design/human-interface-guidelines/boxes) combined with a segmented control. Consider using a segmented control to help people switch views in a toolbar or inspector pane.
+**Use a tab view in the main window area - instead of a segmented control - for view switching.** A [Tab views](https://developer.apple.com/design/human-interface-guidelines/tab-views) supports efficient view switching and is similar in appearance to a [Boxes](https://developer.apple.com/design/human-interface-guidelines/boxes) combined with a segmented control. Consider using a segmented control to help people switch views in a toolbar or inspector pane.
 
 ![A screenshot of the macOS Calendar app. The main window area shows a tab view that contains four tabs: Day, Week, Month, and Year. The sidebar shows a segmented control that contains two segments: New and Replied.](https://docs-assets.developer.apple.com/published/e0a8dd930dcd6e099b72c643b6077a7b/macos-calendar-tab-view-segmented-control-comparison%402x.png)
 
@@ -76,11 +76,11 @@ When people look at a segmented control that uses icons, the system displays a t
 
 ##### Developer documentation
 
-[segmented](https://developer.apple.com/documentation/SwiftUI/PickerStyle/segmented) — SwiftUI
+[segmented](https://developer.apple.com/documentation/SwiftUI/PickerStyle/segmented) - SwiftUI
 
-[UISegmentedControl](https://developer.apple.com/documentation/UIKit/UISegmentedControl) — UIKit
+[UISegmentedControl](https://developer.apple.com/documentation/UIKit/UISegmentedControl) - UIKit
 
-[NSSegmentedControl](https://developer.apple.com/documentation/AppKit/NSSegmentedControl) — AppKit
+[NSSegmentedControl](https://developer.apple.com/documentation/AppKit/NSSegmentedControl) - AppKit
 
 ### Change log
 

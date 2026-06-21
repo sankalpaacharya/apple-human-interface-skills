@@ -30,7 +30,7 @@ If you’re creating custom tab bar icons, see [Apple Design Resources](https://
 
 ![A diagram of a tab bar, with callouts indicating the location of the tab bar icon and tab label.](https://docs-assets.developer.apple.com/published/375cf01f8d10756d740ba2bdbe8f72c6/tab-bar-anatomy-callouts%402x.png)
 
-**Use a badge to indicate that critical information is available.** You can display a badge — a red oval containing white text and either a number or an exclamation point — on a tab to indicate that there’s new or updated information in the section that warrants a person’s attention. Reserve badges for critical information so you don’t dilute their impact and meaning. For guidance, see [Notifications](https://developer.apple.com/design/human-interface-guidelines/notifications).
+**Use a badge to indicate that critical information is available.** You can display a badge - a red oval containing white text and either a number or an exclamation point - on a tab to indicate that there’s new or updated information in the section that warrants a person’s attention. Reserve badges for critical information so you don’t dilute their impact and meaning. For guidance, see [Notifications](https://developer.apple.com/design/human-interface-guidelines/notifications).
 
 ![An illustration of the bottom half of an iPhone in portrait orientation, with a tab bar at the bottom of the screen. Two of the tabs have red circular badges attached, indicating the presence of critical information.](https://docs-assets.developer.apple.com/published/29a93bc69eaa415e2e3d5440474a8d36/tab-bar-badges-iphone%402x.png)
 
@@ -130,15 +130,15 @@ In visionOS, a tab bar is always vertical, floating in a position that’s fixed
 
 ##### Developer documentation
 
-[TabView](https://developer.apple.com/documentation/SwiftUI/TabView) — SwiftUI
+[TabView](https://developer.apple.com/documentation/SwiftUI/TabView) - SwiftUI
 
-[TabViewBottomAccessoryPlacement](https://developer.apple.com/documentation/SwiftUI/TabViewBottomAccessoryPlacement) — SwiftUI
+[TabViewBottomAccessoryPlacement](https://developer.apple.com/documentation/SwiftUI/TabViewBottomAccessoryPlacement) - SwiftUI
 
-[Enhancing your app’s content with tab navigation](https://developer.apple.com/documentation/SwiftUI/Enhancing-your-app-content-with-tab-navigation) — SwiftUI
+[Enhancing your app’s content with tab navigation](https://developer.apple.com/documentation/SwiftUI/Enhancing-your-app-content-with-tab-navigation) - SwiftUI
 
-[UITabBar](https://developer.apple.com/documentation/UIKit/UITabBar) — UIKit
+[UITabBar](https://developer.apple.com/documentation/UIKit/UITabBar) - UIKit
 
-[Elevating your iPad app with a tab bar and sidebar](https://developer.apple.com/documentation/UIKit/elevating-your-ipad-app-with-a-tab-bar-and-sidebar) — UIKit
+[Elevating your iPad app with a tab bar and sidebar](https://developer.apple.com/documentation/UIKit/elevating-your-ipad-app-with-a-tab-bar-and-sidebar) - UIKit
 
 ##### Videos
 

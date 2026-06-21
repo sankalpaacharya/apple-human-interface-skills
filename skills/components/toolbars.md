@@ -11,7 +11,7 @@
 - Group items logically into a few groups, and keep grouping and placement consistent across views and sizes.
 - Position items by role: navigation and title leading, common controls in the center, and the primary action, search, and overflow trailing.
 - Give one prominent action at most, on the trailing side, and keep text-labeled buttons spaced apart.
-- Use standard navigation and close controls, and keep the title concise — never the app name.
+- Use standard navigation and close controls, and keep the title concise - never the app name.
 
 **Accessibility**
 - Give every icon-only action a clear name so its purpose isn't conveyed by the icon alone.

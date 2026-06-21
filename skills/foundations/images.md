@@ -10,7 +10,7 @@
 - Align artwork to a clean pixel grid so it stays crisp when scaled up.
 - Use consistent, color-managed assets so imagery renders the same everywhere.
 - Optimize file sizes and defer loading of offscreen imagery so the experience stays responsive.
-- Test on real devices and a range of sizes — previews can hide pixelation or stretching.
+- Test on real devices and a range of sizes - previews can hide pixelation or stretching.
 
 **Accessibility**
 - Provide a meaningful text description for informative images, and treat purely decorative images as hidden.

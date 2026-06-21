@@ -1,6 +1,6 @@
 # iCloud
 
-> iCloud is a service that lets people seamlessly access the content they care about — photos, videos, documents, and more — from any device, without performing explicit synchronization.
+> iCloud is a service that lets people seamlessly access the content they care about - photos, videos, documents, and more - from any device, without performing explicit synchronization.
 
 *Source: https://developer.apple.com/design/human-interface-guidelines/icloud*
 

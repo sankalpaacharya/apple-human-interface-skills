@@ -12,7 +12,7 @@
 - Align elements to a shared grid, and use alignment and indentation to express hierarchy.
 - Provide generous spacing around controls so targets don't crowd each other.
 - Design the full layout first, and collapse to a compact, stacked form only when it no longer fits.
-- Don't distort media aspect ratio to fit — scale and crop to keep the key subject visible.
+- Don't distort media aspect ratio to fit - scale and crop to keep the key subject visible.
 - Respect safe areas and standard margins, accounting for rounded corners, cutouts, and floating chrome.
 
 **Accessibility**

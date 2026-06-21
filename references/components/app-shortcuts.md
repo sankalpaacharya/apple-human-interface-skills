@@ -84,9 +84,9 @@ App Shortcuts aren’t supported in macOS. However, actions you create for your 
 
 [SiriKit](https://developer.apple.com/documentation/SiriKit)
 
-[Getting started with the App Intents framework](https://developer.apple.com/documentation/AppIntents/getting-started-with-the-app-intents-framework) — App Intents
+[Getting started with the App Intents framework](https://developer.apple.com/documentation/AppIntents/getting-started-with-the-app-intents-framework) - App Intents
 
-[Defining app entities for your custom data types](https://developer.apple.com/documentation/AppIntents/defining-app-entities-for-your-custom-data-types) — App Intents
+[Defining app entities for your custom data types](https://developer.apple.com/documentation/AppIntents/defining-app-entities-for-your-custom-data-types) - App Intents
 
 ##### Videos
 

@@ -6,7 +6,7 @@
 
 ![A sketch of a right-aligned bulleted list within a window, suggesting an interface displayed in a right-to-left language. The image is overlaid with rectangular and circular grid lines and is tinted yellow to subtly reflect the yellow in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/5d683460f2af897b631f4dad86fd3473/foundations-rtl-intro%402x.png)
 
-When people choose a language for their device — or just your app or game — they expect the interface to adapt in various ways (to learn more, see [Localization](https://developer.apple.com/localization/)).
+When people choose a language for their device - or just your app or game - they expect the interface to adapt in various ways (to learn more, see [Localization](https://developer.apple.com/localization/)).
 
 System-provided UI frameworks support right-to-left (RTL) by default, allowing system-provided UI components to flip automatically in the RTL context. If you use system-provided elements and standard layouts, you might not need to make any changes to your app’s automatically reversed interface.
 
@@ -20,7 +20,7 @@ If you want to fine-tune your layout or enhance specific localizations to adapt 
 
 ![An illustration showing a layout of text and images in an interface. Three bars that represent text are right-aligned above a rounded rectangle area. A placeholder image is centered in the area, above another bar at the bottom edge. The bar inside the area is right-aligned. The placeholder image isn't flipped.](https://docs-assets.developer.apple.com/published/10386033d677b3fd65ec33ac16d67e56/text-alignment-rtl-screen%402x.png)
 
-**Align a paragraph based on its language, not on the current context.** When the alignment of a paragraph — defined as three or more lines of text — doesn’t match its language, it can be difficult to read. For example, right-aligning a paragraph that consists of LTR text can make the beginning of each line difficult to see. To improve readability, continue aligning one- and two-line text blocks to match the reading direction of the current context, but align a paragraph to match its language.
+**Align a paragraph based on its language, not on the current context.** When the alignment of a paragraph - defined as three or more lines of text - doesn’t match its language, it can be difficult to read. For example, right-aligning a paragraph that consists of LTR text can make the beginning of each line difficult to see. To improve readability, continue aligning one- and two-line text blocks to match the reading direction of the current context, but align a paragraph to match its language.
 
 ![An image showing two paragraphs of placeholder copy. The first paragraph is in Arabic and is right-aligned. The second paragraph is in English and is left-aligned.](https://docs-assets.developer.apple.com/published/b32ae443b1d7daa1bb661b56b42b8a34/paragraph-alignment-correct%402x.png)
 
@@ -50,7 +50,7 @@ If your app covers mathematical concepts or other number-centric topics, it’s 
 
 ![From the right, the numerals one, two, and three in Eastern Arabic numerals.](https://docs-assets.developer.apple.com/published/8a9f9c2f6fb291304a5d93e27be0bead/textformat-123-ar%402x.png)
 
-**Don’t reverse the order of numerals in a specific number.** Regardless of the current language or the surrounding content, the digits in a specific number — such as “541,” a phone number, or a credit card number — always appear in the same order.
+**Don’t reverse the order of numerals in a specific number.** Regardless of the current language or the surrounding content, the digits in a specific number - such as “541,” a phone number, or a credit card number - always appear in the same order.
 
 ![From the left, the two words order and number followed by the number 123456 in Latin script.](https://docs-assets.developer.apple.com/published/e6ae8d9dab2a6da825829cf88bfb6adb/latin-numerals%402x.png)
 
@@ -150,7 +150,7 @@ If you have a custom interface icon that uses letters or words to communicate a 
 
 ![The silhouette of a game controller with a white plus sign on the left and two white buttons on the right.](https://docs-assets.developer.apple.com/published/c3f51c228de248bf096aae7164836eab/gamecontroller-fill-ltr%402x.png)
 
-**Before merely flipping a complex custom interface icon, consider its individual components and the overall visual balance.** In some cases, a component — like a badge, slash, or magnifying glass — needs to adhere to a visual design language regardless of localization. For example, SF Symbols maintains visual consistency by using the same backslash to represent the prohibition or negation of a symbol’s meaning in both LTR and RTL versions.
+**Before merely flipping a complex custom interface icon, consider its individual components and the overall visual balance.** In some cases, a component - like a badge, slash, or magnifying glass - needs to adhere to a visual design language regardless of localization. For example, SF Symbols maintains visual consistency by using the same backslash to represent the prohibition or negation of a symbol’s meaning in both LTR and RTL versions.
 
 ![A silhouette of a speaker pointing right with a backslash on top of it.](https://docs-assets.developer.apple.com/published/0557fd6fd8fc1b2c347cd869baa6ae0e/speaker-slash-fill-ltr%402x.png)
 
@@ -194,7 +194,7 @@ If your custom interface icon includes a component that can imply handedness, li
 
 [Localization](https://developer.apple.com/localization/)
 
-[Preparing views for localization](https://developer.apple.com/documentation/SwiftUI/Preparing-views-for-localization) — SwiftUI
+[Preparing views for localization](https://developer.apple.com/documentation/SwiftUI/Preparing-views-for-localization) - SwiftUI
 
 ##### Videos
 

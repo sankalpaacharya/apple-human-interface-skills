@@ -1,6 +1,6 @@
 # Rating indicators
 
-> A rating indicator uses a series of horizontally arranged graphical symbols — by default, stars — to communicate a ranking level.
+> A rating indicator uses a series of horizontally arranged graphical symbols - by default, stars - to communicate a ranking level.
 
 *Source: https://developer.apple.com/design/human-interface-guidelines/rating-indicators*
 
@@ -26,7 +26,7 @@ A rating indicator doesn’t display partial symbols; it rounds the value to dis
 
 ##### Developer documentation
 
-[NSLevelIndicator.Style.rating](https://developer.apple.com/documentation/AppKit/NSLevelIndicator/Style/rating) — AppKit
+[NSLevelIndicator.Style.rating](https://developer.apple.com/documentation/AppKit/NSLevelIndicator/Style/rating) - AppKit
 
 ### Change log
 

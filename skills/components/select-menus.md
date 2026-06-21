@@ -10,7 +10,7 @@
 - Keep the option list flat and mutually exclusive, grouping related items into clear sections when helpful.
 - Use a pop-up button for moderate lists; for very long lists, prefer a searchable control instead.
 - Optionally include a "Custom…" option to reveal extra inputs only when needed.
-- Don't use a pop-up button to trigger actions — use a menu or buttons for that.
+- Don't use a pop-up button to trigger actions - use a menu or buttons for that.
 
 **Accessibility**
 - Always pair the control with a clear, visible label.

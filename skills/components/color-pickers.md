@@ -12,7 +12,7 @@
 - Provide a small set of recent or preset swatches when it speeds common choices.
 
 **Accessibility**
-- Don't rely on the swatch color alone — also expose the value as text people can read.
+- Don't rely on the swatch color alone - also expose the value as text people can read.
 - Give every color control a clear, descriptive label.
 - Keep the picker fully operable in a logical focus order, not by pointer alone.
 - Make controls generous, easily tapped targets (about 44pt) with legible, high-contrast labels.

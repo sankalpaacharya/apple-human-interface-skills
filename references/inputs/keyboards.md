@@ -8,7 +8,7 @@
 
 People can connect a physical keyboard to any device except Apple Watch. Mac users tend to use a physical keyboard all the time and iPad users often do. Many games work well with a physical keyboard, and people can prefer using one instead of a [Virtual keyboards](https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards) when entering a lot of text.
 
-Keyboard users often appreciate using keyboard shortcuts to speed up their interactions with apps and games. A *keyboard shortcut* is a combination of a primary key and one or more modifier keys (Control, Option, Shift, and Command) that map to a specific command. A keyboard shortcut in a game — called a *key binding* — often consists of a single key.
+Keyboard users often appreciate using keyboard shortcuts to speed up their interactions with apps and games. A *keyboard shortcut* is a combination of a primary key and one or more modifier keys (Control, Option, Shift, and Command) that map to a specific command. A keyboard shortcut in a game - called a *key binding* - often consists of a single key.
 
 Apple defines standard keyboard shortcuts to work consistently across the system and most apps, helping people transfer their knowledge to new experiences. Some apps define custom keyboard shortcuts for the app-specific commands people use most; most games define custom key bindings that make it quick and efficient to use the keyboard to control the game. For guidance, see [Keyboards](https://developer.apple.com/design/human-interface-guidelines/game-controls#Keyboards).
 
@@ -20,11 +20,11 @@ Apple defines standard keyboard shortcuts to work consistently across the system
 >
 > Although iPadOS supports keyboard navigation in text fields, text views, and sidebars, and provides APIs you can use to support it in collection views and other custom views, avoid supporting keyboard navigation for controls, such as buttons, segmented controls, and switches. Instead, let people use Full Keyboard Access to activate controls, navigate to all onscreen components, and perform gesture-based interactions like drag and drop. For guidance, see [iPadOS](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection#iPadOS); for developer guidance, see [Focus-based navigation](https://developer.apple.com/documentation/uikit/focus-based_navigation).
 
-**Respect standard keyboard shortcuts.** While using most apps, people generally expect to rely on the standard keyboard shortcuts that work in other apps and throughout the system. If your app offers a unique action that people perform frequently, prefer creating a [Custom keyboard shortcuts](https://developer.apple.com/design/human-interface-guidelines/keyboards#Custom-keyboard-shortcuts) shortcut for it instead of repurposing a standard one that people associate with a different action. While playing a game, people may expect to use certain standard keyboard shortcuts — such as Command–Q to quit the game — but they also expect to be able to modify each game’s key bindings to fit their personal play style. For guidance, see [Keyboards](https://developer.apple.com/design/human-interface-guidelines/game-controls#Keyboards).
+**Respect standard keyboard shortcuts.** While using most apps, people generally expect to rely on the standard keyboard shortcuts that work in other apps and throughout the system. If your app offers a unique action that people perform frequently, prefer creating a [Custom keyboard shortcuts](https://developer.apple.com/design/human-interface-guidelines/keyboards#Custom-keyboard-shortcuts) shortcut for it instead of repurposing a standard one that people associate with a different action. While playing a game, people may expect to use certain standard keyboard shortcuts - such as Command-Q to quit the game - but they also expect to be able to modify each game’s key bindings to fit their personal play style. For guidance, see [Keyboards](https://developer.apple.com/design/human-interface-guidelines/game-controls#Keyboards).
 
 ### Standard keyboard shortcuts
 
-**In general, don’t repurpose standard keyboard shortcuts for custom actions.** People can get confused when the shortcuts they know work differently in your app or game. Only consider redefining a standard shortcut if its action doesn’t make sense in your experience. For example, if your app doesn’t support text editing, it doesn’t need a text-styling command like Italic, so you might repurpose Command–I for an action that has more relevance, like Get Info.
+**In general, don’t repurpose standard keyboard shortcuts for custom actions.** People can get confused when the shortcuts they know work differently in your app or game. Only consider redefining a standard shortcut if its action doesn’t make sense in your experience. For example, if your app doesn’t support text editing, it doesn’t need a text-styling command like Italic, so you might repurpose Command-I for an action that has more relevance, like Get Info.
 
 People expect each of the following standard keyboard shortcuts to perform the action listed in the table below.
 
@@ -210,13 +210,13 @@ In visionOS, an app’s keyboard shortcuts appear in the shortcut interface that
 
 ##### Developer documentation
 
-[KeyboardShortcut](https://developer.apple.com/documentation/SwiftUI/KeyboardShortcut) — SwiftUI
+[KeyboardShortcut](https://developer.apple.com/documentation/SwiftUI/KeyboardShortcut) - SwiftUI
 
-[Input events](https://developer.apple.com/documentation/SwiftUI/Input-events) — SwiftUI
+[Input events](https://developer.apple.com/documentation/SwiftUI/Input-events) - SwiftUI
 
-[Handling key presses made on a physical keyboard](https://developer.apple.com/documentation/UIKit/handling-key-presses-made-on-a-physical-keyboard) — UIKit
+[Handling key presses made on a physical keyboard](https://developer.apple.com/documentation/UIKit/handling-key-presses-made-on-a-physical-keyboard) - UIKit
 
-[Mouse, Keyboard, and Trackpad](https://developer.apple.com/documentation/AppKit/mouse-keyboard-and-trackpad) — AppKit
+[Mouse, Keyboard, and Trackpad](https://developer.apple.com/documentation/AppKit/mouse-keyboard-and-trackpad) - AppKit
 
 ### Change log
 

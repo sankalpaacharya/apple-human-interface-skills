@@ -6,7 +6,7 @@
 
 ![A sketch of the Live Photos icon. The image is overlaid with rectangular and circular grid lines and is tinted blue to subtly reflect the blue in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/dc6a4a0eb43d1336511cf15379c03a04/technologies-Live-Photos-intro%402x.png)
 
-When Live Photos is available, the Camera app captures additional content — including audio and extra frames — before and after people take a photo. People press a Live Photo to see it spring to life.
+When Live Photos is available, the Camera app captures additional content - including audio and extra frames - before and after people take a photo. People press a Live Photo to see it spring to life.
 
 ### Best practices
 
@@ -42,9 +42,9 @@ In visionOS, people can view a Live Photo, but they can’t capture one.
 
 ##### Developer documentation
 
-[PHLivePhoto](https://developer.apple.com/documentation/Photos/PHLivePhoto) — PhotoKit
+[PHLivePhoto](https://developer.apple.com/documentation/Photos/PHLivePhoto) - PhotoKit
 
-[LivePhotosKit JS](https://developer.apple.com/documentation/LivePhotosKitJS) — LivePhotosKit JS
+[LivePhotosKit JS](https://developer.apple.com/documentation/LivePhotosKitJS) - LivePhotosKit JS
 
 ##### Videos
 

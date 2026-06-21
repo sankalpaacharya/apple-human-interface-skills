@@ -70,6 +70,6 @@ For developer guidance, see [TVPosterView](https://developer.apple.com/documenta
 
 ##### Developer documentation
 
-[TVLockupView](https://developer.apple.com/documentation/TVUIKit/TVLockupView) — TVUIKit
+[TVLockupView](https://developer.apple.com/documentation/TVUIKit/TVLockupView) - TVUIKit
 
-[TVLockupHeaderFooterView](https://developer.apple.com/documentation/TVUIKit/TVLockupHeaderFooterView) — TVUIKit
+[TVLockupHeaderFooterView](https://developer.apple.com/documentation/TVUIKit/TVLockupHeaderFooterView) - TVUIKit

@@ -7,7 +7,7 @@
 **Guidelines**
 - Use plain, direct language; address people as "you," and reserve "we" and "our" for your company.
 - Define or avoid technical terms, and skip idioms and colloquialisms that don't translate.
-- Be cautious with humor — it's subjective and hard to localize.
+- Be cautious with humor - it's subjective and hard to localize.
 - Avoid unnecessary gender references and prefer gender-neutral nouns, which also eases localization.
 - If you collect gender, offer inclusive options and let people set their pronouns.
 - Represent diverse people in imagery and avoid stereotypes in roles and settings.
@@ -16,7 +16,7 @@
 - Build approachable experiences with clear interfaces and skippable onboarding.
 
 **Accessibility**
-- Inclusion requires accessibility — support the full spectrum of needs, including temporary and situational ones.
+- Inclusion requires accessibility - support the full spectrum of needs, including temporary and situational ones.
 - Internationalize: respect reading direction, format dates, numbers, and currency per locale, and allow for text expansion.
 - Verify that color symbolism holds across cultures.
 

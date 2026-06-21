@@ -88,9 +88,9 @@ In addition to custom controls that you create, the system provides a set of sta
 
 ##### Developer documentation
 
-[Enhancing your app experience with the Camera Control](https://developer.apple.com/documentation/AVFoundation/enhancing-your-app-experience-with-the-camera-control) — AVFoundation
+[Enhancing your app experience with the Camera Control](https://developer.apple.com/documentation/AVFoundation/enhancing-your-app-experience-with-the-camera-control) - AVFoundation
 
-[AVCaptureControl](https://developer.apple.com/documentation/AVFoundation/AVCaptureControl) — AVFoundation
+[AVCaptureControl](https://developer.apple.com/documentation/AVFoundation/AVCaptureControl) - AVFoundation
 
 [LockedCameraCapture](https://developer.apple.com/documentation/LockedCameraCapture)
 

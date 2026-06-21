@@ -12,7 +12,7 @@ In addition to indicating the current value in a range, a gauge can provide more
 
 A gauge uses a circular or linear path to represent a range of values, mapping the current value to a specific point on the path. A standard gauge displays an indicator that shows the current value’s location; a gauge that uses the capacity style displays a fill that stops at the value’s location on the path.
 
-Circular and linear gauges in both standard and capacity styles are also available in a variant that’s visually similar to watchOS complications. This variant — called accessory — works well in iOS Lock Screen widgets and anywhere you want to echo the appearance of complications.
+Circular and linear gauges in both standard and capacity styles are also available in a variant that’s visually similar to watchOS complications. This variant - called accessory - works well in iOS Lock Screen widgets and anywhere you want to echo the appearance of complications.
 
 > **Note**
 >
@@ -30,7 +30,7 @@ Circular and linear gauges in both standard and capacity styles are also availab
 
 #### macOS
 
-In addition to supporting gauges, macOS also defines a level indicator that displays a specific numerical value within a range. You can configure a level indicator to convey capacity, rating, or — rarely — relevance.
+In addition to supporting gauges, macOS also defines a level indicator that displays a specific numerical value within a range. You can configure a level indicator to convey capacity, rating, or - rarely - relevance.
 
 The capacity style can depict discrete or continuous values.
 
@@ -40,7 +40,7 @@ The capacity style can depict discrete or continuous values.
 
 ![An image of a discrete capacity indicator that uses the default green fill to indicate an amount of three-quarters of the total capacity.](https://docs-assets.developer.apple.com/published/f148e7934177391449aa61cc97ffea49/indicators-discrete%402x.png)
 
-**Discrete.** A horizontal row of separate, equally sized, rectangular segments. The number of segments matches the total capacity, and the segments fill completely — never partially — with color to indicate the current value.
+**Discrete.** A horizontal row of separate, equally sized, rectangular segments. The number of segments matches the total capacity, and the segments fill completely - never partially - with color to indicate the current value.
 
 **Consider using the continuous style for large ranges.** A large value range can make the segments of a discrete capacity indicator too small to be useful.
 
@@ -60,9 +60,9 @@ Although rarely used, the relevance style can communicate relevancy using a shad
 
 ##### Developer documentation
 
-[Gauge](https://developer.apple.com/documentation/SwiftUI/Gauge) — SwiftUI
+[Gauge](https://developer.apple.com/documentation/SwiftUI/Gauge) - SwiftUI
 
-[NSLevelIndicator](https://developer.apple.com/documentation/AppKit/NSLevelIndicator) — AppKit
+[NSLevelIndicator](https://developer.apple.com/documentation/AppKit/NSLevelIndicator) - AppKit
 
 ### Change log
 

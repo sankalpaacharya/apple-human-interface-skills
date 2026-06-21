@@ -16,7 +16,7 @@ Different platforms communicate focus in different ways. For example, iPadOS and
 
 **Rely on system-provided focus effects.** System-defined focus effects are precisely tuned to complement interactions with Apple devices, providing experiences that feel responsive, fluid, and lifelike. Incorporating system-provided focus behaviors gives your app consistency and predictability, helping people understand it quickly. Consider creating custom focus effects only if it’s absolutely necessary.
 
-**Avoid changing focus without people’s interaction.** People rely on the focus system to help them know where they are in your app. If you change focus without their interaction, people have to spend time finding the newly focused item, delaying their current task. The exception is when people are moving focus using an input device that lets them make discrete, directional movements — like a keyboard, remote, or game controller — and a previously focused item disappears. In this scenario, there are only a small number of items within one discrete step of the previously focused item, so moving focus to one of these remaining items ensures that the focus indicator is in a location people can easily find. When people aren’t moving focus by using such an input device, you can’t predict the item they’ll target next, so it’s generally best to simply hide the focus indicator when the focused object disappears.
+**Avoid changing focus without people’s interaction.** People rely on the focus system to help them know where they are in your app. If you change focus without their interaction, people have to spend time finding the newly focused item, delaying their current task. The exception is when people are moving focus using an input device that lets them make discrete, directional movements - like a keyboard, remote, or game controller - and a previously focused item disappears. In this scenario, there are only a small number of items within one discrete step of the previously focused item, so moving focus to one of these remaining items ensures that the focus indicator is in a location people can easily find. When people aren’t moving focus by using such an input device, you can’t predict the item they’ll target next, so it’s generally best to simply hide the focus indicator when the focused object disappears.
 
 **Be consistent with the platform as you help people bring focus to items in your app.** For example, in iPadOS and macOS, a full keyboard access mode helps people use the keyboard to reach every control, so you only need to support focus for content elements like list items, text fields, and search fields, and not for controls like buttons, sliders, and toggles. In contrast, tvOS users rely on using directional gestures on a remote or game controller (or pressing the arrow keys on an attached keyboard) to reach every onscreen element, so you need to make sure that people can bring focus to every element in your app.
 
@@ -32,7 +32,7 @@ Different platforms communicate focus in different ways. For example, iPadOS and
 
 iPadOS 15 and later defines a focus system that supports keyboard interactions for navigating text fields, text views, and sidebars, in addition to various types of collection views and other custom views in your app.
 
-The iPadOS and tvOS focus systems are similar. People perform actions by moving a focus indicator to an item and then selecting it (for guidance, see [tvOS](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection#tvOS)). Although the underlying system is the same, the user experiences are a little different. tvOS uses *directional focus*, which means people can use the same interaction — that is, swiping the Siri Remote or using only the arrow keys on a connected keyboard — to navigate to every onscreen component. In contrast, iPadOS defines *focus groups*, which represent specific areas within an app, like a sidebar, grid, or list. Using focus groups, iPadOS can support two different keyboard interactions.
+The iPadOS and tvOS focus systems are similar. People perform actions by moving a focus indicator to an item and then selecting it (for guidance, see [tvOS](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection#tvOS)). Although the underlying system is the same, the user experiences are a little different. tvOS uses *directional focus*, which means people can use the same interaction - that is, swiping the Siri Remote or using only the arrow keys on a connected keyboard - to navigate to every onscreen component. In contrast, iPadOS defines *focus groups*, which represent specific areas within an app, like a sidebar, grid, or list. Using focus groups, iPadOS can support two different keyboard interactions.
 
 - Pressing the Tab key moves focus among focus groups, letting people navigate to sidebars, grids, and other app areas.
 
@@ -40,7 +40,7 @@ The iPadOS and tvOS focus systems are similar. People perform actions by moving 
 
 Onscreen components can indicate focus by using the halo effect or the highlighted appearance.
 
-The *halo* focus effect — also known as the *focus ring* — displays a customizable outline around the component. You can apply the halo effect to custom views and to fully opaque content within a collection or list cell, such as an image.
+The *halo* focus effect - also known as the *focus ring* - displays a customizable outline around the component. You can apply the halo effect to custom views and to fully opaque content within a collection or list cell, such as an image.
 
 ![An illustration of a collection view of photos showing the standard halo effect that outlines the focused photo.](https://docs-assets.developer.apple.com/published/2bfe6fedc5a6a8ecf6d7e74e9492a096/focus-and-selection-halo-focus-effect%402x.png)
 
@@ -48,7 +48,7 @@ The *halo* focus effect — also known as the *focus ring* — displays a custom
 
 ![An illustration of a collection view of photos showing a rounded-rectangle halo effect that outlines the focused photo.](https://docs-assets.developer.apple.com/published/1a84f872d0624355e89fa03b357ddd13/focus-and-selection-customized-halo%402x.png)
 
-The *highlighted* appearance — in which the component’s text uses the app’s accent color — also indicates focus, but it’s not a focus effect. The highlight appearance occurs automatically when people select a collection view cell on which you’ve set content configurations (for developer guidance, see [UICollectionViewCell](https://developer.apple.com/documentation/UIKit/UICollectionViewCell)).
+The *highlighted* appearance - in which the component’s text uses the app’s accent color - also indicates focus, but it’s not a focus effect. The highlight appearance occurs automatically when people select a collection view cell on which you’ve set content configurations (for developer guidance, see [UICollectionViewCell](https://developer.apple.com/documentation/UIKit/UICollectionViewCell)).
 
 ![An illustration of a list of menu items with the second item highlighted. The item's title and icon are tinted with a red accent color.](https://docs-assets.developer.apple.com/published/01261865c38379fa118f16057a54f23e/focus-and-selection-highlighted-appearance%402x.png)
 
@@ -92,11 +92,11 @@ visionOS supports the same focus system as in iPadOS and tvOS, letting people us
 
 ##### Developer documentation
 
-[Focus Attributes](https://developer.apple.com/documentation/TVML/focus-attributes) — TVML
+[Focus Attributes](https://developer.apple.com/documentation/TVML/focus-attributes) - TVML
 
-[Focus-based navigation](https://developer.apple.com/documentation/UIKit/focus-based-navigation) — UIKit
+[Focus-based navigation](https://developer.apple.com/documentation/UIKit/focus-based-navigation) - UIKit
 
-[About focus interactions for Apple TV](https://developer.apple.com/documentation/UIKit/about-focus-interactions-for-apple-tv) — UIKit
+[About focus interactions for Apple TV](https://developer.apple.com/documentation/UIKit/about-focus-interactions-for-apple-tv) - UIKit
 
 ##### Videos
 
