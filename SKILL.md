@@ -9,14 +9,24 @@ Apple's Human Interface Guidelines, distilled into short design-principle files 
 
 This is **design guidance**, not implementation - it says how something should look and behave, never which framework or component to build it with.
 
+## Start here: the playbook
+
+Before designing, read the **[playbook](playbook/)**. The `skills/` files give taste and correctness; the playbook gives the concrete moves and numbers that actually make a UI look Apple:
+
+- **[playbook/apple-look.md](playbook/apple-look.md)** - what reads as "Apple," a design checklist, and how to apply this boldly instead of making timid tweaks.
+- **[playbook/tokens.md](playbook/tokens.md)** - real values: type ramp, 8pt spacing, radii, the iOS system color palette (light + dark), shadows, motion. Copy-paste CSS variables, Tailwind, and `tokens.json`.
+- **[playbook/fonts.md](playbook/fonts.md)** - font stacks (system/SF, Inter substitute, mono, serif), sources, and licensing.
+
+Adopt the tokens and font first, then design against them. "Be consistent" only works once "consistent" has numbers.
+
 ## How to use this skill
 
-1. Figure out what you're designing - a **foundation**, a **pattern/flow**, a **component**, or an **interaction**.
-2. Find it in the router below and read that one short file.
-3. Apply its **Guidelines**, **Accessibility**, and **Avoid** points to your design.
-4. Want the complete original guidance? Each file links to its full Apple HIG page under `references/`.
+1. Read the **playbook** above for the concrete system (tokens, fonts, the Apple-look checklist).
+2. Figure out what you're designing - a **foundation**, a **pattern/flow**, a **component**, or an **interaction** - and open that one file from the router below.
+3. Apply its **Guidelines**, **Accessibility**, and **Avoid** points, expressed in the playbook tokens.
+4. Make it look, then critique it against `playbook/apple-look.md` and iterate. Each skill links to its full Apple HIG page for deep detail.
 
-`skills/` holds **65** design skills. `references/` holds the **172** full HIG pages for deep dives.
+`playbook/` holds the opinionated design system. `skills/` holds **65** design skills. `references/` holds the **172** full HIG pages for deep dives.
 
 ## Router
 

@@ -37,23 +37,24 @@ Worth being clear about what this is, so it doesn't disappoint:
 **What it does**
 
 - Gives an agent Apple's design *taste* - clear hierarchy, sensible spacing, restraint, good defaults - so its choices are more considered.
+- Ships a **playbook** with concrete numbers (type ramp, 8pt spacing, radii, the iOS system color palette, shadows, motion) and font setup, so "be consistent" turns into real values.
 - Helps it pick the right element for the job and place, label, and size it well.
 - Bakes in accessibility as a design concern (contrast, target size, not relying on color alone, motion sensitivity).
 - Catches common design mistakes when reviewing an existing UI.
 
 **What it doesn't**
 
-- It won't single-handedly turn a plain screen into a stunning one. HIG is guidance for *not getting it wrong*, not a recipe for "wow" - on its own it makes an agent careful, not bold.
-- It has no opinionated numbers (exact spacing scale, type ramp, palette). It says "be consistent," not "use an 8pt grid." Pair it with real design tokens for that.
-- It doesn't write code, choose a framework, or set up a component library.
+- It won't single-handedly turn a plain screen into a stunning one. It makes an agent careful and consistent; the ambition still has to come from your prompt.
+- It doesn't write your code or set up a component library. The playbook gives copy-paste tokens, but you wire them into your stack.
 - It can't see your screen. Real polish needs a look-and-critique loop (see [Getting good results](#getting-good-results)).
 
-Think of it as the *taste* layer. You still bring the ambition, the direction, and the concrete specs.
+Think of it as the *taste and system* layer. You still bring the ambition and the direction.
 
 ## Layout
 
 ```
 SKILL.md      the entry point: a short intro and a table that points to the right topic
+playbook/     the opinionated layer: apple-look checklist, design tokens, font setup
 skills/       65 short design skills - foundations, patterns, components, interaction
 references/   the full 172-page HIG, for when you want everything Apple wrote
 ```
