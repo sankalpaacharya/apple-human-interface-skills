@@ -2,7 +2,23 @@
   <img src="https://docs-assets.developer.apple.com/published/fcb6f603e6672e3443637efe652e5bdb/platforms-iOS-intro%402x.png" width="620" alt="Apple platforms">
 </p>
 
-# Apple Human Interface Skills
+<h1 align="center">Apple Human Interface Skills</h1>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/source-Apple%20HIG-000000?logo=apple&logoColor=white" alt="Source: Apple HIG">
+  <img src="https://img.shields.io/badge/format-Agent%20Skill-7c3aed" alt="Format: Agent Skill">
+  <img src="https://img.shields.io/badge/design%20skills-65-0a84ff" alt="65 design skills">
+  <img src="https://img.shields.io/badge/reference%20pages-172-0a84ff" alt="172 reference pages">
+  <img src="https://img.shields.io/badge/scope-design%20only-34c759" alt="Design only">
+</p>
+
+<p align="center">
+  <img src="https://docs-assets.developer.apple.com/published/10ec5551985c77cabaeaaaff016cdfd8/foundations-color-intro%402x.png" width="150" alt="Color">
+  <img src="https://docs-assets.developer.apple.com/published/d90940d120149af7220e4fedfd1c10bd/foundations-typography-intro%402x.png" width="150" alt="Typography">
+  <img src="https://docs-assets.developer.apple.com/published/fe3e14f290a6986d2490634a9e2fab0c/foundations-layout-intro%402x.png" width="150" alt="Layout">
+  <img src="https://docs-assets.developer.apple.com/published/2bed567b2804738b174adfe4cbfecb17/foundations-materials-intro%402x.png" width="150" alt="Materials">
+  <img src="https://docs-assets.developer.apple.com/published/1a0efd7807cfcba7a5821be86b20bafc/foundations-motion-intro%402x.png" width="150" alt="Motion">
+</p>
 
 Apple's Human Interface Guidelines are some of the best design writing out there, but they're spread across ~170 web pages. I wanted that thinking in a form an AI could actually follow while designing something, so I scraped the whole thing and boiled the useful parts down.
 
