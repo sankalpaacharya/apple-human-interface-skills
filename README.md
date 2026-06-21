@@ -30,6 +30,26 @@ Every HIG page, pulled down and turned into Markdown, plus a short distilled fil
 
 It's design guidance on purpose — it tells you how something should look and behave, never which framework or code to build it with. That part's up to you.
 
+## What to expect
+
+Worth being clear about what this is, so it doesn't disappoint:
+
+**What it does**
+
+- Gives an agent Apple's design *taste* — clear hierarchy, sensible spacing, restraint, good defaults — so its choices are more considered.
+- Helps it pick the right element for the job and place, label, and size it well.
+- Bakes in accessibility as a design concern (contrast, target size, not relying on color alone, motion sensitivity).
+- Catches common design mistakes when reviewing an existing UI.
+
+**What it doesn't**
+
+- It won't single-handedly turn a plain screen into a stunning one. HIG is guidance for *not getting it wrong*, not a recipe for "wow" — on its own it makes an agent careful, not bold.
+- It has no opinionated numbers (exact spacing scale, type ramp, palette). It says "be consistent," not "use an 8pt grid." Pair it with real design tokens for that.
+- It doesn't write code, choose a framework, or set up a component library.
+- It can't see your screen. Real polish needs a look-and-critique loop (see [Getting good results](#getting-good-results)).
+
+Think of it as the *taste* layer. You still bring the ambition, the direction, and the concrete specs.
+
 ## Layout
 
 ```
