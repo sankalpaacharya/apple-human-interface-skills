@@ -1,37 +1,27 @@
 # Windows
 
-> A window is the bounded surface that presents an app's content; on the web it maps to the browser viewport, and on mobile to the device screen / scene.
+> A window is the bounded surface that presents an app's content.
 
-**Use it for:** The primary surface where main navigation and content live; auxiliary surfaces (compose, detail, settings) map to modals, panels, or new windows/scenes when multitasking helps.
-
-**Implementation**
-
-| Platform | Maps to |
-| --- | --- |
-| Web | Browser viewport/tab (responsive layout); `window.open()` / modals for auxiliary; PWA standalone window |
-| SwiftUI | `WindowGroup` / `Window` (macOS/iPadOS); a single scene fills the screen on iOS |
-| Android (Compose) | `Activity` window; adapt with `WindowSizeClass`; multi-window / split-screen support |
-| UIKit | `UIWindow` / `UIWindowScene`; `UISceneSession` for multiple scenes |
-| React Native | Single root view per app; size adapts via `Dimensions`/`useWindowDimensions` |
-| Flutter | Single `FlutterView` / `MediaQuery`-driven layout; desktop multi-window is emerging |
+**When to use it:** Use the main window as the primary surface for navigation and content, and use additional windows only for auxiliary surfaces where multitasking genuinely helps.
 
 **Guidelines**
-- Make layouts adapt fluidly across sizes (size classes / breakpoints) to support resizing and multi-window/multitask use.
-- Open a new window/tab/scene only when it genuinely helps; excessive ones create clutter.
-- Offer "open in new window" as an explicit option rather than default behavior.
-- Set sensible min/max sizes and breakpoints so the layout never breaks at extremes.
-- Don't fake native window chrome/controls; rely on the platform's real frame.
-- Account for system-provided overlays (safe areas / insets, PWA title-bar area) and inset accordingly.
+- Make layouts adapt fluidly across sizes so they support resizing and side-by-side use.
+- Open a new window only when it genuinely helps; too many create clutter.
+- Offer "open in new window" as an explicit choice rather than default behavior.
+- Set sensible minimum and maximum sizes so the layout never breaks at extremes.
+- Don't fake native window chrome or controls; rely on the platform's real frame.
+- Account for system-provided overlays and safe areas, and inset content accordingly.
 
 **Accessibility**
-- Web: preserve logical focus and reading order as layout reflows; give programmatically-opened windows a descriptive `<title>` and move focus; usable at high zoom and small viewports.
-- iOS (VoiceOver): each scene exposes its content; manage focus when presenting new scenes.
-- Android (TalkBack): announce window/Activity transitions; keep content reachable across configuration changes.
-- Nothing becomes unreachable or clipped across sizes; controls meet ≥44pt / 48dp targets.
+- Preserve a logical focus and reading order as the layout reflows across sizes.
+- Give each window a descriptive title and move focus to it when it opens.
+- Keep the layout usable at high zoom and small sizes, with nothing clipped or unreachable.
+- Convey transitions between windows so they're perceivable without sight.
+- Ensure controls meet an adequate touch target of roughly 44pt and keep sufficient contrast.
 
 **Avoid**
-- Opening new windows/tabs/scenes as default behavior.
-- Custom window frames or controls that imitate the OS.
-- Layouts that overlap or clip UI at extreme sizes.
+- Opening new windows as default behavior.
+- Custom window frames or controls that imitate the operating system.
+- Layouts that overlap or clip content at extreme sizes.
 
 **Full reference:** [full reference](../../references/components/windows.md)

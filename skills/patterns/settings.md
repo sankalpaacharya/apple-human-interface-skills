@@ -2,34 +2,24 @@
 
 > A place for general, infrequently changed preferences that customize the experience.
 
-**Use it for:** App-wide options (theme, account, defaults) people rarely change and that must persist across sessions. Task-level options belong inline, not here.
-
-**Implementation**
-
-| Platform | Maps to |
-| --- | --- |
-| Web | A settings page/route persisted via `localStorage`/cookies or a user account; real form controls |
-| SwiftUI | `Form`/`Settings` scene, `@AppStorage`/`UserDefaults`, `Toggle`/`Picker`; deep-link to iOS Settings app where relevant |
-| Android (Compose) | Settings screen with Jetpack DataStore/`PreferenceDataStore`, `Switch`/`RadioButton` |
-| React Native | Settings screen + `@react-native-async-storage`/MMKV, `Switch` |
-| Flutter | Settings screen + `shared_preferences`, `settings_ui` package, `SwitchListTile` |
+**When to use it:** For app-wide options (theme, account, defaults) people rarely change and that must persist across sessions; task-level options belong inline, not here.
 
 **Guidelines**
-- Ship strong defaults that suit most people, so settings are optional; minimize their number.
-- Keep task-specific options inline where they apply (filters, sort, show/hide), not buried in settings.
-- Detect what you can (system dark mode, language, locale) instead of asking.
-- Respect OS-level preferences (reduced motion, color scheme, contrast); don't duplicate or override them.
-- Group related settings into clearly labeled sections; restore the last-viewed section when reopened.
-- Make settings reachable in expected ways (clear menu/icon; consider a shortcut).
+- Ship strong defaults that suit most people so settings stay optional, and keep their number small.
+- Keep task-specific options inline where they apply (filters, sort, show or hide), not buried in settings.
+- Detect what you can (system appearance, language, locale) instead of asking.
+- Respect system-level preferences such as reduced motion, color scheme, and contrast; don't duplicate or override them.
+- Group related settings into clearly labeled sections, and restore the last-viewed section when people return.
+- Make settings reachable in expected ways, with a clear menu or icon.
 
 **Accessibility**
-- Use real form controls (switches, selects) with associated labels.
-- Group related controls (fieldset/legend or platform equivalents); reflect state via accessibility attributes.
-- Announce when a setting is applied if there's no immediate visual confirmation.
+- Use clear, well-labeled controls and group related ones together.
+- Reflect each control's current state clearly, and announce when a setting is applied if there's no immediate visual confirmation.
+- Honor system accessibility preferences rather than forcing people to reconfigure them here.
 
 **Avoid**
-- Asking for setup info you can detect automatically.
-- Redundant in-app copies of global system settings.
+- Asking for setup information you could detect automatically.
+- Duplicating global system settings inside the app.
 - Putting frequently used, contextual controls on a separate settings page.
 
 **Full reference:** [full reference](../../references/patterns/settings.md)

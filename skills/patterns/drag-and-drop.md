@@ -2,32 +2,23 @@
 
 > Moving or copying content by dragging a selection from a source location to a destination.
 
-**Use it for:** Reordering lists/boards, moving items between containers, uploading files, or transferring content between views/apps.
-
-**Implementation**
-
-| Platform | Maps to |
-| --- | --- |
-| Web | HTML Drag and Drop API (`draggable`, `DataTransfer`) for files; pointer events via dnd-kit/react-dnd/SortableJS for in-app reorder |
-| SwiftUI | `.draggable`/`.dropDestination`, `.onDrag`/`.onDrop`, `onMove` for list reorder |
-| Android (Compose) | `dragAndDropSource`/`dragAndDropTarget` modifiers; `detectDragGestures` / Reorderable lists |
-| React Native | `react-native-gesture-handler` + `reanimated`, `react-native-draggable-flatlist` |
-| Flutter | `Draggable`/`DragTarget`, `ReorderableListView` |
+**When to use it:** For reordering lists or boards, moving items between containers, or transferring content between views or apps.
 
 **Guidelines**
-- Support drag where expected, but always offer a non-drag alternative (menu/button) — drag is hard for some users.
-- Decide move vs. copy by context (within container = move, across = copy); honor the expected convention to avoid data loss.
-- Support multi-item drag where it makes sense; let people undo a drop or confirm an irreversible one.
-- Offer multiple data representations highest-to-lowest fidelity so the destination picks the richest it supports.
-- Show a translucent drag preview; indicate valid vs. invalid drop targets and clear feedback when the item leaves.
-- On invalid drop, animate the item back to its source; auto-scroll near container edges; show progress for slow transfers.
+- Support drag where people expect it, but always offer a non-drag alternative such as a menu or button; dragging is hard for some people.
+- Decide move versus copy by context (within a container suggests move, across containers suggests copy) and honor that convention to prevent accidental data loss.
+- Support dragging multiple items where it makes sense; let people undo a drop or confirm an irreversible one.
+- Show a clear, translucent preview of what's being dragged so people stay oriented.
+- Clearly distinguish valid from invalid drop targets, and give feedback when an item leaves a target.
+- On an invalid drop, animate the item back to its source; auto-scroll near container edges; show progress for slow transfers.
 
 **Accessibility**
-- Provide a keyboard-operable alternative (cut/paste, move buttons, arrow-key reorder) — native HTML5 drag isn't keyboard accessible.
-- Announce drag start, valid targets, and drop results (ARIA live / VoiceOver / TalkBack); dnd-kit and platform reorder APIs ship a11y announcements.
+- Provide a fully keyboard- and switch-operable alternative (move buttons, cut and paste, reorder controls) so dragging is never the only way.
+- Announce drag start, valid targets, and drop results to people using assistive technology.
+- Use clear position cues and labels, not color alone, to signal valid drop zones; respect reduced-motion preferences for drag animations.
 
 **Avoid**
 - Making drag the only way to perform an action.
-- Unexpected move/copy behavior or no feedback on hover/invalid drop.
+- Unexpected move or copy behavior, or no feedback on hover or an invalid drop.
 
 **Full reference:** [full reference](../../references/patterns/drag-and-drop.md)

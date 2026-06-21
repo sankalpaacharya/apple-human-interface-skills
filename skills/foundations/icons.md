@@ -1,34 +1,24 @@
-# Icons (Interface Icons / Glyphs)
+# Icons
 
 > Simple graphic symbols that express a single action, item, or mode in a way people instantly understand.
 
-**Use it for:** Toolbar/menu/button actions and labeling content where a recognizable glyph reads faster than text.
-
-**Implementation**
-
-| Platform | Maps to |
-| --- | --- |
-| Web | Inline `<svg>` or sprite/library (Lucide, Heroicons); `currentColor`, `aria-label`/`aria-hidden` |
-| SwiftUI | `Image(systemName:)` (SF Symbols), `.symbolRenderingMode`, `.accessibilityLabel` |
-| Android (Compose) | `Icon(imageVector = Icons.…)` (Material Icons) with `contentDescription`, `tint` |
-| React Native | `react-native-vector-icons` / SVG components, `accessibilityLabel` on the touchable |
-| Flutter | `Icon(Icons.…)` (Material) or `SvgPicture`, `semanticLabel`, `color` |
+**When to use it:** Toolbar, menu, and button actions, and labeling content where a recognizable glyph reads faster than text.
 
 **Guidelines**
-- Keep designs simplified and recognizable; use familiar metaphors tied to the action.
-- Maintain consistency across the set — same size, detail, stroke weight, perspective.
-- Match icon stroke weight to adjacent text weight unless intentionally emphasizing one.
-- Optically center asymmetric icons rather than geometric centering.
-- Use vector formats so icons scale crisply and adapt to `currentColor`/`tint`.
-- Drive selected/unselected states with color/fill, not separate art.
-- Use inclusive, gender-neutral imagery; localize and flip directional glyphs for RTL.
+- Keep designs simplified and recognizable, using familiar metaphors tied to the action.
+- Maintain consistency across the set — same size, level of detail, stroke weight, and perspective.
+- Match icon stroke weight to adjacent text weight unless you intentionally emphasize one.
+- Optically center asymmetric icons rather than centering them purely by geometry.
+- Design icons to scale crisply and adopt the surrounding text color.
+- Distinguish selected and unselected states with color or fill, not entirely separate artwork.
+- Use inclusive, gender-neutral imagery; flip directional glyphs for right-to-left layouts.
 - Reuse standard glyphs (search = magnifier, delete = trash, share, more = ellipsis, add = plus).
-- Avoid depicting Apple hardware (dates quickly; trademark risk).
+- Avoid depicting specific hardware, which dates quickly and risks trademark issues.
 
 **Accessibility**
-- Icon-only controls need an accessible name (`aria-label` / `contentDescription` / `accessibilityLabel`).
-- Mark purely decorative icons as hidden so they aren't announced.
-- Ensure icon contrast meets 3:1 against its background.
+- Give every icon-only control a clear accessible name.
+- Treat purely decorative icons as hidden so they aren't announced.
+- Ensure icon contrast meets about 3:1 against its background.
 
 **Avoid**
 - Overly detailed glyphs that blur at small sizes.

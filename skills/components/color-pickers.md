@@ -1,35 +1,25 @@
 # Color Pickers
 
-> A color picker (Apple "color well") lets people choose and adjust a color for text, shapes, or other elements.
+> A color picker lets people choose and adjust a color for text, shapes, or other elements.
 
-**Use it for:** Picking or changing a color value, ideally via a native control for a familiar, low-effort experience.
-
-**Implementation**
-
-| Platform | Maps to |
-| --- | --- |
-| Web | `<input type="color">` + `<label>`, or a custom `role="dialog"` popover with sliders/hex field |
-| SwiftUI | `ColorPicker` |
-| Android (Compose) | No M3 built-in; third-party color-picker composable or custom dialog |
-| UIKit | `UIColorPickerViewController` / `UIColorWell` |
-| React Native | `@react-native-community` / third-party color-picker libs |
-| Flutter | `flutter_colorpicker` package or custom |
+**When to use it:** When people need to pick or change a color value, ideally through a familiar, low-effort control.
 
 **Guidelines**
-- Prefer the native control for a consistent, OS-integrated picker with minimal code.
-- Show the currently selected color in the swatch/trigger so the active value stays visible.
-- If custom, also offer a hex/RGB text field for exact values.
+- Prefer a standard, system-consistent picker so the experience feels familiar.
+- Show the currently selected color in the swatch or trigger so the active value stays visible.
+- Offer a precise text entry (such as a hex value) alongside visual selection for exact colors.
 - Update previews live as the color changes.
-- Provide a small set of recent/preset swatches when it speeds common choices.
+- Provide a small set of recent or preset swatches when it speeds common choices.
 
 **Accessibility**
-- Web: native `<input type="color">` is keyboard- and SR-accessible; always give it a `<label>`.
-- Don't rely on swatch color alone — expose the hex/value as text. iOS VoiceOver / Android TalkBack: label every control.
-- Custom popovers: focus trap, Escape to close; targets ≥44pt / 48dp.
+- Don't rely on the swatch color alone — also expose the value as text people can read.
+- Give every color control a clear, descriptive label.
+- Keep the picker fully operable in a logical focus order, not by pointer alone.
+- Make controls generous, easily tapped targets (about 44pt) with legible, high-contrast labels.
 
 **Avoid**
-- Reinventing a complex color UI when a native control suffices.
-- Conveying the chosen color only visually with no text/value.
-- Custom popovers without keyboard focus management.
+- Reinventing a complex color interface when a simpler, familiar one suffices.
+- Conveying the chosen color only visually with no readable value.
+- A picker that can't be operated or dismissed without a pointer.
 
 **Full reference:** [color-wells.md](../../references/components/color-wells.md)

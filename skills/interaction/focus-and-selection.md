@@ -1,38 +1,28 @@
 # Focus and Selection
 
-> Focus visually marks the element an interaction targets; selection marks the item(s) a user has chosen to act on.
+> Focus marks the single element an interaction will target; selection marks the item or items a user has chosen to act on.
 
-**Use it for:** Every keyboard- or remote-navigable interface; lists, grids, menus, and tabs needing arrow-key navigation; modals and dynamic views where focus must move or restore.
-
-**Implementation**
-
-| Platform | Maps to |
-| --- | --- |
-| Web | `:focus-visible`, `element.focus()`, `tabindex` + roving tabindex, `aria-selected`/`aria-current`, `::selection` |
-| SwiftUI | `@FocusState` + `.focused`, `.focusable`, `.defaultFocus`, `List`/`Table` `selection:`, `.textSelection` |
-| Android (Compose) | `FocusRequester` + `Modifier.focusRequester`/`onFocusChanged`, `Modifier.selectable`/`selectableGroup`, `SelectionContainer` |
-| React Native | `ref.focus()`, `focusable`/`hasTFocus` (TV/desktop), `accessibilityState={{selected}}`, `selectable` text |
-| Flutter | `Focus`/`FocusNode` + `FocusScope`, `FocusTraversalGroup`, `SelectableText`/`SelectionArea`, selection state |
+**When to use it:** Any interface navigated by keyboard or remote; lists, grids, menus, and tabs that need directional navigation; and dynamic views where focus must move or be restored.
 
 **Guidelines**
-- Rely on native focus behavior wherever possible; build custom handling only when necessary.
-- Never move focus without a user action — except to keep it sensible when the focused element is removed.
-- On opening a modal/dialog, move focus into it; on close, restore focus to the triggering element.
-- Use a focus ring for text fields and single controls; a row/cell highlight for items in a list or collection.
-- Make focus order follow reading order; group related controls so arrow keys stay within a logical area (roving tabindex / focus group).
-- Distinguish focus from selection: focusing an item shouldn't auto-activate it if that causes a disruptive shift; require explicit Enter/Space/tap.
-- Reflect selection state programmatically (`aria-selected`, `selected` accessibility state) and style selected items distinctly from focused ones.
+- Rely on familiar, expected focus behavior wherever possible; introduce custom handling only when truly needed.
+- Never move focus without a user action — except to keep it sensible when the focused element disappears.
+- When a modal or dialog opens, move focus into it; when it closes, return focus to whatever opened it.
+- Indicate focus with a ring for individual controls and a highlight for an item within a list or collection.
+- Make focus order follow reading order, and group related controls so directional navigation stays within a logical area.
+- Distinguish focus from selection: focusing an item shouldn't activate it if that causes a jarring shift; require an explicit confirmation.
+- Style selected items distinctly from focused ones so the two states are never confused.
 
 **Accessibility**
-- Always keep a clearly visible focus indicator (web/desktop: `:focus-visible`); never remove without an equally visible replacement.
-- Ensure the indicator has sufficient contrast and isn't clipped by overflow or occluding elements.
-- Manage focus in dynamic UI (route changes, panels) so it never lands on a hidden element or gets lost; announce changes to VoiceOver/TalkBack.
-- Keep text selectable with adequate contrast; don't disable selection on readable content.
+- Always keep a clearly visible focus indicator; never remove it without an equally visible replacement.
+- Ensure the indicator has enough contrast and isn't clipped or hidden behind other elements.
+- Manage focus in dynamic interfaces so it never lands on a hidden element or gets lost, and make focus changes perceivable to assistive tech.
+- Keep readable text selectable with adequate contrast; don't disable selection on content users may want to copy.
 
 **Avoid**
-- Removing or suppressing focus outlines, leaving keyboard users unable to see where they are.
-- Programmatically stealing or resetting focus during a user's task.
-- Auto-selecting/activating a focused item when it triggers a jarring context shift.
-- Conveying selection only by color with no programmatic state for assistive tech.
+- Removing or suppressing the focus indicator, leaving keyboard users unsure where they are.
+- Stealing or resetting focus in the middle of a user's task.
+- Auto-activating a focused item when doing so triggers a disruptive context shift.
+- Conveying selection by color alone, with no perceivable state for assistive tech.
 
 **Full reference:** [full reference](../../references/inputs/focus-and-selection.md)

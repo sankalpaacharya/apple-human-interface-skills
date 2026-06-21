@@ -1,38 +1,28 @@
 # Toolbars
 
-> A horizontal bar of frequently used commands, controls, navigation, and search along the top (or bottom) edge of a view, acting on the current content.
+> A toolbar is a horizontal bar of frequently used commands, controls, navigation, and search along the top or bottom edge of a view, acting on the current content.
 
-**Use it for:** Actions that operate on the current view's content (edit, share, delete, new), and hosting the view title, back/navigation controls, and search.
-
-**Implementation**
-
-| Platform | Maps to |
-| --- | --- |
-| Web | `<div role="toolbar" aria-label="…">` of `<button>`s; overflow `<button aria-haspopup="menu" aria-expanded>`; distinct from `<nav>` |
-| SwiftUI | `.toolbar { ToolbarItem(placement:) }`; `Menu` for overflow |
-| Android (Compose) | Material 3 `TopAppBar` / `BottomAppBar` with action `IconButton`s + overflow `DropdownMenu` |
-| UIKit | `UIToolbar` (bottom) / `UINavigationBar` items; `UIBarButtonItem` |
-| React Native | Header from `@react-navigation` (`headerRight`/`headerLeft`); RN Paper `Appbar` |
-| Flutter | `AppBar` / `BottomAppBar` with `actions`; `PopupMenuButton` for overflow |
+**When to use it:** Use a toolbar for actions that operate on the current view's content, and for hosting the view's title, navigation controls, and search.
 
 **Guidelines**
-- Choose items deliberately to avoid overcrowding; define which move into an overflow ("More") menu as width shrinks. Don't overflow by default.
-- Prioritize the most frequent actions; push secondary ones into overflow.
-- Prefer recognizable icon buttons over text (except actions like "Edit"); use familiar standard icons.
-- Group items logically (≤3 groups); keep grouping/placement consistent across pages/breakpoints.
-- Position: leading = back / sidebar toggle / title; center = common controls; trailing = primary action, inspector toggles, search, overflow.
-- Give one primary/prominent action only, on the trailing side; keep text-labeled buttons spaced apart.
-- Use standard Back/Close controls and symbols; keep the title concise and never the app name.
+- Choose items deliberately to avoid overcrowding, and decide which move into an overflow menu as space shrinks rather than overflowing by default.
+- Prioritize the most frequent actions, pushing secondary ones into overflow.
+- Prefer recognizable icon buttons over text for most actions, using familiar standard symbols.
+- Group items logically into a few groups, and keep grouping and placement consistent across views and sizes.
+- Position items by role: navigation and title leading, common controls in the center, and the primary action, search, and overflow trailing.
+- Give one prominent action at most, on the trailing side, and keep text-labeled buttons spaced apart.
+- Use standard navigation and close controls, and keep the title concise — never the app name.
 
 **Accessibility**
-- Web: `role="toolbar"` + `aria-label`; roving tabindex with arrow-key navigation; overflow trigger uses `aria-haspopup`/`aria-expanded`; icon-only buttons need labels + tooltips.
-- iOS (VoiceOver): bar button items expose labels/traits; set `accessibilityLabel` on custom items.
-- Android (TalkBack): set `contentDescription` on icon actions; overflow announces as a menu.
-- Every toolbar action is also reachable via a menu/command; targets meet ≥44pt / 48dp.
+- Give every icon-only action a clear name so its purpose isn't conveyed by the icon alone.
+- Provide a logical focus order across the bar and a visible focus indicator.
+- Ensure each toolbar action is also reachable another way, such as through a menu.
+- Make every action meet an adequate touch target of roughly 44pt.
+- Maintain sufficient contrast for icons, labels, and the prominent action.
 
 **Avoid**
-- Using a toolbar for primary section navigation (that's a tab bar/nav).
-- More than three control groups, or running text labels together.
-- Overcrowding the bar or adding an overflow menu when none is needed.
+- Using a toolbar for primary section navigation, which belongs in a tab bar.
+- More than a few control groups, or running text labels together.
+- Overcrowding the bar, or adding an overflow menu when none is needed.
 
 **Full reference:** [full reference](../../references/components/toolbars.md)

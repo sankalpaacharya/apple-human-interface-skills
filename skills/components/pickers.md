@@ -2,34 +2,24 @@
 
 > A picker presents one or more scrollable lists of distinct values to choose from, including date and time pickers.
 
-**Use it for:** Choosing from a medium-to-long list of predictable, logically ordered values. Use native date/time inputs for dates and times; a select for short lists; a searchable list for very large sets.
-
-**Implementation**
-
-| Platform | Maps to |
-| --- | --- |
-| Web | `<input type="date\|time\|datetime-local\|month">`; `<select>` or ARIA `listbox` for value lists |
-| SwiftUI | `DatePicker`, `Picker` (`.wheel`/`.menu` styles) |
-| Android (Compose) | `DatePicker`/`TimePicker`, `DropdownMenu` for value lists |
-| UIKit | `UIDatePicker`, `UIPickerView` |
-| React Native | `@react-native-community/datetimepicker`, `@react-native-picker/picker` |
-| Flutter | `showDatePicker`/`showTimePicker`, `CupertinoPicker`, `DropdownButton` |
+**When to use it:** To choose from a medium-to-long list of predictable, logically ordered values. Use a short selection control for brief lists and a searchable list for very large sets.
 
 **Guidelines**
-- Use predictable, logically ordered values (alphabetical, chronological) for quick scanning.
+- Use predictable, logically ordered values — alphabetical or chronological — for quick scanning.
 - Show the picker in context, near the field being edited, rather than navigating to a new view.
-- Prefer native date/time controls — they bring calendar UI, keyboard entry, and localization for free.
-- Let the locale format and order date/time parts; don't hardcode order.
-- For minute granularity, constrain intervals (e.g. 15-minute steps).
+- Prefer familiar date and time pickers so people get calendar layout, entry, and localization they already know.
+- Let the locale format and order date and time parts; don't hardcode the order.
+- For fine granularity, constrain intervals to sensible steps such as 15 minutes.
 
 **Accessibility**
-- Web: native date/time and `<select>` are keyboard- and SR-accessible — prefer them; give every picker a `<label>`.
-- iOS VoiceOver / Android TalkBack: native pickers expose adjustable values; custom listboxes need roles, arrow nav, and selected state.
-- Touch targets ≥44pt / 48dp.
+- Give every picker a clear, descriptive label.
+- Make values adjustable and selectable in a logical order, not by pointer alone.
+- Clearly convey the currently selected value.
+- Give controls generous, easily tapped targets (about 44pt).
 
 **Avoid**
-- Recreating iOS scrolling wheel pickers in the browser.
+- Forcing an unfamiliar selection pattern where a familiar one fits.
 - Switching to a separate screen just to show the picker.
-- Custom date widgets that lack keyboard support or localization.
+- Custom date widgets that lack keyboard operability or localization.
 
 **Full reference:** [pickers.md](../../references/components/pickers.md)

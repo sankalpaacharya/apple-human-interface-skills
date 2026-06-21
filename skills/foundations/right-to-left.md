@@ -1,36 +1,26 @@
-# Right to Left (RTL)
+# Right to Left
 
-> Mirroring your interface to match the reading direction of RTL scripts like Arabic and Hebrew.
+> Mirroring your interface to match the reading direction of right-to-left scripts like Arabic and Hebrew.
 
-**Use it for:** Whenever you localize for Arabic, Hebrew, Persian, Urdu, or other RTL languages.
-
-**Implementation**
-
-| Platform | Maps to |
-| --- | --- |
-| Web | `dir="rtl"`/`dir="auto"`, CSS logical properties (`margin-inline-start`, `inset-inline`, `text-align: start`), `:dir()` |
-| SwiftUI | Automatic via leading/trailing layout; `@Environment(\.layoutDirection)`, `.environment(\.layoutDirection, .rightToLeft)` |
-| Android (Compose) | `LocalLayoutDirection`, start/end-based modifiers/padding, `supportsRtl` in manifest |
-| React Native | `I18nManager.isRTL`, `start`/`end` style props, `writingDirection` |
-| Flutter | `Directionality` widget, `EdgeInsetsDirectional`, `TextDirection`, start/end alignment |
+**When to use it:** Whenever you localize for Arabic, Hebrew, Persian, Urdu, or other right-to-left languages.
 
 **Guidelines**
-- Prefer logical (start/end) layout over physical (left/right) so layout mirrors automatically.
-- Align text to match interface direction; right-align in RTL contexts.
-- Align a paragraph (3+ lines) by its own language, not the surrounding context.
-- Use one consistent alignment for all items in a list, even mixed-script.
-- Never reverse digit order within a number (phone, card); locale may swap numeral systems.
-- Reverse the order of numerals showing progress/sequence to match a flipped control — but don't mirror the glyphs.
-- Flip directional controls (sliders, progress, back/next) and reverse their start/end icons.
-- Don't flip controls that point to a real direction or onscreen location.
-- Reverse the order of images when their sequence is meaningful.
+- Think in terms of leading and trailing edges so the layout mirrors automatically with reading direction.
+- Align text to match the interface direction — right-aligned in right-to-left contexts.
+- Align a paragraph of three or more lines by its own language, not the surrounding context.
+- Use one consistent alignment for all items in a list, even when scripts are mixed.
+- Never reverse the digit order within a number such as a phone or card number.
+- Reverse the order of numerals that show progress or sequence to match a flipped control, but don't mirror the glyphs themselves.
+- Flip directional controls (sliders, progress, back and next) and reverse their leading and trailing icons.
+- Don't flip controls that point to a real direction or an onscreen location.
+- Reverse the order of images when their sequence carries meaning.
 
 **Accessibility**
-- Set direction correctly so screen readers announce reading order and bidi text renders; use auto-detection for user-generated content.
-- Visually balance Arabic/Hebrew next to all-caps Latin (those scripts lack uppercase) — bump RTL font size slightly if needed.
+- Set reading direction correctly so screen readers announce order properly and bidirectional text renders well; auto-detect direction for user-generated content.
+- Visually balance Arabic or Hebrew next to all-caps Latin (those scripts have no uppercase) by nudging the right-to-left text size if needed.
 
 **Avoid**
-- Flipping photos, illustrations, logos, or universal marks (checkmark).
+- Flipping photos, illustrations, logos, or universal marks such as a checkmark.
 - Mirroring icons of real-world objects (clocks, right-handed tools) that aren't directional.
 - Reversing digits inside a single number.
 

@@ -1,34 +1,24 @@
 # Embedded Content
 
-> Embedded content loads and displays external rich web content (HTML, sites, media) inline within your page or app.
+> Embedded content displays external rich content such as web pages or media inline within your own screen.
 
-**Use it for:** Showing external HTML/web content inline (rendered email, a help article, a third-party widget) or briefly surfacing a website inside your app's context.
-
-**Implementation**
-
-| Platform | Maps to |
-| --- | --- |
-| Web | `<iframe>` (`title`, `sandbox`, `loading="lazy"`, `allow`); native `<video>`/`<audio>`, `<object>`/`<embed>` |
-| SwiftUI | `WebView` (iOS 26+) or `WKWebView` wrapped via `UIViewRepresentable` |
-| Android (Compose) | `WebView` inside `AndroidView` |
-| UIKit | `WKWebView` (use `SFSafariViewController` for general browsing) |
-| React Native | `react-native-webview` `WebView` |
-| Flutter | `webview_flutter` `WebViewWidget` |
+**When to use it:** To show external content inline — a rendered message, a help article, or a third-party widget — or to briefly surface an outside source within your app's context.
 
 **Guidelines**
-- Support forward/back navigation only when people visit multiple pages, with explicit controls.
+- Offer forward and back navigation only when people visit multiple pages, with explicit, visible controls.
 - Don't rebuild a full browser inside an embed — link out for general browsing.
-- Lazy-load offscreen embeds to keep the page fast.
-- Sandbox untrusted content and grant only the permissions it needs.
-- Size the frame to its content and make it responsive.
+- Defer loading of off-screen embeds so the surrounding experience stays fast.
+- Show only trusted content and request only the access it genuinely needs.
+- Size the embed to its content and let it adapt responsively.
 
 **Accessibility**
-- Web: give each `<iframe>` a descriptive `title`; keep embedded content keyboard-reachable with sensible focus order; don't trap focus.
-- iOS VoiceOver / Android TalkBack: ensure the web view's content is exposed to the screen reader.
-- Provide a meaningful fallback or label if the embed fails to load.
+- Give each embed a descriptive label so people understand what it contains.
+- Keep the embedded content reachable in a sensible focus order and don't trap focus inside it.
+- Ensure the embedded content itself is perceivable to assistive technology.
+- Provide a meaningful fallback or message if the embed fails to load.
 
 **Avoid**
-- Replicating Safari/browser functionality inside the app.
-- Untitled or unsandboxed iframes hosting untrusted content.
+- Replicating full browser functionality inside the app.
+- Untitled embeds or showing untrusted content without safeguards.
 
 **Full reference:** [web-views.md](../../references/components/web-views.md)

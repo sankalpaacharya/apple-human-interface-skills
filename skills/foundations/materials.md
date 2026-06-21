@@ -1,37 +1,27 @@
 # Materials
 
-> Translucent, blurred effects that separate a floating control/navigation layer from background content, creating depth while keeping foreground elements legible.
+> Translucent, blurred surfaces that separate a floating control or navigation layer from background content, creating depth while keeping foreground elements legible.
 
-**Use it for:** Toolbars, nav/tab bars, sidebars, popovers, and sheets floating over scrolling content or media where the background should subtly peek through.
-
-**Implementation**
-
-| Platform | Maps to |
-| --- | --- |
-| Web | `backdrop-filter: blur()` + semi-transparent `background-color`; `@supports` gate + solid fallback |
-| SwiftUI | `.background(.ultraThinMaterial / .regularMaterial / .thickMaterial)`, `.foregroundStyle(.secondary)` vibrancy |
-| Android (Compose) | `Modifier.blur` / `RenderEffect` (API 31+) or scrim overlay; translucent `Surface` with fallback tint |
-| React Native | `@react-native-community/blur` (`BlurView`) or `expo-blur`; solid fallback on unsupported targets |
-| Flutter | `BackdropFilter(filter: ImageFilter.blur(...))` inside a `ClipRect`, semi-transparent overlay |
+**When to use it:** Toolbars, navigation and tab bars, sidebars, popovers, and sheets floating over scrolling content or media where the background should subtly show through.
 
 **Guidelines**
-- Reserve translucency for the controls/navigation layer above content — not ordinary content backgrounds.
-- Use it sparingly; over-applying blur distracts and hurts performance.
-- Choose thickness by need: more opaque for text contrast, more translucent when context should show through.
-- Use a regular/opaque treatment for text-heavy surfaces; clear/translucent only over rich media.
-- Over bright media, add a dimming layer (~35% dark) to keep foreground legible; skip when already dark.
-- Put vibrant, sufficiently opaque text/icons on top — thin gray content vanishes against blur.
-- Always provide a solid fallback for platforms/browsers without backdrop blur.
+- Reserve translucency for the controls and navigation layer above content, not ordinary content backgrounds.
+- Use it sparingly; over-applying blur distracts and feels heavy.
+- Choose thickness by need — more opaque for text contrast, more translucent when context should show through.
+- Use a more opaque treatment for text-heavy surfaces, and a lighter, clearer one mainly over rich media.
+- Over bright media, add a subtle dimming layer to keep foreground content legible; skip it when the background is already dark.
+- Place vibrant, sufficiently solid text and icons on top — thin gray content disappears against blur.
+- Always have a solid fallback in mind for contexts where the blur effect isn't available.
 
 **Accessibility**
-- Honor reduce-transparency and increase-contrast settings by switching to a solid, opaque background.
-- Verify text on translucent surfaces meets 4.5:1 against the worst-case background that can scroll behind.
-- Don't rely on blur alone for separation — keep a border or shadow where contrast may be insufficient.
+- Honor reduced-transparency and increased-contrast preferences by switching to a solid, opaque background.
+- Verify text on translucent surfaces stays legible against the worst-case content that can scroll behind it.
+- Don't rely on blur alone for separation — keep a border or shadow where contrast may fall short.
 
 **Avoid**
-- Translucency on content-layer backgrounds (confusing hierarchy).
-- Low-contrast/non-vibrant text or icons over blurred materials.
-- Blur with no opaque fallback, leaving unreadable bars.
-- Heavy blur on many simultaneous elements (visual noise + jank).
+- Translucency on content-layer backgrounds, which confuses hierarchy.
+- Low-contrast or thin text and icons over blurred surfaces.
+- Translucent bars with no readable fallback.
+- Heavy blur across many elements at once, creating visual noise.
 
 **Full reference:** [Apple HIG](../../references/foundations/materials.md)

@@ -1,36 +1,26 @@
 # Alerts
 
-> An alert is a modal dialog that delivers critical information and requires the user to respond before continuing.
+> An alert is a modal that delivers critical information and requires the user to respond before continuing.
 
-**Use it for:** Warning before a destructive/irreversible action, confirming an important user-initiated action (e.g. a purchase), or reporting a problem the user must acknowledge.
-
-**Implementation**
-
-| Platform | Maps to |
-| --- | --- |
-| Web | `<dialog role="alertdialog" aria-modal="true">` (never JS `alert()`/`confirm()`) |
-| SwiftUI | `.alert(_:isPresented:)` |
-| Android (Compose) | `AlertDialog` |
-| UIKit | `UIAlertController` with `.alert` style |
-| React Native | `Alert.alert(...)` |
-| Flutter | `AlertDialog` via `showDialog` |
+**When to use it:** To warn before a destructive or irreversible action, confirm an important user-initiated action such as a purchase, or report a problem the user must acknowledge.
 
 **Guidelines**
-- Use sparingly — alerts interrupt; each must be essential and actionable.
-- Don't alert merely to convey info, on load, or for common undoable actions.
-- Write a clear, specific title (avoid "Error"); add message text only if it adds value.
-- Use specific verb buttons ("Delete", "Erase") over "OK"; reserve "OK" for informational alerts.
-- Put the default action on the trailing side, Cancel on the leading side; never make a destructive button the default.
-- Style destructive buttons distinctly (e.g. red).
+- Use alerts sparingly — each one interrupts, so reserve them for essential, actionable moments.
+- Don't alert merely to convey information, on load, or for common undoable actions.
+- Write a clear, specific title; add message text only when it adds real value.
+- Use specific verb buttons ("Delete", "Erase") rather than "OK"; reserve "OK" for purely informational alerts.
+- Place the default action on the trailing side and Cancel on the leading side; never make a destructive button the default.
+- Style destructive buttons distinctly so their consequence is obvious.
 
 **Accessibility**
-- Web: `role="alertdialog"`, focus the default/first focusable on open and restore on close, Escape cancels, background `inert`.
-- iOS VoiceOver / Android TalkBack: announce as an interrupting dialog with its message.
-- Touch targets ≥44pt / 48dp.
+- Treat the alert as an interrupting layer that takes focus and clearly conveys its message.
+- Ensure the default action is reachable first and focus returns to context when dismissed.
+- Give buttons generous, easily tapped targets (about 44pt) and legible, high-contrast text.
+- Don't rely on color alone to mark a destructive button — say so in the label.
 
 **Avoid**
-- Using an alert when a menu of choices (action sheet) fits better.
-- Long titles wrapping past two lines, or alerts that scroll.
-- Overusing caution symbols.
+- Using an alert when a menu of choices fits the situation better.
+- Long titles that wrap past two lines, or alerts that scroll.
+- Overusing caution symbols, which dulls their urgency.
 
 **Full reference:** [alerts.md](../../references/components/alerts.md)

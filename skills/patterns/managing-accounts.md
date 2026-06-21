@@ -1,31 +1,22 @@
 # Managing Accounts
 
-> Authentication and account flows that let people access their content without becoming a barrier to entry.
+> Authentication and account flows that let people reach their content without becoming a barrier to entry.
 
-**Use it for:** Only when core functionality genuinely requires an account; otherwise let people use the app anonymously.
-
-**Implementation**
-
-| Platform | Maps to |
-| --- | --- |
-| Web | OAuth/OIDC, Sign in with Apple/Google, passkeys via WebAuthn (`navigator.credentials`), `autocomplete="one-time-code"` autofill |
-| SwiftUI | `SignInWithAppleButton` (`AuthenticationServices`), passkeys via `ASAuthorizationController`, Keychain autofill |
-| Android (Compose) | Credential Manager API (passkeys + Sign in with Google), `Sign in with Google`, autofill framework |
-| React Native | `@invertase/react-native-apple-authentication`, `@react-native-google-signin`, `react-native-passkey` |
-| Flutter | `sign_in_with_apple`, `google_sign_in`, `firebase_auth`, passkey plugins |
+**When to use it:** Only when core functionality genuinely requires an account; otherwise let people use the experience anonymously.
 
 **Guidelines**
-- Require an account only if necessary; delay sign-in as long as possible (let users browse/try first).
-- Explain the benefits of an account in the sign-in view — keep it brief and friendly.
-- Prefer passkeys or federated sign-in (Apple/Google) over passwords; if using passwords, require 2FA.
-- Name the auth method on the button ("Sign in with Passkey/Google"), not a generic "Sign In"; only show methods available on the device.
-- Never prepopulate a password field; rely on the platform keychain/credential autofill.
-- Provide a clear in-app path to delete the account (not just deactivate); don't bury it in Terms/Privacy.
-- Tell people when deletion will complete and confirm when done; explain billing/cancellation relative to deletion.
+- Require an account only when necessary, and delay sign-in as long as possible so people can browse or try first.
+- Explain the benefits of an account in the sign-in view, kept brief and friendly.
+- Prefer modern, low-friction sign-in (passkeys or trusted federated providers) over passwords; if you use passwords, encourage strong second-factor protection.
+- Name the sign-in method clearly rather than a generic "Sign In," and show only methods actually available to the person.
+- Never prepopulate a password field; let the platform fill saved credentials.
+- Provide a clear in-app path to delete the account, not just deactivate it, and don't bury it in legal text.
+- Tell people when deletion will complete, confirm when it's done, and explain how billing or cancellation relates to deletion.
 
 **Accessibility**
-- Make auth buttons real, descriptively labeled controls; announce error states via live region / VoiceOver / TalkBack.
-- Support password managers and platform credential autofill with correct content-type tokens and labeled fields.
+- Make sign-in controls clearly labeled and operable in a logical order.
+- Announce error states so people using assistive technology learn of them promptly.
+- Keep sign-in fields and buttons legible, high-contrast, and large enough to target comfortably.
 
 **Avoid**
 - Forcing sign-in before any value is shown.

@@ -1,34 +1,24 @@
-# Sidebars (Side Navigation / Drawer)
+# Sidebars
 
-> A panel on the leading (left) side of a view for navigating between app areas or top-level content collections like folders and playlists.
+> A sidebar is a panel on the leading side of a view for navigating between app areas or top-level content collections like folders and playlists.
 
-**Use it for:** Apps with more sections than fit a tab bar, or with nested collections, on wide layouts (desktop/tablet) where space allows persistent navigation.
-
-**Implementation**
-
-| Platform | Maps to |
-| --- | --- |
-| Web | `<nav aria-label="Sidebar">` with links (`aria-current`); `<details>`/`role="tree"` for groups; off-canvas drawer on narrow screens |
-| SwiftUI | `NavigationSplitView` sidebar column; `List` with `Section`/`DisclosureGroup` |
-| Android (Compose) | Material 3 `ModalNavigationDrawer` / `PermanentNavigationDrawer` + `NavigationDrawerItem` |
-| UIKit | `UISplitViewController` primary column; `UICollectionView` list sidebar |
-| React Native | `@react-navigation/drawer` (`createDrawerNavigator`) |
-| Flutter | `Drawer` / `NavigationDrawer` (Material 3); `NavigationRail` on wide screens |
+**When to use it:** Use a sidebar for apps with more sections than fit a tab bar, or with nested collections, on wide layouts where there's room for persistent navigation.
 
 **Guidelines**
-- Prefer a tab bar first when sections are few; reach for a sidebar when the hierarchy is broader.
-- Let people customize ordering/contents when feasible; use collapsible disclosure groups for long lists.
-- Show at most ~2 levels of hierarchy; deeper structures belong in a split view (sidebar → list → detail).
-- Use succinct group titles and familiar icons; keep icon color purposeful (default to one accent).
+- Reach for a tab bar first when sections are few; choose a sidebar when the hierarchy is broader.
+- Let people customize ordering and contents when feasible, and use collapsible groups for long lists.
+- Show at most about two levels of hierarchy inline; deeper structures belong in a split view.
+- Use succinct group titles and familiar icons, keeping icon color purposeful and restrained.
 - Persistently highlight the current selection.
-- Let people hide/show the sidebar, but don't hide it by default — keep it discoverable; collapse to a drawer when the viewport narrows.
-- Avoid placing critical actions at the very bottom (can be cut off).
+- Let people hide and show the sidebar, but don't hide it by default — keep it discoverable, and collapse it to an overlay when the view narrows.
+- Avoid placing critical actions at the very bottom, where they can be cut off.
 
 **Accessibility**
-- Web: `<nav>` with a unique `aria-label`; `aria-current="page"`; `aria-expanded` on group toggles; drawer toggle uses `aria-expanded`/`aria-controls` and traps focus when modal.
-- iOS (VoiceOver): split-view sidebar exposes selection; label rows and disclosure controls.
-- Android (TalkBack): drawer items expose selected state; set `contentDescription` on icons.
-- Drawer toggle and rows meet ≥44pt / 48dp targets.
+- Highlight the current selection by more than color alone.
+- Convey group expansion state and selection so they're perceivable without sight.
+- Give the sidebar and its groups clear labels and a logical focus order.
+- Ensure rows and any toggle control meet an adequate touch target of roughly 44pt.
+- Maintain sufficient contrast for labels, icons, and the selected-item indicator.
 
 **Avoid**
 - Forcing a sidebar in cramped layouts where a tab bar fits better.

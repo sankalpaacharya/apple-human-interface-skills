@@ -2,35 +2,25 @@
 
 > Expressing a recognizable brand identity while keeping the experience familiar and content-first.
 
-**Use it for:** Establishing a product's visual and verbal identity (accent color, brand type, voice) across a site or app without crowding out content.
-
-**Implementation**
-
-| Platform | Maps to |
-| --- | --- |
-| Web | Design tokens (CSS custom properties for accent), `@font-face`/variable fonts, consistent copy voice |
-| SwiftUI | `Color` accent + `.tint()`, asset catalog brand colors, custom `Font`, `AccentColor` asset |
-| Android (Compose) | `ColorScheme` primary/brand colors in `MaterialTheme`, custom `FontFamily` in `Typography` |
-| React Native | Theme context / token object for accent, custom fonts via `useFonts`, shared `StyleSheet` |
-| Flutter | `ThemeData` `colorScheme.primary`, `TextTheme` with custom `fontFamily`, `Theme` widget |
+**When to use it:** Establishing a product's visual and verbal identity — accent color, brand type, voice — across an experience without crowding out content.
 
 **Guidelines**
 - Carry a consistent brand voice and tone through all copy.
-- Expose the accent color as a token and apply it to primary actions, links, and highlights.
-- Use a brand font for headlines if desired, but keep it legible at all sizes; pair with a reliable system font for body.
-- Keep branding subordinate to content; don't plaster logos throughout — users know which app they're in.
-- Use standard, familiar UI patterns and locations even within a stylized design.
-- Don't treat a loading/splash screen as a branding moment; put brand expression in onboarding/welcome.
-- Respect third-party trademark guidelines (e.g. don't misuse Apple marks).
+- Choose one accent color and apply it consistently to primary actions, links, and highlights.
+- Use a brand font for headlines if desired, but keep it legible at every size; pair it with a reliable, readable face for body text.
+- Keep branding subordinate to content; don't repeat logos throughout — people know which product they're in.
+- Use standard, familiar patterns and placements even within a stylized design.
+- Don't treat a loading or launch screen as a branding moment; express brand in onboarding and welcome instead.
+- Respect others' trademark and identity guidelines.
 
 **Accessibility**
-- Brand colors must still meet contrast (4.5:1 text, 3:1 UI/large text) in light and dark.
-- Custom fonts must support heavier weights and scale with Dynamic Type / font scaling / browser zoom.
-- Provide accessible text alternatives for any text rendered as brand imagery.
+- Brand colors must still meet contrast (about 4.5:1 for text, 3:1 for large text and interface elements) in light and dark.
+- Custom fonts must remain legible at heavier weights and scale up with the user's text-size preference.
+- Anything important rendered as brand imagery needs a clear text equivalent.
 
 **Avoid**
 - Logo and brand chrome that crowds out content.
 - Illegible brand fonts or fonts that don't scale.
-- Using a launch/splash screen to deliver brand messaging.
+- Using a launch screen to deliver brand messaging.
 
 **Full reference:** [Apple HIG](../../references/foundations/branding.md)

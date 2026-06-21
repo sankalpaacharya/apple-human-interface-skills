@@ -1,35 +1,25 @@
 # Steppers
 
-> A stepper is a two-segment control (increment/decrement) for changing a value by a fixed amount.
+> A stepper is a two-segment control for increasing or decreasing a value by a fixed amount.
 
-**Use it for:** Small, precise adjustments to a numeric value (quantity, copies). Pair with a text/number field when values vary widely.
-
-**Implementation**
-
-| Platform | Maps to |
-| --- | --- |
-| Web | `<input type="number" step>` (native spinners) or a custom `role="spinbutton"` pair with `aria-valuenow/min/max` |
-| SwiftUI | `Stepper(value:in:step:)` |
-| Android (Compose) | No Material 3 stepper — compose two `IconButton`s (`Remove`/`Add`) around a value `Text` |
-| UIKit | `UIStepper` |
-| React Native | No core stepper — two `Pressable` buttons around a value; or a community stepper lib |
-| Flutter | No Material stepper widget (`Stepper` is a wizard) — compose `IconButton`s; or `CupertinoButton` pair |
+**When to use it:** Use a stepper for small, precise adjustments to a numeric value, and pair it with an editable field when values can vary widely.
 
 **Guidelines**
 - Always show the value adjacent to the stepper; the buttons themselves don't display it.
-- Pair with an editable number field so people can type large changes instead of many clicks.
-- Define a sensible `step` plus `min`/`max` bounds; disable the relevant button at a limit.
-- Consider a larger jump (e.g. 10×) on Shift-click for wide ranges.
+- Pair the stepper with an editable field so people can type large changes instead of many taps.
+- Define a sensible increment plus minimum and maximum bounds, and disable the relevant button at a limit.
+- Consider offering a larger jump for wide ranges so people aren't stuck making tiny changes.
 
 **Accessibility**
-- Web: prefer native `<input type="number">`; if custom, `role="spinbutton"` + `aria-valuenow/min/max` and an accessible name.
-- iOS (VoiceOver): `UIStepper`/`Stepper` expose value and adjustable trait automatically.
-- Android (TalkBack): give increment/decrement buttons `contentDescription` (e.g. "Increase quantity"), not just "+"/"−".
-- Buttons keyboard-operable with a visible focus ring; each meets ≥44pt / 48dp target.
+- Give the increment and decrement controls clear names like "Increase quantity," not just "+" and "−".
+- Convey the current value so it's perceivable without sight.
+- Provide a visible focus indicator and a logical order between the two controls.
+- Ensure each control meets an adequate touch target of roughly 44pt.
+- Maintain sufficient contrast for the controls and the displayed value.
 
 **Avoid**
 - A stepper with no visible associated value.
-- Forcing many clicks for large changes with no field to type into.
-- Increment buttons lacking accessible names.
+- Forcing many taps for large changes with no field to type into.
+- Increment controls that lack clear, descriptive names.
 
 **Full reference:** [full reference](../../references/components/steppers.md)

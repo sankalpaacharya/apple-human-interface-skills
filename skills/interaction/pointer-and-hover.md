@@ -1,38 +1,28 @@
 # Pointer and Hover
 
-> Mouse and trackpad input for precise navigation, hover feedback, and contextual (right-click) actions.
+> Precise pointing input — moving, hovering, and invoking contextual actions — typical of mouse and trackpad use.
 
-**Use it for:** Desktop/laptop and hybrid experiences where users expect precision, hover-revealed controls (tooltips, row actions), and right-click context menus.
-
-**Implementation**
-
-| Platform | Maps to |
-| --- | --- |
-| Web | `:hover`, `:focus-visible`, Pointer Events (`pointerdown`/`pointermove`), `contextmenu`, CSS `cursor` |
-| SwiftUI | `.hoverEffect`, `.onHover`, `.contextMenu`, `.pointerStyle`, `.help` (tooltip) |
-| Android (Compose) | `Modifier.hoverable` / `interactionSource`, `Modifier.pointerHoverIcon`, `TooltipBox`, long-press context menu |
-| React Native | `Pressable` `onHoverIn`/`onHoverOut`, `onLongPress`, `cursor` style (web/desktop) |
-| Flutter | `MouseRegion` (`onEnter`/`onExit`, `cursor`), `Tooltip`, `GestureDetector.onSecondaryTap` |
+**When to use it:** Desktop, laptop, and hybrid experiences where users expect precision, hover-revealed affordances, and contextual (secondary-click) actions.
 
 **Guidelines**
-- Give interactive elements clear hover feedback (subtle background, tint, or elevation).
-- Set appropriate cursors: pointer on clickable elements, I-beam on text, resize on draggable edges.
-- Keep hover effects meaningful — a hover change should signal something is interactive.
-- Make hit targets comfortable: pad clickable areas beyond their visible bounds.
-- Keep adjacent hit regions contiguous (e.g. toolbar buttons) to avoid flicker.
-- Behave consistently across input modes; pair every hover affordance with a focus equivalent.
-- Reserve scaling/elevation hover for elements with room to grow; use tint-only for tightly packed items.
+- Give interactive elements clear hover feedback (a subtle background, tint, or lift) so they read as interactive.
+- Show the right cursor for the context: a pointer on clickable things, a text cursor over text, a resize cursor on draggable edges.
+- Keep hover effects meaningful — a change on hover should signal that something can be acted on.
+- Make hit targets comfortable by extending the clickable area beyond the visible bounds.
+- Keep adjacent hit regions contiguous (as in a toolbar) so feedback doesn't flicker as the pointer moves.
+- Behave consistently across input modes; pair every hover affordance with an equivalent that keyboard and touch users get.
+- Reserve growth or elevation effects for elements with room to move; use subtle tints for tightly packed items.
 
 **Accessibility**
-- Never make functionality hover-only — revealed content/actions must also appear on keyboard focus and be reachable by touch.
-- Provide a keyboard/touch-accessible alternative to right-click context menus (visible "more" button or context-menu key).
-- Use focus-visible semantics so rings show for keyboard users without flashing on every click.
-- Ensure hit targets are large enough (~44pt/dp) for limited motor precision; VoiceOver/TalkBack reach the same actions.
+- Never make functionality hover-only — anything revealed on hover must also be reachable by keyboard and touch.
+- Provide a visible, reachable alternative to secondary-click menus (such as a "more" control) rather than hiding actions behind right-click.
+- Keep hit targets large enough for users with limited motor precision, and ensure every action is reachable by assistive tech.
+- Show a visible focus state for the same elements that respond to hover, so non-pointer users see what's interactive.
 
 **Avoid**
-- Hover-only menus, tooltips, or controls with no keyboard/touch path.
-- Removing default cursors or focus outlines without a replacement.
-- Gratuitous, purely decorative pointer/hover effects.
-- Overriding native scroll, swipe-between-pages, or zoom gestures.
+- Hover-only menus, tooltips, or controls with no keyboard or touch path.
+- Removing the default cursor or focus indication without an equally clear replacement.
+- Gratuitous, purely decorative pointer effects that don't signal interactivity.
+- Overriding the system's native scroll, swipe, or zoom behaviors.
 
 **Full reference:** [full reference](../../references/inputs/pointing-devices.md)

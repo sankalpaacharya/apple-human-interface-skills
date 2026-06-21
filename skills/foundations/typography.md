@@ -2,38 +2,28 @@
 
 > Typographic choices establish legibility, hierarchy, and brand through deliberate use of size, weight, and a limited set of typefaces.
 
-**Use it for:** Building a reusable type scale, conveying hierarchy without extra typefaces, and ensuring text scales with user/OS font-size settings.
-
-**Implementation**
-
-| Platform | Maps to |
-| --- | --- |
-| Web | Type scale in `rem`/`em` tokens + `clamp()`; `system-ui`/variable fonts; semantic classes (`.title`, `.body`) |
-| SwiftUI | `Font` text styles (`.largeTitle`…`.caption`), Dynamic Type, `@ScaledMetric`, custom `Font` with relative scaling |
-| Android (Compose) | `MaterialTheme.typography` styles, `sp` units (auto font scaling), `FontFamily` |
-| React Native | `StyleSheet` with `fontSize`/`fontWeight`, `allowFontScaling`, theme type tokens, `PixelRatio.getFontScale()` |
-| Flutter | `TextTheme` styles (`titleLarge`, `bodyMedium`), `MediaQuery.textScaler`, `TextStyle` |
+**When to use it:** Building a reusable type scale, conveying hierarchy without extra typefaces, and ensuring text scales with the user's font-size preference.
 
 **Guidelines**
-- Define a semantic type scale (large title → title → headline → body → caption) and reuse it.
+- Define a meaning-based type scale (large title, title, headline, body, caption) and reuse it.
 - Minimize the number of typefaces; mixing many obscures hierarchy.
-- Convey hierarchy with weight, size, and color; keep relative hierarchy intact when text scales.
-- Body text ~16–17pt baseline; keep a sensible minimum (~11–12pt) for small labels.
-- Prefer Regular/Medium/Semibold/Bold; avoid Thin/Light weights at small sizes.
-- Use system font stacks for performance and native feel; if custom, prefer variable fonts that scale and bold correctly.
+- Convey hierarchy with weight, size, and color, and keep that relative hierarchy intact as text scales.
+- Keep body text comfortably readable (around 16–17pt) with a sensible minimum for small labels.
+- Prefer Regular, Medium, Semibold, and Bold weights, and avoid Thin or Light weights at small sizes.
+- Favor the system typeface for a native feel; if you use a custom one, ensure it scales and bolds well.
 - Adjust line height to context — looser for long passages, tighter for dense rows.
-- Constrain measure (~45–75 chars); reduce columns as text grows.
-- Size paired icons relatively so they grow alongside text.
+- Keep line length comfortable (roughly 45–75 characters) and reduce columns as text grows.
+- Size paired icons relative to text so they grow alongside it.
 
 **Accessibility**
-- Use relative/scalable units and Dynamic Type / font scaling — never fixed `px` for body copy.
-- Web: don't disable user zoom; test at 200% text size.
-- Prioritize key content when scaling — let body grow even if chrome stays put.
-- Keep strong contrast; let labels wrap instead of truncating at large sizes.
+- Use scalable text that honors the user's font-size preference — never lock body copy to a fixed size.
+- Don't disable the ability to zoom, and check the interface at enlarged text sizes.
+- Prioritize key content when scaling — let body text grow even if surrounding chrome stays put.
+- Keep strong contrast, and let labels wrap instead of truncating at large sizes.
 
 **Avoid**
-- Many competing typefaces or light/thin weights for important text.
-- Pixel-locked font sizes that ignore user preferences.
-- Truncating meaningful text instead of wrapping when font size increases.
+- Many competing typefaces, or light and thin weights for important text.
+- Fixed font sizes that ignore the user's preferences.
+- Truncating meaningful text instead of wrapping when the font size increases.
 
 **Full reference:** [Apple HIG](../../references/foundations/typography.md)

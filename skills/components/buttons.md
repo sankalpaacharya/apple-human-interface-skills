@@ -1,36 +1,26 @@
 # Buttons
 
-> A button initiates an instantaneous action, combining style, content (text and/or icon), and a semantic role.
+> A button initiates an instantaneous action, combining style, content, and a semantic role.
 
-**Use it for:** Triggering an action (submit, save, delete, open dialog). Use a link/navigation element instead when the result is navigating to a URL or screen.
-
-**Implementation**
-
-| Platform | Maps to |
-| --- | --- |
-| Web | `<button type="button\|submit">` (`<a>` only for navigation) |
-| SwiftUI | `Button` (`.buttonStyle`, `.borderedProminent` for primary) |
-| Android (Compose) | `Button` / `FilledButton`, `OutlinedButton`, `TextButton` |
-| UIKit | `UIButton` |
-| React Native | `Pressable` / `Button` (RN Paper `Button`) |
-| Flutter | `ElevatedButton`, `OutlinedButton`, `TextButton` |
+**When to use it:** To trigger an action such as submit, save, delete, or open a dialog. Use a navigation element instead when the result is simply moving to another screen or destination.
 
 **Guidelines**
-- Use one prominent/primary style per view for the most likely action; keep others lighter.
+- Use one prominent, primary style per view for the most likely action; keep the others lighter.
 - Distinguish the preferred option with style, not size; keep buttons in a set the same size.
 - Start text labels with a verb ("Add to Cart"); use familiar icons for familiar actions.
-- Provide visible hover, focus, active (pressed), and disabled states.
-- Style destructive actions distinctly (e.g. red); never make destructive the default that responds to Enter.
-- For slow actions, show an in-button spinner and optionally swap the label.
+- Provide clearly distinct hover, focus, pressed, and disabled appearances.
+- Style destructive actions distinctly and never make a destructive button the default that responds to the return key.
+- For slow actions, show progress within the button and consider swapping the label.
 
 **Accessibility**
-- Web: accessible name (text/`aria-label`), Enter+Space, visible focus ring, `aria-busy` for loading.
-- iOS VoiceOver: button trait + label; icon-only buttons need an accessibility label. Android TalkBack: content description.
-- Touch target ≥44pt / 48dp (web aim 44×44 CSS px); don't rely on color alone for state/role.
+- Give every button a clear, descriptive name; icon-only buttons especially need a spoken label.
+- Show a visible focus indication and keep focus order logical.
+- Make targets generous and easily tapped (about 44pt) and don't pack them tightly.
+- Don't rely on color alone to signal a button's state or role.
 
 **Avoid**
 - Multiple competing prominent buttons in one view.
-- Building buttons from `<div>`/`<span>` without keyboard support; removing focus outlines.
+- Removing the visible focus indication.
 - Tiny or tightly packed tap targets.
 
 **Full reference:** [buttons.md](../../references/components/buttons.md)

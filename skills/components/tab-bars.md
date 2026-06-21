@@ -1,37 +1,27 @@
-# Tab Bars (Primary / Bottom Navigation)
+# Tab Bars
 
-> A persistent bar of top-level destinations that lets people switch between the main sections of an app while preserving each section's state.
+> A tab bar is a persistent bar of top-level destinations that lets people switch between an app's main sections while preserving each section's state.
 
-**Use it for:** Top-level navigation between a small number of peer sections (Home, Search, Profile) that must stay visible and quickly reachable.
-
-**Implementation**
-
-| Platform | Maps to |
-| --- | --- |
-| Web | `<nav aria-label="Primary">` with `<a aria-current="page">` links, or `role="tablist"`/`tab`/`tabpanel` for in-page panels |
-| SwiftUI | `TabView` with `.tabItem` (or `Tab` in newer APIs) |
-| Android (Compose) | Material 3 `NavigationBar` + `NavigationBarItem` (bottom); `NavigationRail` on wide screens |
-| UIKit | `UITabBarController` / `UITabBar` |
-| React Native | `@react-navigation/bottom-tabs` (`createBottomTabNavigator`); RN Paper `BottomNavigation` |
-| Flutter | `NavigationBar` (Material 3) / `BottomNavigationBar`; `CupertinoTabBar` |
+**When to use it:** Use a tab bar for top-level navigation between a small number of peer sections that must stay visible and quickly reachable.
 
 **Guidelines**
-- Use for navigation, not actions — put content commands in a toolbar.
-- Keep the bar visible across sections; only hide it under a full-screen modal.
-- Keep tabs small (≈5 or fewer); use a sidebar/drawer for complex hierarchies. Avoid overflow/"More" tabs.
-- Keep tabs available even when a section is empty; explain emptiness inside, don't disable the tab.
-- Include a short text label with each icon; use familiar, filled icons.
-- Use a badge only for critical/new info; ensure label/active color has sufficient contrast.
-- On wide screens consider promoting the tab bar to a sidebar/rail; collapse to bottom nav on narrow.
+- Use a tab bar for navigation, not actions; put commands that act on content in a toolbar.
+- Keep the bar visible across sections, hiding it only under a full-screen modal experience.
+- Keep the number of tabs small (about five or fewer); use a sidebar for complex hierarchies, and avoid overflow or "More" tabs.
+- Keep every tab available even when its section is empty; explain the emptiness inside rather than disabling the tab.
+- Include a short text label with each icon, and use familiar, recognizable icons.
+- Use a badge only for critical or new information, and ensure the active state has sufficient contrast.
+- On wide layouts, consider promoting the tab bar to a sidebar, and collapse back to a tab bar on narrow ones.
 
 **Accessibility**
-- Web: links mark active with `aria-current="page"`; in-page panels use the tabs pattern (`aria-selected`, roving tabindex, arrow keys, `aria-controls`); give the nav an `aria-label`.
-- iOS (VoiceOver): `UITabBar`/`TabView` expose selected tab and index automatically.
-- Android (TalkBack): `NavigationBarItem` announces selected state; set `contentDescription` on icons.
-- Tap targets meet ≥44pt / 48dp; labels are not icon-only.
+- Convey the selected tab by more than color alone.
+- Include a text label with every tab rather than relying on icons alone.
+- Give the bar and each tab a clear name and a logical focus order.
+- Ensure each tab meets an adequate touch target of roughly 44pt.
+- Maintain strong contrast for labels, icons, badges, and the active state.
 
 **Avoid**
-- Disabling or hiding individual tab buttons (looks unstable).
+- Disabling or hiding individual tabs, which makes the bar look unstable.
 - Using the bar for one-off actions instead of navigation.
 - Icon-only tabs with no text labels.
 
