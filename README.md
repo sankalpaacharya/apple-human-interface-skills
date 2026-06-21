@@ -62,6 +62,17 @@ Claude then loads it automatically whenever your request matches what it's for �
 
 Once installed, you don't really "call" it — just ask your agent to design or review something and it pulls the relevant topic in. Under the hood it reads the router in `SKILL.md`, opens the one file it needs (designing a modal? `sheets.md`), and applies the guidance. Every skill links back to the original Apple page if you want the full version.
 
+## Getting good results
+
+A heads-up: the HIG is guidance for *not getting it wrong* — clear hierarchy, sensible spacing, restraint. On its own it makes an agent careful, not bold. If you just say "improve the UI," you'll get a tidy spacing pass, not a redesign. To get real change out of it:
+
+- **Ask for ambition explicitly.** "Redesign this screen to feel premium — rework the visual hierarchy, type scale, spacing rhythm, color, and depth. Meaningfully different, not minor tweaks. Use the HIG skill for taste." Permission to be bold matters more than the skill itself.
+- **Give it a target.** Point at a screen, a reference you like, or a vibe ("calm and editorial," "dense and pro"). Taste needs direction.
+- **Make it look, then critique.** The biggest quality jump is a loop: render the page → screenshot it → critique against the guidelines → fix → repeat. Text-only edits can't see that a heading is too timid.
+- **Pair it with concrete tokens.** This skill gives principles; combine it with a real spacing/type scale and a limited palette so "consistent spacing" becomes actual numbers.
+
+Think of it as the design *taste* layer. You still bring the ambition and the direction.
+
 ## Credit
 
 Everything here is from Apple's [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines) — I just scraped it (June 2026) and reorganized it. It's Apple's work; this is an unofficial reference, and the image up top is theirs too.
